@@ -1,9 +1,12 @@
+"use client"
 import { Merriweather } from "next/font/google";
 
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./../components/NavBar/NavBar";
 import Footer from "./../components/Footer/Footer";
+import { useEffect, useState } from "react";
+import Loader from './../components/Loader/Loader';
 
 const merri = Merriweather({
   subsets: ["latin"],
@@ -14,6 +17,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // fake loading for animation effect
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1200);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <html lang="en" className={merri.className}>
       <head>
@@ -21,7 +34,7 @@ export default function RootLayout({
       </head>
       <body style={{ backgroundColor: "var(--customColor3)" }}>
         <NavBar />
-        {children}
+        {loading ? <Loader /> : children}
         <Footer />
       </body>
     </html>

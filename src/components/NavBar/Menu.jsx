@@ -56,8 +56,8 @@ const Menu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/"
-                  className={pathname === "/" ? "active" : ""}
+                  href="/cleaning-services"
+                  className={pathname === "/cleaning-services" ? "actives" : ""}
                 >
                   Cleaning Services
                 </Link>
@@ -66,25 +66,25 @@ const Menu = () => {
               <div className="innerMenuDropDown">
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/full-house"
+                    className={pathname === "/full-house" ? "actives" : ""}
                   >
                     Full-House
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/bathroom"
+                    className={pathname === "/bathroom" ? "actives" : ""}
                   >
                     Bathroom
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/kitchen"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/kitchen" ? "actives" : ""
                     }
                   >
                     Kitchen{" "}
@@ -92,56 +92,56 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/chimney"
+                    className={pathname === "/chimney" ? "actives" : ""}
                   >
                     Chimney
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/carpet"
+                    className={pathname === "/carpet" ? "actives" : ""}
                   >
                     Carpet
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/sofa"
+                    className={pathname === "/sofa" ? "actives" : ""}
                   >
                     Sofa
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/mattress"
+                    className={pathname === "/mattress" ? "actives" : ""}
                   >
                     Mattress
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/window"
+                    className={pathname === "/window" ? "actives" : ""}
                   >
                     Window
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/balcony"
+                    className={pathname === "/balcony" ? "actives" : ""}
                   >
                     Balcony
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/chair"
+                    className={pathname === "/chair" ? "actives" : ""}
                   >
                     Chair
                   </Link>
@@ -150,8 +150,8 @@ const Menu = () => {
             </li>
             <li>
               <Link
-                href="/"
-                className={pathname === "/" ? "active" : ""}
+                href="/marble-polishing"
+                className={pathname === "/marble-polishing" ? "actives" : ""}
               >
                 Marble Polishing
               </Link>
@@ -159,8 +159,8 @@ const Menu = () => {
             <li>
               <span>
                 <Link
-                  href="/"
-                  className={pathname === "/" ? "active" : ""}
+                  href="/painting-services"
+                  className={pathname === "/painting-services" ? "actives" : ""}
                 >
                   Painting Services
                 </Link>
@@ -169,9 +169,9 @@ const Menu = () => {
               <div className="innerMenuDropDown">
                 <li>
                   <Link
-                    href="/"
+                    href="/interior-painting"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/interior-painting" ? "actives" : ""
                     }
                   >
                     Interior Painting
@@ -179,9 +179,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/textured-painting"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/textured-painting" ? "actives" : ""
                     }
                   >
                     Textured Painting
@@ -189,9 +189,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/exterior-painting"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/exterior-painting" ? "actives" : ""
                     }
                   >
                     Exterior Painting
@@ -199,9 +199,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/wood-polishing"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/wood-polishing" ? "actives" : ""
                     }
                   >
                     Wood Polishing
@@ -211,8 +211,8 @@ const Menu = () => {
             </li>
             <li>
               <Link
-                href="/"
-                className={pathname === "/" ? "active" : ""}
+                href="/water-proofing"
+                className={pathname === "/water-proofing" ? "actives" : ""}
               >
                 Waterproofing
               </Link>
@@ -221,8 +221,8 @@ const Menu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/"
-                  className={pathname === "/" ? "active" : ""}
+                  href="/house-renovation"
+                  className={pathname === "/house-renovation" ? "actives" : ""}
                 >
                   House Renovation
                 </Link>
@@ -232,8 +232,8 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/bathroom"
+                    className={pathname === "/bathroom" ? "actives" : ""}
                   >
                     Bathroom Remodelling/Renovation{" "}
                   </Link>
@@ -241,18 +241,18 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/shower"
+                    className={pathname === "/shower" ? "actives" : ""}
                   >
                     Shower Enclosure
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/tiles"
                     className={
-                      pathname === "/"
-                        ? "active"
+                      pathname === "/tiles"
+                        ? "actives"
                         : ""
                     }
                   >
@@ -261,9 +261,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/replastering"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/replastering" ? "actives" : ""
                     }
                   >
                     Replastering
@@ -272,9 +272,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
+                    href="/wall-crack"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/wall-crack" ? "actives" : ""
                     }
                   >
                     Wall Crack Filling{" "}
@@ -283,9 +283,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
+                    href="/home-inspection"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/home-inspection" ? "actives" : ""
                     }
                   >
                     Home Inspection
@@ -294,9 +294,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
+                    href="/kitchen"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/kitchen" ? "actives" : ""
                     }
                   >
                     Kitchen Renovation
@@ -305,9 +305,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
+                    href="/false-ceiling"
                     className={
-                      pathname === "/" ? "active" : ""
+                      pathname === "/false-ceiling" ? "actives" : ""
                     }
                   >
                     False Ceiling
@@ -317,9 +317,9 @@ const Menu = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/grouting"
                 className={
-                  pathname === "/" ? "active" : ""
+                  pathname === "/grouting" ? "actives" : ""
                 }
               >
                 Grouting
@@ -329,8 +329,8 @@ const Menu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/"
-                  className={pathname === "/" ? "active" : ""}
+                  href="/other-services"
+                  className={pathname === "/other-services" ? "actives" : ""}
                 >
                   Other Services
                 </Link>
@@ -340,8 +340,8 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/pest-control"
+                    className={pathname === "/pest-control" ? "actives" : ""}
                   >
                     Pest Control Services
                   </Link>
@@ -349,8 +349,8 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/"
-                    className={pathname === "/" ? "active" : ""}
+                    href="/office-cleaning"
+                    className={pathname === "/office-cleaning" ? "actives" : ""}
                   >
                     Office Cleaning
                   </Link>
@@ -370,16 +370,16 @@ const Menu = () => {
 
         <li>
           <Link
-            href="/"
-            className={pathname === "/" ? "active" : ""}
+            href="/blog"
+            className={pathname === "/blog" ? "active" : ""}
           >
             Blog
           </Link>
         </li>
         <li>
           <Link
-            href="/"
-            className={pathname === "/" ? "active" : ""}
+            href="/gallery"
+            className={pathname === "/gallery" ? "active" : ""}
           >
             Our Work Gallery
           </Link>
