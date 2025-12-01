@@ -24,7 +24,7 @@ const HomeHeader = () => {
           {card.map((x) => (
             <div className="homeHeader-itemCard" key={x.id}>
               <div className="homeHeader-itemCardImg">
-                <video src={x.vid} muted loop autoPlay />
+                <video src={x.vid} muted loop autoPlay preload="none" />
               </div>
               <button>{x.title}</button>
             </div>

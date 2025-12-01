@@ -392,6 +392,9 @@
 .active {
   color: var(--customColor1); /* Color when active */
 }
+.actives {
+  color: var(--customColor2);
+}
 /* ----------------------------------------------- */
 .innerRespMenuDropDown {
   /* border: solid green; */
@@ -477,8 +480,7 @@
   justify-content: center;
   align-items: center;
   z-index: 4;
-    overflow-y: scroll;
-
+  overflow-y: scroll;
 }
 .respMenuBar > img:hover .respMenu {
   transform: translateX(0);

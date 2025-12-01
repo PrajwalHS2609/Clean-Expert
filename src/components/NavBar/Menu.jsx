@@ -394,7 +394,7 @@ const Menu = () => {
         </li>
       </div>
       <div>
-        <button class="button1" id="non-repsBtn">
+        <button className="button1" id="non-repsBtn">
           Book Now
           <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
             <path
@@ -913,7 +913,7 @@ const Menu = () => {
               </Link>
             </li>
             <li>
-              <button class="button1">
+              <button className="button1">
                 Book Now
                 <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
                   <path
