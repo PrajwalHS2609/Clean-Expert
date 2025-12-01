@@ -56,8 +56,8 @@ const Menu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/pregnancy-scan"
-                  className={pathname === "/pregnancy-scan" ? "active" : ""}
+                  href="/"
+                  className={pathname === "/" ? "active" : ""}
                 >
                   Cleaning Services
                 </Link>
@@ -66,25 +66,25 @@ const Menu = () => {
               <div className="innerMenuDropDown">
                 <li>
                   <Link
-                    href="/dating-scan"
-                    className={pathname === "/dating-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Full-House
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/anomaly-scan"
-                    className={pathname === "/anomaly-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Bathroom
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/3d-and-4d-fetal-scan"
+                    href="/"
                     className={
-                      pathname === "/3d-and-4d-fetal-scan" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Kitchen{" "}
@@ -92,56 +92,56 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/nt-scan"
-                    className={pathname === "/nt-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Chimney
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/nt-scan"
-                    className={pathname === "/nt-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Carpet
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/nt-scan"
-                    className={pathname === "/nt-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Sofa
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/nt-scan"
-                    className={pathname === "/nt-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Mattress
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/nt-scan"
-                    className={pathname === "/nt-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Window
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/nt-scan"
-                    className={pathname === "/nt-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Balcony
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/nt-scan"
-                    className={pathname === "/nt-scan" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Chair
                   </Link>
@@ -150,8 +150,8 @@ const Menu = () => {
             </li>
             <li>
               <Link
-                href="/obstetrics"
-                className={pathname === "/obstetrics" ? "active" : ""}
+                href="/"
+                className={pathname === "/" ? "active" : ""}
               >
                 Marble Polishing
               </Link>
@@ -159,8 +159,8 @@ const Menu = () => {
             <li>
               <span>
                 <Link
-                  href="/advanced-usg"
-                  className={pathname === "/advanced-usg" ? "active" : ""}
+                  href="/"
+                  className={pathname === "/" ? "active" : ""}
                 >
                   Painting Services
                 </Link>
@@ -169,9 +169,9 @@ const Menu = () => {
               <div className="innerMenuDropDown">
                 <li>
                   <Link
-                    href="/liver-elastography"
+                    href="/"
                     className={
-                      pathname === "/liver-elastography" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Interior Painting
@@ -179,9 +179,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/fatty-liver-quantification"
+                    href="/"
                     className={
-                      pathname === "/fatty-liver-quantification" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Textured Painting
@@ -189,9 +189,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/fatty-liver-quantification"
+                    href="/"
                     className={
-                      pathname === "/fatty-liver-quantification" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Exterior Painting
@@ -199,9 +199,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/fatty-liver-quantification"
+                    href="/"
                     className={
-                      pathname === "/fatty-liver-quantification" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Wood Polishing
@@ -211,8 +211,8 @@ const Menu = () => {
             </li>
             <li>
               <Link
-                href="/infertility-scans"
-                className={pathname === "/infertility-scans" ? "active" : ""}
+                href="/"
+                className={pathname === "/" ? "active" : ""}
               >
                 Waterproofing
               </Link>
@@ -221,8 +221,8 @@ const Menu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/doppler-scan"
-                  className={pathname === "/doppler-scan" ? "active" : ""}
+                  href="/"
+                  className={pathname === "/" ? "active" : ""}
                 >
                   House Renovation
                 </Link>
@@ -232,8 +232,8 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/carotid-doppler"
-                    className={pathname === "/carotid-doppler" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Bathroom Remodelling/Renovation{" "}
                   </Link>
@@ -241,17 +241,17 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/renal-doppler"
-                    className={pathname === "/renal-doppler" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Shower Enclosure
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/upper-and-lower-limb-doppler"
+                    href="/"
                     className={
-                      pathname === "/upper-and-lower-limb-doppler"
+                      pathname === "/"
                         ? "active"
                         : ""
                     }
@@ -261,9 +261,9 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/leuteal-phase-scan"
+                    href="/"
                     className={
-                      pathname === "/leuteal-phase-scan" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Replastering
@@ -272,9 +272,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/whole-body-doppler"
+                    href="/"
                     className={
-                      pathname === "/whole-body-doppler" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Wall Crack Filling{" "}
@@ -283,9 +283,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/whole-body-doppler"
+                    href="/"
                     className={
-                      pathname === "/whole-body-doppler" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Home Inspection
@@ -294,9 +294,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/whole-body-doppler"
+                    href="/"
                     className={
-                      pathname === "/whole-body-doppler" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     Kitchen Renovation
@@ -305,9 +305,9 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/whole-body-doppler"
+                    href="/"
                     className={
-                      pathname === "/whole-body-doppler" ? "active" : ""
+                      pathname === "/" ? "active" : ""
                     }
                   >
                     False Ceiling
@@ -317,9 +317,9 @@ const Menu = () => {
             </li>
             <li>
               <Link
-                href="/musculoskeletal-scans"
+                href="/"
                 className={
-                  pathname === "/musculoskeletal-scans" ? "active" : ""
+                  pathname === "/" ? "active" : ""
                 }
               >
                 Grouting
@@ -329,8 +329,8 @@ const Menu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/soft-tissue-scans"
-                  className={pathname === "/soft-tissue-scans" ? "active" : ""}
+                  href="/"
+                  className={pathname === "/" ? "active" : ""}
                 >
                   Other Services
                 </Link>
@@ -340,8 +340,8 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/carotid-doppler"
-                    className={pathname === "/carotid-doppler" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Pest Control Services
                   </Link>
@@ -349,8 +349,8 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/renal-doppler"
-                    className={pathname === "/renal-doppler" ? "active" : ""}
+                    href="/"
+                    className={pathname === "/" ? "active" : ""}
                   >
                     Office Cleaning
                   </Link>
@@ -370,16 +370,16 @@ const Menu = () => {
 
         <li>
           <Link
-            href="/health-packages"
-            className={pathname === "/health-packages" ? "active" : ""}
+            href="/"
+            className={pathname === "/" ? "active" : ""}
           >
             Blog
           </Link>
         </li>
         <li>
           <Link
-            href="/consultation"
-            className={pathname === "/consultation" ? "active" : ""}
+            href="/"
+            className={pathname === "/" ? "active" : ""}
           >
             Our Work Gallery
           </Link>
@@ -452,9 +452,9 @@ const Menu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/pregnancy-scan`}
+                        href={`/`}
                         className={
-                          pathname === "/pregnancy-scan" ? "active" : ""
+                          pathname === "/" ? "active" : ""
                         }
                       >
                         Cleaning Services{" "}
@@ -471,9 +471,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/dating-scan`}
+                            href={`/`}
                             className={
-                              pathname === "/dating-scan" ? "active" : ""
+                              pathname === "/" ? "active" : ""
                             }
                           >
                             Full-House
@@ -484,9 +484,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/anomaly-scan`}
+                            href={`/`}
                             className={
-                              pathname === "/anomaly-scan" ? "active" : ""
+                              pathname === "/" ? "active" : ""
                             }
                           >
                             Bathroom
@@ -497,9 +497,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/3d-and-4d-fetal-scan`}
+                            href={`/`}
                             className={
-                              pathname === "/3d-and-4d-fetal-scan"
+                              pathname === "/"
                                 ? "active"
                                 : ""
                             }
@@ -512,8 +512,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/nt-scan`}
-                            className={pathname === "/nt-scan" ? "active" : ""}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Chimney
                           </Link>
@@ -523,8 +523,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/nt-scan`}
-                            className={pathname === "/nt-scan" ? "active" : ""}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Carpet
                           </Link>
@@ -534,8 +534,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/nt-scan`}
-                            className={pathname === "/nt-scan" ? "active" : ""}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Sofa
                           </Link>
@@ -545,8 +545,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/nt-scan`}
-                            className={pathname === "/nt-scan" ? "active" : ""}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Mattress
                           </Link>
@@ -556,8 +556,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/nt-scan`}
-                            className={pathname === "/nt-scan" ? "active" : ""}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Window
                           </Link>
@@ -567,8 +567,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/nt-scan`}
-                            className={pathname === "/nt-scan" ? "active" : ""}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Balcony
                           </Link>
@@ -578,8 +578,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/nt-scan`}
-                            className={pathname === "/nt-scan" ? "active" : ""}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Chair
                           </Link>
@@ -592,14 +592,14 @@ const Menu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/obstetrics`}
-                        className={pathname === "/obstetrics" ? "active" : ""}
+                        href={`/`}
+                        className={pathname === "/" ? "active" : ""}
                       >
                         Marble Polishing{" "}
                       </Link>
                       <FaChevronRight
                         className="menuNavDropIcon"
-                        onClick={() => toggleSubDropdown("obstetrics")}
+                        onClick={() => toggleSubDropdown("")}
                       />
                     </span>
                   </li>
@@ -627,9 +627,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/anomaly-scan`}
+                            href={`/`}
                             className={
-                              pathname === "/anomaly-scan" ? "active" : ""
+                              pathname === "/" ? "active" : ""
                             }
                           >
                             Interior Painting
@@ -682,9 +682,9 @@ const Menu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/infertility-scans`}
+                        href={`/`}
                         className={
-                          pathname === "/infertility-scans" ? "active" : ""
+                          pathname === "/" ? "active" : ""
                         }
                       >
                         Waterproofing
@@ -701,8 +701,8 @@ const Menu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/doppler-scan`}
-                        className={pathname === "/doppler-scan" ? "active" : ""}
+                        href={`/`}
+                        className={pathname === "/" ? "active" : ""}
                       >
                         House Renovation
                       </Link>
@@ -747,9 +747,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/leuteal-phase-scan`}
+                            href={`/`}
                             className={
-                              pathname === "/leuteal-phase-scan" ? "active" : ""
+                              pathname === "/" ? "active" : ""
                             }
                           >
                             Tiles/Stone Replacement
@@ -839,8 +839,8 @@ const Menu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/doppler-scan`}
-                        className={pathname === "/doppler-scan" ? "active" : ""}
+                        href={`/`}
+                        className={pathname === "/" ? "active" : ""}
                       >
                         Other Services{" "}
                       </Link>
@@ -891,8 +891,8 @@ const Menu = () => {
               <Link
                 id="menuNavLink"
                 onClick={hideSideBar}
-                href={`/health-packages`}
-                className={pathname === "/health-packages" ? "active" : ""}
+                href={`/`}
+                className={pathname === "/" ? "active" : ""}
               >
                 Blog
               </Link>
