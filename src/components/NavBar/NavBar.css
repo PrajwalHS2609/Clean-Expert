@@ -1,0 +1,576 @@
+.navBarContainer {
+  /* border: solid red; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 10;
+  padding: 2px 30px;
+  margin-top: 2px;
+}
+/* ----------------Logo----------------- */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 100px;
+  height: 100%;
+}
+.logoContainer > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(2.5);
+}
+/* -------------------Menu-------------------- */
+.menuContainer {
+  /* border: solid blue; */
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0px;
+}
+.menuContainerList {
+  /* border: solid green; */
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.menuContainerList > li {
+  /* border: solid; */
+  height: 70px;
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.menuContainerList > li > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+}
+.menuContainerList > li > a {
+  height: 100%;
+  list-style: none;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.menuDropDown > li > span {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menuDropDown > li > span > a {
+  height: 100%;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 50px;
+}
+.menuDropDown > li > a {
+  height: 100%;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.menuContainerList .active {
+  color: var(--customColor1); /* Color when active */
+  border-bottom: solid var(--customColor2);
+}
+
+.menuContainerList > li:hover .menuDropDown {
+  display: flex;
+  transform: translateY(-10px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menuDropDown {
+  /* border: solid green; */
+  width: 220px;
+  position: absolute;
+  left: -60px;
+  top: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms ease-in-out;
+  box-shadow: 0 0 5px rgb(189, 189, 189);
+}
+.menuDropDown > li {
+  /* border-bottom: 1px solid; */
+  margin: 0px;
+  width: 100%;
+  height: 50px;
+  transition: 300ms ease-in-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  &:hover {
+    background-color: var(--customColor2);
+  }
+}
+
+.menuDropDown > li > a {
+  /* border: solid; */
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+}
+.menuDropIcon {
+  font-size: 15px;
+  color: var(--customColor1);
+}
+.service-text {
+  font-size: 17px;
+  font-weight: 500;
+}
+.innerMenuDropDown {
+  /* border: solid green; */
+  width: 220px;
+  position: absolute;
+  top: 0px;
+  left: 230px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms ease-in-out;
+  box-shadow: 0 0 5px rgb(211, 211, 211);
+}
+.innerMenuDropDown > li {
+  /* border-bottom: 1px solid; */
+  margin: 0px;
+  width: 100%;
+  height: 50px;
+  transition: 300ms ease-in-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  &:hover {
+    background-color: var(--customColor2);
+  }
+}
+.innerMenuDropDown > li:hover a {
+  color: white;
+}
+.innerMenuDropDown > li > a {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+  margin-top: 15px;
+}
+
+.menuDropDown > li:hover .innerMenuDropDown {
+  display: flex;
+  transform: translateX(-10px);
+  opacity: 1;
+  visibility: visible;
+}
+#subMenuDropDown {
+  width: 250px;
+}
+/* -------------------resp Menu---------------------------- */
+.respMenuBar {
+  /* border: solid red; */
+  display: none;
+}
+.respMenuBar {
+  margin-left: 150px;
+}
+.respMenuIcon {
+  font-size: 30px;
+  color: var(--customColor2);
+}
+.respMenuExit {
+  font-size: 28px;
+  color: var(--customColor1);
+  cursor: pointer;
+}
+
+.respMenuHeader {
+  width: 100%;
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.respMenuDropIcon {
+  font-size: 20px;
+  color: var(--customColor2);
+}
+.respMenuScroll {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+}
+.respMenu {
+  border: solid red;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.respMenuScroll > li {
+  border-bottom: 2px solid grey;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  background-color: white;
+}
+.respMenuScroll > li > a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+}
+.respMenuScroll > li > span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  font-weight: 500;
+}
+.servList {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+.respMenuDrop {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.respMenuDrop > li {
+  /* border: solid; */
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.respMenuDrop > li > a {
+  text-decoration: none;
+  color: grey;
+}
+.respMenuDrop > li > span > a {
+  text-decoration: none;
+  color: grey;
+}
+.respMenuDrop > li > span {
+  /* border: solid teal; */
+  width: 100%;
+  text-decoration: none;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.respDropDown {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+  width: 100%;
+}
+.respDropDown > li {
+  /* border-bottom: 2px solid grey; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 18px;
+  background-color: white;
+}
+.respDropDown > li > span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.respDropDown > li > a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+  width: 100%;
+  text-align: start;
+}
+.respDropDown > li > span > a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+}
+.respDropdownList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.respMenu.show {
+  transform: translateX(0);
+  display: flex;
+}
+
+.innerRespMenu.show {
+  transform: translateX(0);
+}
+
+.menuNavDropIcon {
+  cursor: pointer;
+}
+.respMenu .active {
+  color: var(--customColor1); /* Color when active */
+}
+.active {
+  color: var(--customColor1); /* Color when active */
+}
+/* ----------------------------------------------- */
+.innerRespMenuDropDown {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.innerRespMenuDropDown > li {
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.innerRespMenuDropDown > li > a {
+  text-decoration: none;
+  color: grey;
+}
+
+.innerRespMenuDropDown > li > span {
+  /* border: solid; */
+  width: 100%;
+  text-decoration: none;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardiList {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lastBlockList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.respMenuBar {
+  /* border: solid red; */
+  width: 40px;
+  height: 40px;
+  margin-left: 150px;
+  display: none;
+}
+.respMenuBar > img {
+  width: 100%;
+  height: 100%;
+}
+.respMenu {
+  /* border: solid blue; */
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 1s ease;
+  background-color: #037e7eac;
+  display: flex;
+}
+
+.innerRespMenu {
+  /* border: solid green; */
+  position: absolute;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: 1s ease;
+  transition-delay: 1s;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+    overflow-y: scroll;
+
+}
+.respMenuBar > img:hover .respMenu {
+  transform: translateX(0);
+}
+.closeX {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+}
+
+.innerMenu {
+  /* border: solid red; */
+  height: 80%;
+  width: 90%;
+}
+.innerMenu > li {
+  /* border: solid; */
+  border-bottom: 1px solid grey;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.innerMenu > li > span {
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+  color: var(--customDarkBlue);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.innerMenu > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+  color: var(--customDarkBlue);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.innerMenu li > a > button {
+  border: solid white;
+  border-radius: 20px;
+  background-color: var(--customBlue);
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+}
+.innerMenu li > a > button:hover {
+  background-color: white;
+  border: solid var(--customBlue);
+  color: var(--customBlue);
+}
+.innerMenuDrop {
+  border: 1px solid grey;
+  width: 100%;
+  border-radius: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.innerMenu .active {
+  color: var(--customColor); /* Color when active */
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .navBarContainer {
+    justify-content: space-between;
+    width: 100%;
+  }
+  #non-repsBtn {
+    display: none;
+  }
+  .logoContainer > a > img {
+    width: 100%;
+    border: solid;
+  }
+  .menuContainerList {
+    display: none;
+  }
+  .respMenuBar {
+    /* border: solid red; */
+    display: block;
+  }
+  .respMenu {
+    display: none;
+  }
+}

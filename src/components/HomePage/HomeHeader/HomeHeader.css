@@ -1,0 +1,110 @@
+.homeHeader-container {
+  /* border: solid red; */
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.homeHeader-container > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.homeHeader-wrapper {
+  /* border: solid red; */
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.homeHeader-content {
+  /* border: solid blue; */
+  width: 50%;
+  height: 100%;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.homeHeader-itemCard {
+  /* border: solid green; */
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgb(168, 168, 168);
+  width: 265px;
+  height: 360px;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+  background-color: white;
+}
+.homeHeader-itemCardImg {
+  width: 100%;
+  height: 350px;
+}
+.homeHeader-itemCardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.homeHeader-itemCard > button {
+  background-color: var(--customColor1);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  border: none;
+  &:hover {
+    background-color: var(--customColor2);
+  }
+}
+.homeHeader-content:nth-child(2) {
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 0px;
+}
+.homeHeader-imgContainer {
+  /* border: solid red; */
+  width: 500px;
+  height: 400px;
+  margin: 0px 0px;
+}
+.homeHeader-imgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .homeHeader-wrapper {
+    /* border: solid red; */
+    flex-direction: column;
+    padding: 0px;
+  }
+  .homeHeader-content {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeHeader-itemCard {
+  /* border: solid green; */
+margin-top: 30px;
+}
+}

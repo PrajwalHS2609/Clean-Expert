@@ -1,0 +1,50 @@
+.homeAdvantage-container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.homeAdvantage-container > h2 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.homeAdvantage-container > h3 {
+  color: var(--customColor2);
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.homeAdvantage-container > p {
+  font-size: 18px;
+  text-align: justify;
+}
+.homeAdvantage-container > ul {
+  margin: 0;
+  padding: 0;
+}
+.homeAdvantage-container > ul > li {
+  margin: 10px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .homeAdvantage-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .homeAdvantage-container > h2 {
+    font-size: 30px;
+  }
+  .homeAdvantage-container > h3 {
+    font-size: 25px;
+  }
+  .homeAdvantage-container > ul > li {
+  margin: 10px;
+  font-size: 18px;text-align: justify;
+}
+}

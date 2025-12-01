@@ -1,0 +1,57 @@
+.homePestControl-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.homePestControl-content {
+  /* border: solid green; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.homePestControl-content > a {
+  text-decoration: none;
+  color: black;
+}
+.homePestControl-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 220px;
+  width: 300px;
+  /* border: solid blue; */
+  margin: 20px;
+  box-shadow: 0 0 8px grey;
+  border-radius: 20px;
+  background-color: white;
+  transition: 300ms ease-in-out;
+  padding: 16px;
+  &:hover {
+    box-shadow: 0 8px 0px var(--customColor1);
+  }
+}
+.homePestControl-card > span > img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.homePestControl-card > h5 {
+  font-weight: bold;text-align: center;
+}
+.homePestControl-card > a > button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: var(--customColor1);
+  &:hover {
+    background-color: var(--customColor2);
+  }
+}
