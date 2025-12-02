@@ -18,7 +18,7 @@ const HomeHeader = () => {
   ];
   return (
     <div className="homeHeader-container">
-      <h2>Make Your Home Shine Again</h2>
+      <h2>Let Your Home Shine Brighter Than Ever</h2>
       <div className="homeHeader-wrapper">
         <div className="homeHeader-content">
           {card.map((x) => (

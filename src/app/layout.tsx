@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Merriweather } from "next/font/google";
 
 import "./globals.css";
@@ -6,7 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./../components/NavBar/NavBar";
 import Footer from "./../components/Footer/Footer";
 import { useEffect, useState } from "react";
-import Loader from './../components/Loader/Loader';
+import Loader from "./../components/Loader/Loader";
+import PopupForm from "./../components/PopupForm/PopupForm";
 
 const merri = Merriweather({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
         <NavBar />
         {loading ? <Loader /> : children}
         <Footer />
+        <PopupForm />
       </body>
     </html>
   );

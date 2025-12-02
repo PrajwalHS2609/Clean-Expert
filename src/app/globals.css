@@ -9,7 +9,8 @@
 :root {
   --customColor1: #003460;
   --customColor2: #3bb0b7;
-  --customColor3: #f6feff;
+  /* --customColor3: #f6feff; */
+  --customColor3:#fffff6;
 }
 body {
   background-color: var(--customColor3);

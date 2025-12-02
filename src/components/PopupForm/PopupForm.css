@@ -1,0 +1,122 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+}
+
+.popup-wrapper {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  height: 600px;
+  width: 70%;
+  max-width: 1000px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.popup-content {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.popup-content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-side {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.form-side h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: var(--accentColor1);
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-form input,
+.popup-form select,
+.popup-form textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.popup-form input:focus,
+.popup-form select:focus,
+.popup-form textarea:focus {
+  border-color: var(--accentColor1);
+}
+
+.popup-form button {
+  background-color: #0b61f52f;
+  border: 1px solid var(--accentColor1);
+  color: var(--accentColor1);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  &:hover {
+    background-color: #0be9f54b;
+  }
+}
+
+.popup-exit {
+  /* border: solid red; */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.popup-exitIcon {
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .popup-wrapper {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    height: fit-content;
+    width: 90%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .popup-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .popup-content > img {
+    display: none;
+  }
+}

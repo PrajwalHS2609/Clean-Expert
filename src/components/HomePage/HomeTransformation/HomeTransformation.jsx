@@ -23,10 +23,11 @@ const HomeTransformation = () => {
   };
   return (
     <div className="homeTransformation-container">
-      <h2>Witness the Transformation</h2>
+      <h2>Transformations You’ll Love</h2>
+
       <p>
-        From Musty to Marvelous: See the Magic of Clean Fanatics in These
-        Stunning Before and After Photos
+        Experience stunning makeovers that refresh your space and
+        elevate your lifestyle.
       </p>
       <div className="homeTransformation-wrapper">
         <Carousel

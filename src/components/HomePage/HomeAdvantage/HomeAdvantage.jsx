@@ -3,109 +3,90 @@ import "./HomeAdvantage.css";
 const HomeAdvantage = () => {
   return (
     <div className="homeAdvantage-container">
-      <h2>Get the clean home you deserve: Let us take care of it all</h2>
+      <h2>Your Dream-Clean Home, Delivered by Professionals</h2>
       <p>
-        Are you tired of lackluster cleaning services that leave you feeling
-        underwhelmed and dissatisfied? It’s time to level up with Clean
-        Fanatics’ deep cleaning services. Our team of cleaning experts are ready
-        to tackle even the toughest cleaning challenges, leaving your space
-        spotless and refreshed. Don’t settle for anything less than a truly
-        clean environment – choose Clean Experts (formerly Clean Fanatic) and
-        experience the difference for yourself with our professional deep
-        cleaning services.
+        Say goodbye to mediocre cleaning that never meets your expectations.
+        It’s time to upgrade your space with Clean Experts’ premium deep
+        cleaning services. Our skilled cleaning professionals take on even the
+        toughest grime, transforming your home or workplace into a spotless,
+        revitalized environment. Don’t compromise on cleanliness — choose Clean
+        Experts and experience the remarkable difference of truly professional
+        deep cleaning.
       </p>
-      <h3>The Clean Experts Advantages</h3>
+      <p>
+        At Clean Experts, we go beyond basic cleaning — we create living spaces
+        that are spotless, healthy, and welcoming. As one of Bangalore’s most
+        trusted home service providers, we offer a complete range of solutions
+        designed to elevate the comfort and cleanliness of your home.
+      </p>
+      <p>
+        From deep cleaning services to pest control, marble polishing, grouting,
+        waterproofing, and civil work, Clean Experts ensures every corner of
+        your home receives exceptional care. Our specialized deep cleaning
+        services in Bangalore target areas often overlooked during routine
+        cleaning — including carpets, upholstery, mattresses, windows, chairs,
+        and other surfaces that accumulate hidden dirt over time.
+      </p>
+      <p>
+        We cater to all types of residential properties, whether it's an
+        apartment, villa, or independent home. Every service is tailored to the
+        unique needs of each customer, ensuring a personalized, detail-oriented
+        approach that makes your home shine.
+      </p>
+      <p>
+        Our advanced cleaning techniques and high-quality products allow us to
+        reach even the toughest and most inaccessible areas, delivering a level
+        of cleanliness you can see and feel. With a reputation for reliability
+        and efficiency, our team treats every home with the utmost respect and
+        attention to detail.
+      </p>
+      <p>
+        Situated in a prime location in Bangalore, we understand the city’s
+        unique cleaning challenges — from dust levels to climate conditions —
+        allowing us to provide solutions that truly work for local homes and
+        lifestyles. Clean Experts also offers a wide range of services for both
+        residential spaces and commercial office environments.
+      </p>
+      <p>
+        For us, home cleaning is more than a task — it’s about creating a
+        healthier, more comfortable, and aesthetically pleasing environment for
+        you and your family.
+      </p>{" "}
+      <h3>Enhance your home with our extended list of expert services:</h3>
       <ul>
         <li>
-          Clean Experts offers specialized home cleaning services in Bangalore,
-          ensuring that your living space is not just clean but also healthy and
-          inviting. Along with cleaning services
+          <b> Professional Painting Services:</b> Refresh interiors or upgrade
+          exteriors with flawless, vibrant finishes applied by skilled painters.
         </li>
         <li>
-          Clean Experts offers various home services like pest control, marble
-          polishing, grouting, waterproofing, and civil work services.
+          <b>Grouting & Waterproofing:</b> Protect your walls and floors from
+          moisture, leaks, and long-term damage with durable, high-quality
+          treatments.
         </li>
         <li>
-          Our deep cleaning services in Bangalore are designed to address the
-          areas that regular cleaning might miss. This includes intensive
-          cleaning of carpets, upholstery, Mattress, Windows, Chairs and other
-          areas that accumulate dirt over time.
+          <b>Pest Control Solutions:</b> Eliminate pests effectively and
+          maintain a safe, hygienic home environment.
         </li>
         <li>
-          Our comprehensive house cleaning services in Bangalore cater to all
-          types of residential properties, from apartments to standalone homes.
+          <b>Tile & Stone Replacement:</b> Rejuvenate floors and walls with
+          seamless repairs that restore beauty and strength.
         </li>
         <li>
-          Our home cleaning services are tailored to suit the diverse needs of
-          our customers, ensuring a personalized touch in every job we
-          undertake.
+          <b>Kitchen & Bathroom Remodeling:</b> Transform key spaces with
+          functional and stylish redesigns tailored to your preferences.
         </li>
         <li>
-          Our deep cleaning service are thorough, using advanced techniques
-          products to ensure that even the hardest-to-reach areas are impeccably
-          clean.
+          <b> Replastering Services:</b> Ensure smooth, flawless walls that
+          serve as the perfect backdrop for your home décor.
         </li>
         <li>
-          Trustworthy and efficient, our house cleaning services ensure that
-          every part of your home is treated with the utmost care and attention
-          to detail.
+          <b>Marble Polishing:</b> Restore the natural elegance and shine of
+          your marble surfaces with precision polishing.
         </li>
         <li>
-          Located in a prime location in Bangalore, Clean Experts offers
-          cleaning services that are well-suited to the local environment,
-          addressing the unique cleaning challenges posed by the city’s climate
-          and lifestyle.
-        </li>
-        <li>
-          Clean Experts offers a range of home services, encompassing all
-          aspects of home and including commercial office space.
-        </li>
-        <li>
-          Being a service provider in Bangalore, we understand the specific
-          requirements of the city’s residents, offering tailored solutions to
-          meet these needs.
-        </li>
-        <li>
-          Our home cleaning service is more than just cleaning; it’s about
-          creating a healthy, comfortable, and aesthetically pleasing living
-          environment
-        </li>
-        <li>
-          Transform your home with our expert painting services. From refreshing
-          interiors to enhancing exteriors, our skilled professionals bring life
-          to your walls with precision and care.
-        </li>
-        <li>
-          Our grouting and waterproofing services ensure durable protection for
-          your walls and floors, safeguarding your home against moisture and
-          damage.
-        </li>
-        <li>
-          Our pest control treatments are designed to effectively eliminate
-          pests, preserving the sanctity of your home environment.
-        </li>
-        <li>
-          Restore the beauty of your floors and walls effortlessly. We
-          specialize in seamless tiles and stone replacement, rejuvenating your
-          space with finesse.
-        </li>
-        <li>
-          Our kitchen/bathroom remodeling services combine functionality and
-          aesthetics to create a space that suits your style and preferences.
-        </li>
-        <li>
-          Smooth out imperfections! Our replastering services ensure flawless
-          walls, providing a pristine canvas for your home decor dreams.
-        </li>
-        <li>
-          Restore the natural luster of your marble surfaces! Our specialized
-          polishing services bring back the shine, adding a touch of
-          sophistication to your interiors.
-        </li>
-        <li>
-          Lastly, our focus on home cleaning ensures that every service we
-          provide contributes to a cleaner, more harmonious living space for you
-          and your family.
+          At Clean Experts, every service is designed with one goal — to create
+          a cleaner, safer, and more harmonious living space for you and
+          your loved ones.
         </li>
       </ul>
     </div>
