@@ -7,19 +7,38 @@ const PopupForm = () => {
   const [service, setService] = useState("");
 
   const cleaningOptions = [
-    "House Cleaning",
-    "Bathroom Cleaning",
-    "Kitchen Cleaning",
-    "Sofa Cleaning",
-    "Deep Cleaning",
+    "Full-House",
+    "Bathroom ",
+    "Kitchen ",
+    "Carpet",
+    "Sofa ",
+    "Mattress",
+    "Window",
+    "Balcony",
+    "Chair",
   ];
-
+  const paintingOptions = [
+    "Interior Painting",
+    "Textured Painting ",
+    "Exterior Painting ",
+    "Wood Polishing",
+  ];
+  const renovationOptions = [
+    "Bathroom Remodelling/Renovation ",
+    "Shower Enclosure ",
+    "Tiles/Stone Replacement",
+    "Replastering ",
+    "Wall Crack Filling",
+    "Window",
+    "Balcony",
+    "Chair",
+  ];
   const pestControlOptions = [
-    "Bedbug Control",
-    "Mosquito Control",
-    "Termite Control",
-    "Cockroach Control",
-    "Rodent Control",
+    "General Pest Control",
+    "Bed Bugs",
+    "Mosquito ",
+    "Combo: Best value for money",
+    "Termites",
   ];
 
   const handleExit = () => {
@@ -29,7 +48,6 @@ const PopupForm = () => {
   return (
     <div className="popup-container">
       <div className="popup-wrapper">
-        
         {/* Left Side Image */}
         <div className="popup-content">
           <img
@@ -65,7 +83,9 @@ const PopupForm = () => {
               <option value="House Renovation">House Renovation</option>
               <option value="Shower Enclosure">Shower Enclosure</option>
               <option value="Grouting">Grouting</option>
-              <option value="Pest Control Services">Pest Control Services</option>
+              <option value="Pest Control Services">
+                Pest Control Services
+              </option>
               <option value="Office Cleaning">Office Cleaning</option>
             </select>
 
@@ -80,7 +100,26 @@ const PopupForm = () => {
                 ))}
               </select>
             )}
-
+            {service === "Painting Services" && (
+              <select required>
+                <option value="">Select Cleaning Type</option>
+                {paintingOptions.map((item, idx) => (
+                  <option key={idx} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            )}
+            {service === "House Renovation0" && (
+              <select required>
+                <option value="">Select Cleaning Type</option>
+                {renovationOptions.map((item, idx) => (
+                  <option key={idx} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            )}
             {service === "Pest Control Services" && (
               <select required>
                 <option value="">Select Pest Control Type</option>
@@ -97,7 +136,6 @@ const PopupForm = () => {
             <button type="submit">Submit</button>
           </form>
         </div>
-
       </div>
     </div>
   );
