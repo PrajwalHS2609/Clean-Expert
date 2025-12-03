@@ -78,9 +78,12 @@
 }
 
 .btn-secondary {
-  background-color: green;
+  background-color: var(--customColor2);
+  border: solid 2px white;
 }
 
 .btn-secondary:hover {
-  background-color: darkgreen;
+  background-color: var(--customColor2);
+  border: solid 2px #fff9;
+  
 }

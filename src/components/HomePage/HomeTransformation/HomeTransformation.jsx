@@ -31,8 +31,8 @@ const HomeTransformation = () => {
       </p>
       <div className="homeTransformation-wrapper">
         <Carousel
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.

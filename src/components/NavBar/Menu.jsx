@@ -35,8 +35,8 @@ const Menu = () => {
   const toggleSubDropdown = (submenu) => {
     setActiveSubDropdown((prev) => (prev === submenu ? null : submenu));
   };
-  let handleAppointment = () => {
-    document.querySelector(".bookPopUp").classList.add("showPopup");
+  const handlePop = () => {
+    document.querySelector(".popup-container").style.display = "flex";
   };
   return (
     <div className="menuContainer">
@@ -83,9 +83,7 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/kitchen"
-                    className={
-                      pathname === "/kitchen" ? "actives" : ""
-                    }
+                    className={pathname === "/kitchen" ? "actives" : ""}
                   >
                     Kitchen{" "}
                   </Link>
@@ -200,9 +198,7 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/wood-polishing"
-                    className={
-                      pathname === "/wood-polishing" ? "actives" : ""
-                    }
+                    className={pathname === "/wood-polishing" ? "actives" : ""}
                   >
                     Wood Polishing
                   </Link>
@@ -235,7 +231,7 @@ const Menu = () => {
                     href="/bathroom"
                     className={pathname === "/bathroom" ? "actives" : ""}
                   >
-                    Bathroom Remodelling/Renovation{" "}
+                    Bathroom Remodelling{" "}
                   </Link>
                 </li>
                 <li>
@@ -250,11 +246,7 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/tiles"
-                    className={
-                      pathname === "/tiles"
-                        ? "actives"
-                        : ""
-                    }
+                    className={pathname === "/tiles" ? "actives" : ""}
                   >
                     Tiles/Stone Replacement
                   </Link>
@@ -262,9 +254,7 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/replastering"
-                    className={
-                      pathname === "/replastering" ? "actives" : ""
-                    }
+                    className={pathname === "/replastering" ? "actives" : ""}
                   >
                     Replastering
                   </Link>
@@ -273,9 +263,7 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/wall-crack"
-                    className={
-                      pathname === "/wall-crack" ? "actives" : ""
-                    }
+                    className={pathname === "/wall-crack" ? "actives" : ""}
                   >
                     Wall Crack Filling{" "}
                   </Link>
@@ -284,9 +272,7 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/home-inspection"
-                    className={
-                      pathname === "/home-inspection" ? "actives" : ""
-                    }
+                    className={pathname === "/home-inspection" ? "actives" : ""}
                   >
                     Home Inspection
                   </Link>
@@ -295,9 +281,7 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/kitchen"
-                    className={
-                      pathname === "/kitchen" ? "actives" : ""
-                    }
+                    className={pathname === "/kitchen" ? "actives" : ""}
                   >
                     Kitchen Renovation
                   </Link>
@@ -306,9 +290,7 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/false-ceiling"
-                    className={
-                      pathname === "/false-ceiling" ? "actives" : ""
-                    }
+                    className={pathname === "/false-ceiling" ? "actives" : ""}
                   >
                     False Ceiling
                   </Link>
@@ -318,9 +300,7 @@ const Menu = () => {
             <li>
               <Link
                 href="/grouting"
-                className={
-                  pathname === "/grouting" ? "actives" : ""
-                }
+                className={pathname === "/grouting" ? "actives" : ""}
               >
                 Grouting
               </Link>
@@ -369,10 +349,7 @@ const Menu = () => {
         </li>
 
         <li>
-          <Link
-            href="/blog"
-            className={pathname === "/blog" ? "active" : ""}
-          >
+          <Link href="/blog" className={pathname === "/blog" ? "active" : ""}>
             Blog
           </Link>
         </li>
@@ -394,7 +371,7 @@ const Menu = () => {
         </li>
       </div>
       <div>
-        <button className="button1" id="non-repsBtn">
+        <button className="button1" id="non-repsBtn" onClick={handlePop}>
           Book Now
           <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
             <path
@@ -453,9 +430,7 @@ const Menu = () => {
                         id="menuNavLink"
                         onClick={hideSideBar}
                         href={`/`}
-                        className={
-                          pathname === "/" ? "active" : ""
-                        }
+                        className={pathname === "/" ? "active" : ""}
                       >
                         Cleaning Services{" "}
                       </Link>
@@ -472,9 +447,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/" ? "active" : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Full-House
                           </Link>
@@ -485,9 +458,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/" ? "active" : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Bathroom
                           </Link>
@@ -498,11 +469,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/"
-                                ? "active"
-                                : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Kitchen
                           </Link>
@@ -628,9 +595,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/" ? "active" : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Interior Painting
                           </Link>
@@ -683,9 +648,7 @@ const Menu = () => {
                         id="menuNavLink"
                         onClick={hideSideBar}
                         href={`/`}
-                        className={
-                          pathname === "/" ? "active" : ""
-                        }
+                        className={pathname === "/" ? "active" : ""}
                       >
                         Waterproofing
                       </Link>
@@ -723,7 +686,7 @@ const Menu = () => {
                               pathname === "/3d-base-line-scan" ? "active" : ""
                             }
                           >
-                            Bathroom Remodelling/Renovation{" "}
+                            Bathroom Remodelling{" "}
                           </Link>
                         </li>
                         <li>
@@ -748,9 +711,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/" ? "active" : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Tiles/Stone Replacement
                           </Link>
@@ -913,7 +874,7 @@ const Menu = () => {
               </Link>
             </li>
             <li>
-              <button className="button1">
+              <button className="button1" onClick={handlePop}>
                 Book Now
                 <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
                   <path

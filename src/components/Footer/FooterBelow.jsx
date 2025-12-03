@@ -293,8 +293,7 @@ const FooterBelow = () => {
       </div>
       <div className="footerBelow-content">
         <p>
-          © Copyright 2025 | Clean Experts Designed and Developed By
-          TrySeoServices.com
+          © Copyright 2025 
         </p>
       </div>
     </div>
