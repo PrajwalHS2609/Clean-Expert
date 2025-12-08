@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import balcony from "./../../../images/serviceIcons/balcony.png";
 import bathroom from "./../../../images/serviceIcons/bathroom.png";
-import bed from "./../../../images/serviceIcons/bed.png";
+import beds from "./../../../images/serviceIcons/bed.png";
 import carpet from "./../../../images/serviceIcons/carpet.png";
 import house from "./../../../images/serviceIcons/house.png";
 import kitchen from "./../../../images/serviceIcons/kitchen.png";
@@ -23,7 +23,7 @@ const HomeCleanService = () => {
     { id: 4, img: hood, title: "Chimney", link: "/" },
     { id: 5, img: carpet, title: "Carpet", link: "/" },
     { id: 6, img: sofa, title: "Sofa", link: "/" },
-    { id: 7, img: bed, title: "Mattress", link: "/" },
+    { id: 7, img: beds, title: "Mattress", link: "/" },
     { id: 8, img: windows, title: "Window", link: "/" },
     { id: 9, img: balcony, title: "Balcony", link: "/" },
     { id: 10, img: office, title: "Chair", link: "/" },
