@@ -59,6 +59,12 @@
   object-fit: cover;
   border-radius: 20px;
 }
+.homeHeader-itemCardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
 .homeHeader-itemCard > button {
   background-color: var(--customColor1);
   color: white;

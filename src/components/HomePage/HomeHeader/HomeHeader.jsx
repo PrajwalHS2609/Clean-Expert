@@ -1,20 +1,29 @@
 import React from "react";
 import "./HomeHeader.css";
+import Image from "next/image";
+import cleaning from "@/images/serviceImgs/Cleaning Service.png";
+import painting from "@/images/serviceImgs/Painting Services.png";
+import bathroom from "@/images/serviceImgs/Bathroom Renovation.png";
+import marble from "@/images/serviceImgs/Marbles Polishing.png";
+import civil from "@/images/serviceImgs/Civil Works.png";
+import waterproofing from "@/images/serviceImgs/Water Proofing.png";
+import shower from "@/images/serviceImgs/Shower Cubicle.png";
+import pest from "@/images/serviceImgs/Pest Control.png";
 
 const HomeHeader = () => {
   const card = [
-    { id: 1, title: "Cleaning Services", vid: "/vid/Cleaning Service.mp4" },
-    { id: 2, title: "Painting Services", vid: "/vid/Painting Services.mp4" },
+    { id: 1, title: "Cleaning Services", img: cleaning },
+    { id: 2, title: "Painting Services", img: painting },
     {
       id: 3,
       title: "Bathroom Renovation",
-      vid: "/vid/Bathroom Renovation.mp4",
+      img: bathroom,
     },
-    { id: 4, title: "Marble Polishing", vid: "/vid/Marbles Polishing.mp4" },
-    { id: 5, title: "Civil Works", vid: "/vid/Civil Works.mp4" },
-    { id: 6, title: "Waterproofing", vid: "/vid/Water Proofing.mp4" },
-    { id: 7, title: "Shower Cubicle", vid: "/vid/Shower Cubicle.mp4" },
-    { id: 8, title: "Pest Control", vid: "/vid/Pest Control.mp4" },
+    { id: 4, title: "Marble Polishing", img: marble },
+    { id: 5, title: "Civil Works", img: civil },
+    { id: 6, title: "Waterproofing", img: waterproofing },
+    { id: 7, title: "Shower Cubicle", img: shower },
+    { id: 8, title: "Pest Control", img: pest },
   ];
   return (
     <div className="homeHeader-container">
@@ -24,7 +33,8 @@ const HomeHeader = () => {
           {card.map((x) => (
             <div className="homeHeader-itemCard" key={x.id}>
               <div className="homeHeader-itemCardImg">
-                <video src={x.vid} muted loop autoPlay preload="none" />
+                {/* <video src={x.vid} muted loop autoPlay preload="none" /> */}
+                <Image src={x.img} alt={x.title}/>
               </div>
               <button>{x.title}</button>
             </div>
