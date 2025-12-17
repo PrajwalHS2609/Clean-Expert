@@ -25,7 +25,7 @@ const HomePestControl = () => {
     <div className="homePestControl-container">
       <HeadingProps
         title="Pest Control Service in Bangalore"
-        para="Protect your space with Clean Experts’ advanced pest control service — safe, eco-friendly, and guaranteed results across Bangalore."
+        para="Protect your space with Prime Clean’ advanced pest control service — safe, eco-friendly, and guaranteed results across Bangalore."
       />
       <div className="homePestControl-content">
         {card.map((x) => (

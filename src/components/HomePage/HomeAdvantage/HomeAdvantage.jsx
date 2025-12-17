@@ -6,22 +6,21 @@ const HomeAdvantage = () => {
       <h2>Your Dream-Clean Home, Delivered by Professionals</h2>
       <p>
         Say goodbye to mediocre cleaning that never meets your expectations.
-        It’s time to upgrade your space with Clean Experts’ premium deep
+        It’s time to upgrade your space with Prime Clean’ premium deep
         cleaning services. Our skilled cleaning professionals take on even the
         toughest grime, transforming your home or workplace into a spotless,
-        revitalized environment. Don’t compromise on cleanliness — choose Clean
-        Experts and experience the remarkable difference of truly professional
+        revitalized environment. Don’t compromise on cleanliness — choose Prime Clean and experience the remarkable difference of truly professional
         deep cleaning.
       </p>
       <p>
-        At Clean Experts, we go beyond basic cleaning — we create living spaces
+        At Prime Clean, we go beyond basic cleaning — we create living spaces
         that are spotless, healthy, and welcoming. As one of Bangalore’s most
         trusted home service providers, we offer a complete range of solutions
         designed to elevate the comfort and cleanliness of your home.
       </p>
       <p>
         From deep cleaning services to pest control, marble polishing, grouting,
-        waterproofing, and civil work, Clean Experts ensures every corner of
+        waterproofing, and civil work, Prime Clean ensures every corner of
         your home receives exceptional care. Our specialized deep cleaning
         services in Bangalore target areas often overlooked during routine
         cleaning — including carpets, upholstery, mattresses, windows, chairs,
@@ -44,7 +43,7 @@ const HomeAdvantage = () => {
         Situated in a prime location in Bangalore, we understand the city’s
         unique cleaning challenges — from dust levels to climate conditions —
         allowing us to provide solutions that truly work for local homes and
-        lifestyles. Clean Experts also offers a wide range of services for both
+        lifestyles. Prime Clean also offers a wide range of services for both
         residential spaces and commercial office environments.
       </p>
       <p>
@@ -84,7 +83,7 @@ const HomeAdvantage = () => {
           your marble surfaces with precision polishing.
         </li>
         <li>
-          At Clean Experts, every service is designed with one goal — to create
+          At Prime Clean, every service is designed with one goal — to create
           a cleaner, safer, and more harmonious living space for you and
           your loved ones.
         </li>

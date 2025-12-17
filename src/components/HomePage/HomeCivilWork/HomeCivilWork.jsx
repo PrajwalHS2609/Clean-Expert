@@ -34,7 +34,7 @@ const HomeCivilWork = () => {
     <div className="homeCivicWork-container">
       <HeadingProps
         title="Civil Works in Bangalore"
-        para="Ready to give your space a fresh new look? Clean Experts provide top-quality civil works and renovation services across Bangalore. From minor fixes to complete transformations, we make your renovation journey smooth and extraordinary."
+        para="Ready to give your space a fresh new look? Prime Clean provide top-quality civil works and renovation services across Bangalore. From minor fixes to complete transformations, we make your renovation journey smooth and extraordinary."
       />
       <div className="homeCivicWork-content">
         {card.map((x) => (
