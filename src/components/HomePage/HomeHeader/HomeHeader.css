@@ -84,7 +84,7 @@
 }
 .homeHeader-imgContainer {
   /* border: solid red; */
-  width: 500px;
+  width: fit-content;
   height: 400px;
   margin: 0px 0px;
 }
