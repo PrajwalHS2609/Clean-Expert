@@ -9,7 +9,9 @@ import civil from "@/images/serviceImgs/Civil Works.png";
 import waterproofing from "@/images/serviceImgs/Water Proofing.png";
 import shower from "@/images/serviceImgs/Shower Cubicle.png";
 import pest from "@/images/serviceImgs/Pest Control.png";
-import offer1 from "@/images/Painting Offer.png"
+import paintingOffer from "@/images/offerImgs/Painting-Offer.png"
+import pestControlOffer from "@/images/offerImgs/Pest-Control-Offer.png"
+import professionalOffer from "@/images/offerImgs/Professional-Cleaning-Service.png"
 const HomeHeader = () => {
   const card = [
     { id: 1, title: "Cleaning Services", img: cleaning },
@@ -43,20 +45,20 @@ const HomeHeader = () => {
         <div className="homeHeader-content">
           <div className="homeHeader-imgContainer">
             <Image
-              src={offer1}
-              alt="offer1"
+              src={paintingOffer}
+              alt="Painting Offer"
             />
           </div>
           <div className="homeHeader-imgContainer">
-            <img
-              src="https://img.freepik.com/free-photo/attractive-carpenter-with-protective-helmet-glasses-working-while-drilling-wooden-bar-construction-site_662251-483.jpg?uid=R153459844&ga=GA1.1.790794325.1735297516&semt=ais_hybrid&w=740&q=80"
-              alt=""
+           <Image
+              src={pestControlOffer}
+              alt="Pest Control Offer"
             />
           </div>
           <div className="homeHeader-imgContainer">
-            <img
-              src="https://img.freepik.com/free-photo/attractive-carpenter-with-protective-helmet-glasses-working-while-drilling-wooden-bar-construction-site_662251-483.jpg?uid=R153459844&ga=GA1.1.790794325.1735297516&semt=ais_hybrid&w=740&q=80"
-              alt=""
+            <Image
+              src={professionalOffer}
+              alt="Professional Offer"
             />
           </div>
         </div>
