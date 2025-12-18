@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={merri.className}>
       <head>
-        <link rel="icon" type="image/png" href="./favIcon.png" />
+        <link rel="icon" type="image/png" href="./favicon.png" />
       </head>
       <body style={{ backgroundColor: "var(--customColor3)" }}>
         <NavBar />
