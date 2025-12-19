@@ -8,6 +8,9 @@ import Footer from "./../components/Footer/Footer";
 import { useEffect, useState } from "react";
 import Loader from "./../components/Loader/Loader";
 import PopupForm from "./../components/PopupForm/PopupForm";
+import { usePathname } from "next/navigation";
+import LpPaintNavbar from "./../components/LandingPage/PaintLandingPage/LpPaintNavbar/LpPaintNavbar";
+import LpPaintFooter from "./../components/LandingPage/PaintLandingPage/LpPaintFooter/LpPaintFooter";
 
 const merri = Merriweather({
   subsets: ["latin"],
@@ -18,6 +21,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const isPaintLanding = pathname.startsWith("/lp-paint");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,9 +39,9 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="./favicon.png" />
       </head>
       <body style={{ backgroundColor: "var(--customColor3)" }}>
-        <NavBar />
+        {isPaintLanding ? <LpPaintNavbar /> : <NavBar />}
         {loading ? <Loader /> : children}
-        <Footer />
+        {isPaintLanding ? <LpPaintFooter /> : <Footer />}
         <PopupForm />
       </body>
     </html>

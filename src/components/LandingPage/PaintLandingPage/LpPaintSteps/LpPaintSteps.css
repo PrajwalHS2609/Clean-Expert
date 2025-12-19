@@ -1,0 +1,59 @@
+.lpPaintSteps-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--lpCustom2);
+}
+.lpPaintSteps-heading {
+  /* border: solid green; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPaintSteps-heading > h2 {
+  font-size: 40px;
+}
+.lpPaintSteps-content {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.lpPaintSteps-itemCard {
+  width: 150px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.lpPaintSteps-itemCard > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.lpPaintSteps-itemCard > p {
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+}
+.lpPaintSteps-itemIcon {
+  font-size: 50px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lpPaintSteps-itemIcon:last-child {
+  display: none;
+}

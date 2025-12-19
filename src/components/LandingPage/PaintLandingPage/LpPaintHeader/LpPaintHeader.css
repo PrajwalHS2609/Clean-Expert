@@ -1,0 +1,154 @@
+.lpPaintHeader-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+}
+.lpPaintHeader-content:nth-child(1) {
+  position: relative;
+}
+.lpPaintHeader-content > img {
+  width: 100%;
+  height: 510px;
+  object-fit: contain;
+  object-position: 90px 0;
+}
+.lpPaintHeader-wrapper {
+  /* border: solid; */
+  width: 100%;
+  height: 100px;
+  background-color: var(--lpCustom4);
+}
+.lpPaintHeader-wrapper:nth-child(2) {
+  /* border: solid green; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+.lpPaintHeader-formCard {
+  width: 380px;
+  background: #e9f4f6;
+  border-radius: 18px;
+  overflow: hidden;
+  transform: scale(0.9);
+}
+
+.lpPaintHeader-formHeader {
+  background: var(--lpCustom3);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.lpPaintHeader-form {
+  padding: 20px;
+}
+
+.lpPaintHeader-form input,
+.lpPaintHeader-form select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 12px;
+}
+
+.lpPaintHeader-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.lpPaintHeader-checkbox > input {
+  width: fit-content;
+  margin-top: 10px;
+}
+.lpPaintHeader-checkbox span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.lpPaintHeader-checkbox > label {
+  font-size: 12px;
+}
+.lpPaintHeader-submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--lpCustom1);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.lpPaintHeader-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, var(--lpCustom3) 10%, transparent, transparent);
+}
+
+.lpPaintHeader-heading {
+  /* border: solid red; */
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px;
+  margin-left: 30px;
+}
+.lpPaintHeader-heading > h2 {
+  font-size: 50px;
+  font-weight: lighter;
+  color: white;
+}
+.lpPaintHeader-heading > p {
+  font-weight: 500;
+  color: white;
+}
+.lpPaintHeader-heading > button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: grey;
+  border: none;
+}
+.lpPaintHeader-item {
+  /* border: solid red; */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--lpCustom3);
+  gap: 5px;
+}
+.lpPaintHeader-itemContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: solid red; */
+  width: 90%;
+  gap: 50px;
+  
+}
+.lpPaintHeader-item > p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 10px;
+}
+.lpPaintHeader-icon {
+  font-size: 35px;
+  margin-top: 10px;
+}

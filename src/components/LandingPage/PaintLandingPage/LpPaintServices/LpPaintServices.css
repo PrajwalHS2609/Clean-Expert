@@ -1,0 +1,103 @@
+.lpPaintService-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPaintService-heading {
+  /* border: solid green; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPaintService-heading > h2 {
+  font-size: 40px;
+}
+.lpPaintService-cardWrapper {
+  /* border: solid blue; */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lpPaintService-cardWrapper > a {
+  color: black;
+  text-decoration: none;
+  margin: 30px;
+}
+.lpPaintService-card {
+  width: 380px;
+  height: 600px;
+  /* border: solid brown; */
+  box-shadow: 0 0 2px rgb(137, 137, 137);
+  border-radius: 20px;
+  transition: 300ms ease;
+  overflow: hidden;
+  &:hover {
+    box-shadow: 0 0 10px rgb(137, 137, 137);
+  }
+}
+.lpPaintService-cardImg {
+  width: 100%;
+  height: 270px;
+  /* border: solid yellow; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+.lpPaintService-card:hover img {
+  transform: scale(1.2);
+}
+.lpPaintService-cardContent {
+  width: 100%;
+  height: 250px;
+  /* border: solid teal; */
+  padding: 20px;
+}
+.lpPaintService-cardIcon {
+  width: 100%;
+  height: 80px;
+  /* border: solid black; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lpPaintService-cardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 300ms ease;
+}
+.lpPaintService-cardPara > ul {
+  padding: 10px;
+}
+.lpPaintService-cardPara > ul > li {
+  margin: 10px;
+  font-size: 15px;
+}
+
+.lpPaintService-cardIcon > span {
+  background-color: var(--lpCustom1);
+  font-size: 40px;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 300ms ease;
+}
+.lpPaintService-card:hover span {
+  transform: scale(1.1);
+}

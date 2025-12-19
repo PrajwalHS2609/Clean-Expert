@@ -1,0 +1,52 @@
+.lpPaintWhy-container {
+  /* border: solid red; */
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lpCustom2);
+}
+.lpPaintWhy-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPaintWhy-wrapper {
+  width: 80%;
+  margin-top: 30px;
+  /* border: solid red; */
+}
+.lpPaintWhy-content {
+  margin-left:30px;
+  /* border: solid green; */
+  width: 250px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.lpPaintWhy-item:nth-child(1) {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.lpPaintWhy-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.lpPaintWhy-item:nth-child(2) {
+  padding: 10px;
+}
+.lpPaintWhy-item > p {
+  text-align: justify;
+  font-size: 15px;
+}
