@@ -5,6 +5,9 @@ import Carousel from "react-bootstrap/Carousel";
 import testimonial from "@/images/testimonial.png";
 import Image from "next/image";
 import rating from "@/images/rating.png";
+import img1 from "@/images/TestimonialImg/img1.png"
+import img2 from "@/images/TestimonialImg/img2.png"
+import img3 from "@/images/TestimonialImg/img3.png"
 
 const LpPaintTestimonial = () => {
   const [index, setIndex] = useState(0);
@@ -27,7 +30,7 @@ const LpPaintTestimonial = () => {
           <Carousel.Item className="lpPaintTestimonial-carouselItem">
             <div className="lpPaintTestimonial-wrapper">
               <div className="lpPaintTestimonial-content">
-                <Image src={testimonial} alt="" />
+                <Image src={img2} alt="img2" />
                 <div className="lpPaintTestimonial-text">
                   <Image src={rating} alt="rating" />
                   <p>
@@ -45,7 +48,7 @@ const LpPaintTestimonial = () => {
           <Carousel.Item className="lpPaintTestimonial-carouselItem">
             <div className="lpPaintTestimonial-wrapper">
               <div className="lpPaintTestimonial-content">
-                <Image src={testimonial} alt="" />
+                <Image src={img1} alt="img1" />
                 <div className="lpPaintTestimonial-text">
                   <Image src={rating} alt="rating" />
                   <p>
@@ -54,7 +57,7 @@ const LpPaintTestimonial = () => {
                     expedita! Commodi ullam, ipsam debitis corporis quae
                     consequuntur tempore id repellat iste alias!
                   </p>
-                  <h3>- Mr Ramesh</h3>
+                  <h3>- Ramesh</h3>
                   <h4>Bangalore</h4>
                 </div>
               </div>
@@ -63,7 +66,7 @@ const LpPaintTestimonial = () => {
           <Carousel.Item className="lpPaintTestimonial-carouselItem">
             <div className="lpPaintTestimonial-wrapper">
               <div className="lpPaintTestimonial-content">
-                <Image src={testimonial} alt="" />
+                <Image src={img3} alt="img3" />
                 <div className="lpPaintTestimonial-text">
                   <Image src={rating} alt="rating" />
                   <p>
