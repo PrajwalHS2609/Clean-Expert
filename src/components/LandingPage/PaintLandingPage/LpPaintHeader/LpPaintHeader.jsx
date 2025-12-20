@@ -17,8 +17,11 @@ const LpPaintHeader = () => {
         <Image src={bannerImg} alt="bannerImg" />
         <div className="lpPaintHeader-cover">
           <div className="lpPaintHeader-heading">
-            <h2>Paint your home the smart way </h2>
-            <p>Get your expert painting</p>
+            <h2>No Body Does Spray Painting Like Us! </h2>
+            <p>
+              Seamless finish, Flawless shine. The PaintKraft spray painting
+              difference.
+            </p>
             <button>Explore Now</button>
           </div>
           <div className="lpPaintHeader-formCard">

@@ -54,6 +54,9 @@
   font-weight: 500;
 }
 @media screen and (max-width: 768px) {
+  .lpPaintFaq-container > h2 {
+    font-size: 30px;
+  }
   .lpPaintFaq-container {
     /* border: solid red; */
     padding: 10px;
@@ -69,6 +72,11 @@
     padding: 10px;
   }
   .lpPaintFaq-content > img {
+    display: none;
+  }
+  .lpPaintFaq-content:nth-child(2) {
+    background-color: #86a5a8;
+    height: 700px;
     display: none;
   }
 }

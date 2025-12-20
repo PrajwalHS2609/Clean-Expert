@@ -1,0 +1,14 @@
+.lpPaintFooter-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #211d1e;
+  padding: 10px;
+}
+.lpPaintFooter-container > p {
+  color: white;
+}
+ 
+            

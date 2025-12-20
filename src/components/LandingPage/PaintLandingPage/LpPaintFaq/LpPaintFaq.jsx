@@ -97,7 +97,7 @@ const LpPaintFaq = () => {
           </Accordion>
         </div>
         <div className="lpPaintFaq-content">
-          {/* <Image src={faq} alt="" /> */}
+          <img src="https://images.bergerpaints.com/s3fs-public/2025-02/What%20is%20Berger%20Express%20Painting%20.png?VersionId=qBy2BDyH9iC1cKiUOJSOLtyi4JHHwZiS&format=webp&width=1080&quality=75" alt="" />
         </div>
       </div>
     </div>

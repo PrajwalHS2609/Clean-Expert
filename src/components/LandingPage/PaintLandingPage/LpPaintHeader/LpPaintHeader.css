@@ -94,7 +94,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(to right, var(--lpCustom3) 10%, transparent, transparent);
+  background: linear-gradient(
+    to right,
+    var(--lpCustom3) 10%,
+    transparent,
+    transparent
+  );
 }
 
 .lpPaintHeader-heading {
@@ -141,7 +146,6 @@
   /* border: solid red; */
   width: 90%;
   gap: 50px;
-  
 }
 .lpPaintHeader-item > p {
   font-size: 12px;
@@ -151,4 +155,48 @@
 .lpPaintHeader-icon {
   font-size: 35px;
   margin-top: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .lpPaintHeader-content > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px 0;
+  }
+  .lpPaintHeader-cover {
+    width: 100%;
+    height: 100%;
+    position: static;
+    padding: 10px;
+    flex-direction: column;
+    background: linear-gradient(
+      to right,
+      var(--lpCustom3),
+      var(--lpCustom1),
+      var(--lpCustom4)
+    );
+  }
+  .lpPaintHeader-heading {
+    /* border: solid red; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 0px;
+  }
+  .lpPaintHeader-wrapper {
+    /* border: solid; */
+    width: 100%;
+    height: 100%;
+    background-color: var(--lpCustom4);
+  }
+  .lpPaintHeader-itemContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: solid red; */
+    width: 100%;
+    gap: 30px;
+    padding: 20px;
+  }
 }

@@ -1,11 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import "./LpPaintNavbar.css";
+import LpPaintLogo from "./LpPaintLogo";
+import LpPaintMenu from "./LpPaintMenu";
 const LpPaintNavbar = () => {
   return (
-    <div>
-      
+    <div className="lpPaintNavbar-container">
+      <LpPaintLogo />
+      <LpPaintMenu />
     </div>
-  )
-}
+  );
+};
 
-export default LpPaintNavbar
+export default LpPaintNavbar;

@@ -1,11 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import "./LpPaintFooter.css";
 const LpPaintFooter = () => {
   return (
-    <div>
-      
+    <div className="lpPaintFooter-container">
+      <p>© Copyright 2025 primecleanCo.in</p>
     </div>
-  )
-}
+  );
+};
 
-export default LpPaintFooter
+export default LpPaintFooter;

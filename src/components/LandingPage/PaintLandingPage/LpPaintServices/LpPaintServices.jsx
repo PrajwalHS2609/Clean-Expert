@@ -1,68 +1,82 @@
 import React from "react";
 import "./LpPaintServices.css";
-import { GiEmptyMetalBucketHandle } from "react-icons/gi";
+import {
+  GiEmptyMetalBucketHandle,
+  GiLargePaintBrush,
+  GiSpray,
+} from "react-icons/gi";
 import Link from "next/link";
+import apartment from "@/images/LppaintServiceImgs/Apartment Painting.png";
+import home from "@/images/LppaintServiceImgs/Home Painting.png";
+import spray from "@/images/LppaintServiceImgs/Spray Painting.png";
+import day1 from "@/images/LppaintServiceImgs/1 Day Express Painting.png";
+import texture from "@/images/LppaintServiceImgs/Designer Walls.png";
+import waterproofing from "@/images/LppaintServiceImgs/Waterproofing.png";
+import Image from "next/image";
+import { IoWater } from "react-icons/io5";
+import { TbTexture } from "react-icons/tb";
+
 const LpPaintServices = () => {
   const card = [
     {
       id: 1,
-      img: "https://images.bergerpaints.com/s3fs-public/2023-11/Interior.png?format=webp&width=1080&quality=75",
-      title: "Interior Painting",
+      img: home,
+      title: "Home Painting",
       desc: [
-        "Renovate your space with our expert Interior Painting Services. Quality and style guaranteed!",
-        "Our trained and certified painters will add more life to your interiors.",
+        "Transform your interiors with our expert painting services, delivering superior finish, lasting quality, and modern style tailored to your space.",
+        "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
       ],
-      icon: <GiEmptyMetalBucketHandle />,
+      icon: <GiLargePaintBrush />,
     },
     {
       id: 2,
-      img: "https://images.bergerpaints.com/s3fs-public/2023-11/Interior.png?format=webp&width=1080&quality=75",
-      title: "Interior Painting",
+      img: apartment,
+      title: "Apartment Painting",
       desc: [
-        "Renovate your space with our expert Interior Painting Services. Quality and style guaranteed!",
-        "Our trained and certified painters will add more life to your interiors.",
+        "Transform your interiors with our expert painting services, delivering superior finish, lasting quality, and modern style tailored to your space.",
+        "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
       ],
       icon: <GiEmptyMetalBucketHandle />,
     },
     {
       id: 3,
-      img: "https://images.bergerpaints.com/s3fs-public/2023-11/Interior.png?format=webp&width=1080&quality=75",
-      title: "Interior Painting",
+      img: spray,
+      title: "Spray Painting",
       desc: [
-        "Renovate your space with our expert Interior Painting Services. Quality and style guaranteed!",
-        "Our trained and certified painters will add more life to your interiors.",
+        "Spray painting delivers a smooth, even, and seamless finish, ensuring faster coverage and a premium look compared to traditional brush or roller methods.",
+        "Ideal for large surfaces and modern interiors, spray painting reduces drying time and ensures uniform color consistency with minimal wastage.",
       ],
-      icon: <GiEmptyMetalBucketHandle />,
+      icon: <GiSpray />,
     },
     {
       id: 4,
-      img: "https://images.bergerpaints.com/s3fs-public/2023-11/Interior.png?format=webp&width=1080&quality=75",
-      title: "Interior Painting",
+      img: day1,
+      title: "1 Day Express Painting",
       desc: [
-        "Renovate your space with our expert Interior Painting Services. Quality and style guaranteed!",
-        "Our trained and certified painters will add more life to your interiors.",
+        "Complete home painting in just one day with a fast, efficient process that delivers high-quality finishes without disrupting your daily routine.",
+        "Ideal for quick makeovers and urgent timelines, 1 Day Express Painting combines speed, precision, and professional execution for instant transformation.",
       ],
       icon: <GiEmptyMetalBucketHandle />,
     },
     {
       id: 5,
-      img: "https://images.bergerpaints.com/s3fs-public/2023-11/Interior.png?format=webp&width=1080&quality=75",
-      title: "Interior Painting",
+      img: texture,
+      title: "Texture & Designer Walls",
       desc: [
-        "Renovate your space with our expert Interior Painting Services. Quality and style guaranteed!",
-        "Our trained and certified painters will add more life to your interiors.",
+        "Texture and designer walls add depth, character, and a premium aesthetic, transforming plain walls into stylish focal points for modern interiors.",
+        "Customized patterns, finishes, and color combinations are expertly crafted to match your décor, enhancing elegance and long-lasting visual appeal.",
       ],
-      icon: <GiEmptyMetalBucketHandle />,
+      icon: <TbTexture />,
     },
     {
       id: 6,
-      img: "https://images.bergerpaints.com/s3fs-public/2023-11/Interior.png?format=webp&width=1080&quality=75",
-      title: "Interior Painting",
+      img: waterproofing,
+      title: "Waterproofing",
       desc: [
-        "Renovate your space with our expert Interior Painting Services. Quality and style guaranteed!",
-        "Our trained and certified painters will add more life to your interiors.",
+        "Waterproofing protects your home from leaks, dampness, and structural damage, ensuring long-term durability and a healthier living environment.",
+        "Professional waterproofing solutions prevent costly repairs by creating a strong moisture barrier for terraces, walls, and bathrooms.",
       ],
-      icon: <GiEmptyMetalBucketHandle />,
+      icon: <IoWater />,
     },
   ];
   return (
@@ -76,7 +90,7 @@ const LpPaintServices = () => {
           <Link href={"/"} key={x.id}>
             <div className="lpPaintService-card">
               <div className="lpPaintService-cardImg">
-                <img src={x.img} alt={x.title} />
+                <Image src={x.img} alt={x.title} />
               </div>
               <div className="lpPaintService-cardContent">
                 <div className="lpPaintService-cardTitle">

@@ -13,7 +13,7 @@ const LpPaintWhy = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
       slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
@@ -25,11 +25,10 @@ const LpPaintWhy = () => {
   return (
     <div className="lpPaintWhy-container">
       <div className="lpPaintWhy-heading">
-        <h2>Why Choose Prime Clean Painting?</h2>
+        <h2>Why Choose PaintKraft Painting Service?</h2>
         <p>
-          We at Prime Clean Painting are trusted by thousands of families to
-          complete their home painting projects and renovation services with our
-          experts.
+          We at PaintKraft are trusted by thousands of families to complete
+          their home painting projects and renovation services with our experts.
         </p>
       </div>
       <div className="lpPaintWhy-wrapper">
@@ -60,10 +59,10 @@ const LpPaintWhy = () => {
               />
             </div>
             <div className="lpPaintWhy-item">
-              <h5>Mechanised Tools</h5>
+              <h5>Free On-Site Consultation</h5>
               <p>
-                We use Mechanised and Automated tools to provide a low-noise,
-                faster, safer and cleaner painting experience for your home.
+                Request a complimentary on-site consultation with our experts
+                for personalized, professional recommendations.
               </p>
             </div>
           </div>
@@ -76,10 +75,10 @@ const LpPaintWhy = () => {
               />
             </div>
             <div className="lpPaintWhy-item">
-              <h5>Furniture & Floor Covering</h5>
+              <h5>Accurate & Specific Quotation</h5>
               <p>
-                We ensure that all your furniture, floor surface, and valuables
-                are covered to protect them against paint spills and damage.
+                Receive precise quotations and advice about the finish that’ll
+                brighten up your walls with our home painting services.
               </p>
             </div>
           </div>
@@ -92,10 +91,11 @@ const LpPaintWhy = () => {
               />
             </div>
             <div className="lpPaintWhy-item">
-              <h5>Mechanised Tools</h5>
+              <h5>Certified Painters</h5>
               <p>
-                We use Mechanised and Automated tools to provide a low-noise,
-                faster, safer and cleaner painting experience for your home.
+                Our certified painting professionals are equipped to provide
+                reliable guidance and tailored solutions for every painting
+                requirement.
               </p>
             </div>
           </div>
@@ -108,10 +108,11 @@ const LpPaintWhy = () => {
               />
             </div>
             <div className="lpPaintWhy-item">
-              <h5>Furniture & Floor Covering</h5>
+              <h5>Colour Consultation</h5>
               <p>
-                We ensure that all your furniture, floor surface, and valuables
-                are covered to protect them against paint spills and damage.
+                Our certified painting professionals are equipped to provide
+                reliable guidance and tailored solutions for every painting
+                requirement.
               </p>
             </div>
           </div>
@@ -124,10 +125,10 @@ const LpPaintWhy = () => {
               />
             </div>
             <div className="lpPaintWhy-item">
-              <h5>Mechanised Tools</h5>
+              <h5>On-Time Job Completion</h5>
               <p>
-                We use Mechanised and Automated tools to provide a low-noise,
-                faster, safer and cleaner painting experience for your home.
+                Our certified experts deliver reliable guidance and tailored
+                painting solutions to meet all requirements.
               </p>
             </div>
           </div>
@@ -140,10 +141,43 @@ const LpPaintWhy = () => {
               />
             </div>
             <div className="lpPaintWhy-item">
-              <h5>Furniture & Floor Covering</h5>
+              <h5>Post Painting Clean-Up</h5>
               <p>
-                We ensure that all your furniture, floor surface, and valuables
-                are covered to protect them against paint spills and damage.
+                Our professional home painting services ensure complete site
+                cleanup once the work is finished.
+              </p>
+            </div>
+          </div>
+          <div className="lpPaintWhy-content">
+            <div className="lpPaintWhy-item">
+              {" "}
+              <img
+                src="https://images.bergerpaints.com/s3fs-public/2025-02/Furniture%20%26%20Floor%20Covering_0.png?VersionId=B0XdGByDuVpTMU7bIKHCedJ6BFLthl.s&format=webp&width=640&quality=75"
+                alt=""
+              />
+            </div>
+            <div className="lpPaintWhy-item">
+              <h5>After Sales Services</h5>
+              <p>
+                We provide top-notch home painting solutions along with
+                efficient customer assistance. Call or write to us – our team is
+                available 24x7/365 days
+              </p>
+            </div>
+          </div>
+          <div className="lpPaintWhy-content">
+            <div className="lpPaintWhy-item">
+              {" "}
+              <img
+                src="https://images.bergerpaints.com/s3fs-public/2025-02/Furniture%20%26%20Floor%20Covering_0.png?VersionId=B0XdGByDuVpTMU7bIKHCedJ6BFLthl.s&format=webp&width=640&quality=75"
+                alt=""
+              />
+            </div>
+            <div className="lpPaintWhy-item">
+              <h5>Eco-Friendly Produts</h5>
+              <p>
+                We safeguard your health and environment by using
+                low-VOC-certified products during the job.
               </p>
             </div>
           </div>

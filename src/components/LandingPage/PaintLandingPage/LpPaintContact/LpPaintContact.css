@@ -23,7 +23,6 @@
   width: 50%;
   padding: 40px;
   border-radius: 20px;
-
 }
 .lpPaintContact-content:nth-child(1) {
   background-color: #eef1f1;
@@ -95,4 +94,31 @@
   border: none;
   cursor: pointer;
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .lpPaintContact-wrapper {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .lpPaintContact-content {
+    /* border: solid green; */
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .lpPaintContact-content > ul > li {
+    /* border: solid red; */
+    gap: 20px;
+    text-align: justify;
+    margin-top: 30px;
+  }
+  .lpPaintContact-content:nth-child(1) {
+    background-color: #eef1f1;
+    padding: 20px;
+  }
+  .lpPaintContact-icon {
+    /* border: solid; */
+    font-size: 25px;
+  }
 }
