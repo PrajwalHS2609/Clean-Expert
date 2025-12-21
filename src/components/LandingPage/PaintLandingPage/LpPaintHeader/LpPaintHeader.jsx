@@ -8,6 +8,7 @@ import {
   MdOutlineShield,
 } from "react-icons/md";
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
+import Link from "next/link";
 const LpPaintHeader = () => {
   const content = [
     {
@@ -43,7 +44,14 @@ const LpPaintHeader = () => {
               Seamless finish, Flawless shine. The PaintKraft spray painting
               difference.
             </p>
-            <button>Explore Now</button>
+            <div className="lpPaintHeader-btn">
+              <Link href="#services">
+                <button>Explore Now</button>
+              </Link>
+              <a href="tel:8792446647">
+                <button>Contact Us</button>
+              </a>
+            </div>
           </div>
           <div className="lpPaintHeader-formCard">
             <div className="lpPaintHeader-formHeader">
@@ -87,7 +95,7 @@ const LpPaintHeader = () => {
               <button type="submit" className="lpPaintHeader-submit">
                 Submit
               </button>
-            
+
               <div className="lpPaintHeader-checkbox">
                 <label htmlFor="terms">
                   Your information is safe with us. We respect your privacy and

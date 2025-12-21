@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import "./LpPaintNavbar.css";
-import { FaChevronRight, FaWhatsapp } from "react-icons/fa";
-
+import { FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 import { FaX } from "react-icons/fa6";
 import { IoMdMenu } from "react-icons/io";
@@ -65,7 +64,7 @@ const LpPaintMenu = () => {
             <li className="">
               <Link
                 id="menuNavLink"
-                href="#Header"
+                href="#home"
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
@@ -76,7 +75,7 @@ const LpPaintMenu = () => {
             <li className="">
               <Link
                 id="menuNavLink"
-                href="#service"
+                href="#services"
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
@@ -87,7 +86,7 @@ const LpPaintMenu = () => {
             <li className="">
               <Link
                 id="menuNavLink"
-                href="#about-us"
+                href="#why"
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >

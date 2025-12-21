@@ -36,7 +36,7 @@
   object-fit: contain;
 }
 .lpPaintFaq-content:nth-child(2) {
-  background-color: #86a5a8;
+  background-color: var(--lpCustom3);
   height: 100%;
   padding: 50px;
 }

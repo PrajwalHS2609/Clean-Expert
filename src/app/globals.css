@@ -11,11 +11,15 @@
   /* --customColor3: #f6feff; */
   --customColor3: #fffff6;
 
+  /* --lpCustom1: #86a5a8; /*button color  and icon bg*/
+  /* --lpCustom2: #f8f8f8; /*light bg color for alternate components */
+  /* --lpCustom3: #1b6e7f; /*form Headline and icon colors*/
+  /* --lpCustom4: #d3e9ed; /*selective Bg*/
 
-  --lpCustom1: #86a5a8; /*button color  and icon bg*/
-  --lpCustom2: #f8f8f8; /*light bg color for alternate components */
-  --lpCustom3: #1b6e7f; /*form Headline and icon colors*/
-  --lpCustom4: #d3e9ed; /*selective Bg*/
+  --lpCustom1: #db3335;
+  --lpCustom2: #FFF1F1;
+  --lpCustom3: #9f1f22;
+  --lpCustom4: #f6c6c7;
 }
 body {
   background-color: var(--customColor3);
