@@ -70,7 +70,7 @@ const LpPaintHeader = () => {
           {content.map((x) => (
             <div className="lpPaintHeader-item">
               <span className="lpPaintHeader-icon">{x.icon}</span>
-              <p>{x.text}</p>
+              <p id="services">{x.text}</p>
             </div>
           ))}
         </div>

@@ -3,6 +3,15 @@ import React from "react";
 import "./LpPaintWhy.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import consultation from "@/images/LpPaintWhyImgs/Free On-Site Consultation.png";
+import accurate from "@/images/LpPaintWhyImgs/Accurate & Specific Quotation.png";
+import certified from "@/images/LpPaintWhyImgs/Certified Painters.png";
+import color from "@/images/LpPaintWhyImgs/Colour Consultation.png";
+import onTime from "@/images/LpPaintWhyImgs/On-Time Job Completion.png";
+import salesService from "@/images/LpPaintWhyImgs/After Sales Services.png";
+import cleanUp from "@/images/LpPaintWhyImgs/Post Painting Clean-Up.png";
+import eco from "@/images/LpPaintWhyImgs/Eco-Friendly Produts.png";
+import Image from "next/image";
 
 const LpPaintWhy = () => {
   const responsive = {
@@ -53,10 +62,7 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2023-10/Mechanised%20Tools.png?format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={consultation} alt="consultation" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>Free On-Site Consultation</h5>
@@ -69,10 +75,7 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2025-02/Furniture%20%26%20Floor%20Covering_0.png?VersionId=B0XdGByDuVpTMU7bIKHCedJ6BFLthl.s&format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={accurate} alt="accurate" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>Accurate & Specific Quotation</h5>
@@ -85,10 +88,7 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2023-10/Mechanised%20Tools.png?format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={certified} alt="certified" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>Certified Painters</h5>
@@ -102,10 +102,7 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2025-02/Furniture%20%26%20Floor%20Covering_0.png?VersionId=B0XdGByDuVpTMU7bIKHCedJ6BFLthl.s&format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={color} alt="color" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>Colour Consultation</h5>
@@ -119,10 +116,7 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2023-10/Mechanised%20Tools.png?format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={onTime} alt="onTime" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>On-Time Job Completion</h5>
@@ -135,10 +129,7 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2025-02/Furniture%20%26%20Floor%20Covering_0.png?VersionId=B0XdGByDuVpTMU7bIKHCedJ6BFLthl.s&format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={cleanUp} alt="cleanUp" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>Post Painting Clean-Up</h5>
@@ -151,10 +142,7 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2025-02/Furniture%20%26%20Floor%20Covering_0.png?VersionId=B0XdGByDuVpTMU7bIKHCedJ6BFLthl.s&format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={salesService} alt="salesService" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>After Sales Services</h5>
@@ -168,14 +156,11 @@ const LpPaintWhy = () => {
           <div className="lpPaintWhy-content">
             <div className="lpPaintWhy-item">
               {" "}
-              <img
-                src="https://images.bergerpaints.com/s3fs-public/2025-02/Furniture%20%26%20Floor%20Covering_0.png?VersionId=B0XdGByDuVpTMU7bIKHCedJ6BFLthl.s&format=webp&width=640&quality=75"
-                alt=""
-              />
+              <Image src={eco} alt="eco" />
             </div>
             <div className="lpPaintWhy-item">
               <h5>Eco-Friendly Produts</h5>
-              <p>
+              <p id="testimonial">
                 We safeguard your health and environment by using
                 low-VOC-certified products during the job.
               </p>

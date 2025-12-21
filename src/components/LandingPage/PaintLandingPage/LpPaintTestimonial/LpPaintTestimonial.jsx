@@ -76,12 +76,13 @@ const LpPaintTestimonial = () => {
                     consequuntur tempore id repellat iste alias!
                   </p>
                   <h3>- Sneha Rao</h3>
-                  <h4>Bangalore</h4>
+                  <h4 >Bangalore</h4>
                 </div>
               </div>
             </div>
           </Carousel.Item>
         </Carousel>
+        <span id="contact-us"></span>
       </div>
     </div>
   );

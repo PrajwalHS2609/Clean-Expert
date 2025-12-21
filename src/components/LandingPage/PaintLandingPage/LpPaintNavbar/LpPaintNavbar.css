@@ -259,3 +259,10 @@
     display: block;
   }
 }
+
+/* --------------------------------------TopBar------------------------------------------ */
+.lpPaintTop-container{
+  /* border: solid red; */
+  height: 60px;
+  background-color: var(--lpCustom4);
+}

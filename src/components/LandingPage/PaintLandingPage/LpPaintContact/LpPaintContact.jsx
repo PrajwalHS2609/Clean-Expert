@@ -1,6 +1,9 @@
 import React from "react";
 import "./LpPaintContact.css";
 import { GiFist } from "react-icons/gi";
+import { AiFillSound } from "react-icons/ai";
+import { IoMdTimer } from "react-icons/io";
+import { MdFormatPaint } from "react-icons/md";
 const LpPaintContact = () => {
   return (
     <div className="lpPaintContact-container">
@@ -12,48 +15,48 @@ const LpPaintContact = () => {
                 <GiFist />
               </div>
               <div className="lpPaintContact-list">
-                <h4>Power in Your Hands</h4>
+                <h4>Complete Control at Your Fingertips</h4>
                 <p>
-                  Enjoy zero contact service with Express Painting App at your
-                  fingertips.
+                  Experience hassle-free, zero-contact painting services with
+                  the Express Painting App—simple, safe, and convenient.
                 </p>
               </div>
             </li>
             <li>
               <div className="lpPaintContact-icon">
-                <GiFist />
+                <MdFormatPaint />
               </div>
               <div className="">
-                <h4>Supervised Painting</h4>
+                <h4>Professionally Supervised Painting</h4>
                 <p>
-                  Trained and certified painters with expert supervision for a
-                  safe and faster painting service.
+                  Our trained and certified painters work under expert
+                  supervision to ensure faster, safer, and flawless results.
                 </p>
               </div>
             </li>
             <li>
               <div className="lpPaintContact-icon">
-                <GiFist />
+                <IoMdTimer />
               </div>
               <div className="">
-                <h4>Time-Saving Tools</h4>
+                <h4>Time-Saving Technology</h4>
                 <p>
-                  Power painting tools that saves time and speeds up On-Time
-                  delivery.
+                  Advanced power painting tools accelerate the process, ensuring
+                  precise finishes and guaranteed on-time completion.
                 </p>
               </div>
             </li>
             <li>
               <div className="lpPaintContact-icon">
-                <GiFist />
+                <AiFillSound />
               </div>
               <div className="">
-                <h4>Low-Noise and Cleaner Painting</h4>
+                <h4>Low-Noise, Clean & Careful Execution</h4>
                 <p>
-                  Our mechanised tools and expert team ensures a smooth and
-                  pleasant painting and renovation experience with additional
-                  clean-up services help protect your valuables from paint
-                  spills.
+                  Mechanized equipment and skilled professionals deliver a
+                  smooth, low-noise painting experience. Added clean-up services
+                  keep your space protected and spotless, safeguarding your
+                  valuables from paint spills.
                 </p>
               </div>
             </li>
@@ -92,6 +95,7 @@ const LpPaintContact = () => {
           </form>{" "}
         </div>
       </div>
+      <span id="faq"></span>
     </div>
   );
 };

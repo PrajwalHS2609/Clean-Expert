@@ -36,7 +36,7 @@ const LpPaintMenu = () => {
             <Link href="#services">Services</Link>
           </li>
           <li>
-            <Link href="#about-us">About Us</Link>
+            <Link href="#why">Why Us</Link>
           </li>
           <li>
             <Link href="#testimonial">Testimonials</Link>
@@ -91,7 +91,7 @@ const LpPaintMenu = () => {
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
-                About Us
+                Why Us
                 <FaChevronRight className="menuNavDropIcon" />
               </Link>{" "}
             </li>

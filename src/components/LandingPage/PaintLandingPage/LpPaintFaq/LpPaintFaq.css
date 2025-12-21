@@ -37,7 +37,8 @@
 }
 .lpPaintFaq-content:nth-child(2) {
   background-color: #86a5a8;
-  height: 700px;
+  height: 100%;
+  padding: 50px;
 }
 .accordion-button:not(.collapsed) {
   background-color: var(--customBg) !important;

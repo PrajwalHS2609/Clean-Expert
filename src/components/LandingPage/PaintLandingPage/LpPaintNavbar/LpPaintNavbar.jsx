@@ -2,12 +2,16 @@ import React from "react";
 import "./LpPaintNavbar.css";
 import LpPaintLogo from "./LpPaintLogo";
 import LpPaintMenu from "./LpPaintMenu";
+import LpPaintTopbar from "./LpPaintTopbar";
 const LpPaintNavbar = () => {
   return (
-    <div className="lpPaintNavbar-container">
-      <LpPaintLogo />
-      <LpPaintMenu />
-    </div>
+    <>
+      <LpPaintTopbar />
+      <div className="lpPaintNavbar-container">
+        <LpPaintLogo />
+        <LpPaintMenu />
+      </div>
+    </>
   );
 };
 
