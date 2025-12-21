@@ -1,0 +1,43 @@
+.lpPaintPartner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  background-color: var(--lpCustom2);
+  gap: 30px;
+}
+.lpPaintPartner-content:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPaintPartner-content:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.lpPaintPartner-content > h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.lpPaintPartner-content > p {
+  width: 70%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .lpPaintPartner-container {
+    padding: 20px;
+  }
+  .lpPaintPartner-content > h2 {
+    font-size: 30px;
+  }
+  .lpPaintPartner-content > p {
+    width: 100%;
+    text-align: justify;
+  }
+}

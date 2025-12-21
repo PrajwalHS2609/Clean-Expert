@@ -34,7 +34,7 @@ const LpPaintWhy = () => {
   return (
     <div className="lpPaintWhy-container">
       <div className="lpPaintWhy-heading">
-        <h2>Why Choose PaintKraft Painting Service?</h2>
+        <h2>Why Choose PaintKraft Service?</h2>
         <p>
           We at PaintKraft are trusted by thousands of families to complete
           their home painting projects and renovation services with our experts.

@@ -72,26 +72,28 @@ const LpPaintContact = () => {
             <input type="email" placeholder="Your Email Address*" required />
 
             <select>
-              <option value="">Select Your Language</option>
-              <option value="english">English</option>
-              <option value="hindi">Hindi</option>
-              <option value="kannada">Kannada</option>
-              <option value="tamil">Tamil</option>
+              <option value="">Select Your Service</option>
+              <option value="Home Painting">Home Painting</option>
+              <option value="Apartment Painting">Apartment Painting</option>
+              <option value="Spray Painting">Spray Painting</option>
+              <option value="1 Day Express Painting">
+                1 Day Express Painting
+              </option>
+              <option value="Texture & Designer Wall<">
+                Texture & Designer Walls
+              </option>
+              <option value="Waterproofing">Waterproofing</option>
             </select>
 
-            <div className="lpPaintContact-checkbox">
-              <input type="checkbox" id="whatsapp" />
-              <label htmlFor="whatsapp">Get updates on WhatsApp</label>
-            </div>
+            <button type="submit">Submit</button>
 
             <div className="lpPaintContact-checkbox">
-              <input type="checkbox" id="terms" required />
               <label htmlFor="terms">
-                I Agree To All <span>Terms And Conditions*</span>
+                Your information is safe with us. We respect your privacy and
+                will only use your details to respond to your inquiry. No spam,
+                ever.{" "}
               </label>
             </div>
-
-            <button type="submit">Submit</button>
           </form>{" "}
         </div>
       </div>

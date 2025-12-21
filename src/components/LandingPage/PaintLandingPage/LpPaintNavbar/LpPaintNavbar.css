@@ -38,7 +38,7 @@
 }
 .lpPetsMenu-content > ul {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -104,7 +104,7 @@
   right: 0;
   transform: translateX(100%);
   transition: 1s ease;
-  background-color:#86a5a8c5;
+  background-color: #86a5a8c5;
   display: flex;
   overflow: hidden;
 }
@@ -261,8 +261,66 @@
 }
 
 /* --------------------------------------TopBar------------------------------------------ */
-.lpPaintTop-container{
+.lpPaintTop-container {
   /* border: solid red; */
   height: 60px;
   background-color: var(--lpCustom4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lpPaintTop-content {
+  /* border: solid; */
+  width: calc(100% / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lpPaintTop-content:nth-child(3) {
+  align-items: center;
+  justify-content: flex-end;
+  /* border: solid; */
+}
+.lpPaintTop-content > a {
+  width: fit-content;
+}
+.lpPaintTop-content > h6 {
+  font-size: 17px;
+  color: var(--lpCustom3);
+  /* animation: text 1s infinite alternate; */
+  text-align: center;
+}
+@keyframes text {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.lpPaintTop-icon {
+  margin-right: 40px;
+  font-size: 40px;
+  color: #25d366;
+}
+@media screen and (max-width: 768px) {
+  .lpPaintTop-content:nth-child(1) {
+    display: none;
+  }
+  .lpPaintTop-content:nth-child(2) {
+    /* border: solid; */
+    width: 80%;
+  }
+  .lpPaintTop-content:nth-child(3) {
+    /* border: solid; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lpPaintTop-icon {
+    margin-right: 0px;
+    font-size: 40px;
+    color: #25d366;
+  }
 }

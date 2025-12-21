@@ -82,8 +82,8 @@ const LpPaintServices = () => {
   return (
     <div className="lpPaintService-container">
       <div className="lpPaintService-heading">
-        <h2>Safe Express Home Painting Services</h2>
-        <p>Renovate Your Home Cleaner, Faster and Safer!</p>
+        <h2>Trusted & Fast Home Painting Solutions</h2>
+        <p>Experience Renovation That’s Quick, Neat, and Worry-Free</p>
       </div>
       <div className="lpPaintService-cardWrapper">
         {card.map((x) => (

@@ -25,6 +25,9 @@
   align-items: center;
   gap: 50px;
 }
+.lpPaintHeader-formHeader > h3 {
+  font-size: 20px;
+}
 .lpPaintHeader-formCard {
   width: 380px;
   background: #e9f4f6;
@@ -60,7 +63,7 @@
   justify-content: flex-start;
   gap: 10px;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   width: 100%;
 }
 .lpPaintHeader-checkbox > input {
@@ -150,10 +153,10 @@
 .lpPaintHeader-item > p {
   font-size: 12px;
   text-align: center;
-  line-height: 10px;
+  line-height: 12px;
 }
 .lpPaintHeader-icon {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 10px;
 }
 @media screen and (max-width: 1200px) {

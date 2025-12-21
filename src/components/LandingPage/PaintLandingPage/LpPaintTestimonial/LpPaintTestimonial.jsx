@@ -5,9 +5,9 @@ import Carousel from "react-bootstrap/Carousel";
 import testimonial from "@/images/testimonial.png";
 import Image from "next/image";
 import rating from "@/images/rating.png";
-import img1 from "@/images/TestimonialImg/img1.png"
-import img2 from "@/images/TestimonialImg/img2.png"
-import img3 from "@/images/TestimonialImg/img3.png"
+import img1 from "@/images/TestimonialImg/img1.png";
+import img2 from "@/images/TestimonialImg/img2.png";
+import img3 from "@/images/TestimonialImg/img3.png";
 
 const LpPaintTestimonial = () => {
   const [index, setIndex] = useState(0);
@@ -34,10 +34,12 @@ const LpPaintTestimonial = () => {
                 <div className="lpPaintTestimonial-text">
                   <Image src={rating} alt="rating" />
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo vitae modi illum cumque sint delectus sit dolorem
-                    expedita! Commodi ullam, ipsam debitis corporis quae
-                    consequuntur tempore id repellat iste alias!
+                    Paintkraft completely transformed our 3BHK apartment in
+                    Indiranagar. Their team was punctual, professional, and
+                    super clean. We loved the color recommendations, and the
+                    final finish was exactly what we envisioned. The no-mess
+                    promise was real—we moved in the very next day! Highly
+                    recommended.
                   </p>
                   <h3>- Priya</h3>
                   <h4>Bangalore</h4>
@@ -52,10 +54,11 @@ const LpPaintTestimonial = () => {
                 <div className="lpPaintTestimonial-text">
                   <Image src={rating} alt="rating" />
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo vitae modi illum cumque sint delectus sit dolorem
-                    expedita! Commodi ullam, ipsam debitis corporis quae
-                    consequuntur tempore id repellat iste alias!
+                    We hired Paintkraft for our home renovation in Whitefield,
+                    and they exceeded expectations. Great attention to detail,
+                    minimal noise, and thorough cleanup after painting. The
+                    supervisor kept us updated regularly. Will definitely use
+                    them again for future projects.
                   </p>
                   <h3>- Ramesh</h3>
                   <h4>Bangalore</h4>
@@ -70,13 +73,14 @@ const LpPaintTestimonial = () => {
                 <div className="lpPaintTestimonial-text">
                   <Image src={rating} alt="rating" />
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo vitae modi illum cumque sint delectus sit dolorem
-                    expedita! Commodi ullam, ipsam debitis corporis quae
-                    consequuntur tempore id repellat iste alias!
+                    From color consultation to execution, Paintkraft made the
+                    whole process smooth and stress-free. Their express painting
+                    service saved us days of work. The painters were courteous
+                    and well-supervised. Best painting experience we've had so
+                    far in Bangalore.
                   </p>
                   <h3>- Sneha Rao</h3>
-                  <h4 >Bangalore</h4>
+                  <h4>Bangalore</h4>
                 </div>
               </div>
             </div>
