@@ -18,6 +18,10 @@
 }
 .lpPaintService-heading > h2 {
   font-size: 40px;
+  text-align: center;
+}
+.lpPaintService-heading > p {
+  text-align: center;
 }
 .lpPaintService-cardWrapper {
   /* border: solid blue; */

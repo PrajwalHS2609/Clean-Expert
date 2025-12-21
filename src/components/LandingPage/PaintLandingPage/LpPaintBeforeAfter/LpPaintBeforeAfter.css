@@ -1,0 +1,27 @@
+.lpPaintBeforeAfter-container {
+  /* border: solid red; */
+  width: 100%;
+  padding: 20px;
+}
+.lpPaintBeforeAfter-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPaintBeforeAfter-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lpPaintBeforeAfter-item {
+  /* border: solid green; */
+  width: 400px;
+  height: 100%;
+}
+.lpPaintBeforeAfter-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
