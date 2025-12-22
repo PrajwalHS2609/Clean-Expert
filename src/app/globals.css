@@ -16,10 +16,17 @@
   /* --lpCustom3: #1b6e7f; /*form Headline and icon colors*/
   /* --lpCustom4: #d3e9ed; /*selective Bg*/
 
-  --lpCustom1: #db3335;
+  /* --lpCustom1: #db3335;
   --lpCustom2: #FFF1F1;
   --lpCustom3: #9f1f22;
-  --lpCustom4: #f6c6c7;
+  --lpCustom4: #f6c6c7; */
+  --lpCustom1: #423d73; /* Primary button color & icon background */
+
+  --lpCustom2: #f3f2f8; /* Light background for alternate components (soft indigo tint) */
+
+  --lpCustom3: #2e2a55; /* Form headline & icon color (deep indigo for contrast) */
+
+  --lpCustom4: #d8d6e8; /* Selective background (muted lavender highlight) */
 }
 body {
   background-color: var(--customColor3);
