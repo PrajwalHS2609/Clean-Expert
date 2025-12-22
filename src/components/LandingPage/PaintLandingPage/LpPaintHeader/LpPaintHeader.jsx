@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import "./LpPaintHeader.css";
 import bannerImg from "./../../../../images/LpBannerImg.png";
+import mobileBannerImg from "./../../../../images/lpMobileBannerImg.jpg";
+
 import Image from "next/image";
 import {
   MdCurrencyRupee,
@@ -9,7 +12,45 @@ import {
 } from "react-icons/md";
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
 import Link from "next/link";
+import Swal from "sweetalert2";
 const LpPaintHeader = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // ✅ Add your Web3Forms access key
+    formData.append("access_key", "2e63432e-e411-4617-8563-fa5f8bb00932");
+
+    const object = Object.fromEntries(formData.entries());
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Mail Sent successfully",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again later.",
+        icon: "error",
+      });
+    }
+  };
+
   const content = [
     {
       id: 1,
@@ -36,7 +77,20 @@ const LpPaintHeader = () => {
   return (
     <div className="lpPaintHeader-container">
       <div className="lpPaintHeader-content">
-        <Image src={bannerImg} alt="bannerImg" />
+        <Image
+          src={bannerImg}
+          alt="Paintkraft Banner"
+          className="lpPaintHeader-desktopImg"
+          priority
+        />
+
+        <Image
+          src={mobileBannerImg}
+          alt="Paintkraft Mobile Banner"
+          className="lpPaintHeader-mobileImg"
+          priority
+        />
+
         <div className="lpPaintHeader-cover">
           <div className="lpPaintHeader-heading">
             <h2>No Body Does Spray Painting Like Us! </h2>
@@ -57,17 +111,37 @@ const LpPaintHeader = () => {
             <div className="lpPaintHeader-formHeader">
               <h3>Book Expert Advice in Minutes</h3>
             </div>
-            <form className="lpPaintHeader-form">
-              <input type="text" placeholder="Enter Your Name*" required />
+            <form className="lpPaintHeader-form" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name*"
+                required
+              />
 
-              <input type="tel" placeholder="Enter Your Phone No*" required />
+              <input
+                type="tel"
+                name="Phone No"
+                placeholder="Enter Your Phone No*"
+                required
+              />
 
-              <input type="text" placeholder="Pincode*" required />
+              <input
+                type="text"
+                name="Pincode"
+                placeholder="Pincode*"
+                required
+              />
 
-              <input type="email" placeholder="Your Email Address*" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email Address*"
+                required
+              />
 
-              <select>
-                <option value="">Select Your Service</option>
+              <select name="Service">
+                <option>Select Your Service</option>
                 <option value="Home Painting">Home Painting</option>
                 <option value="Apartment Painting">Apartment Painting</option>
                 <option value="Spray Painting">Spray Painting</option>
