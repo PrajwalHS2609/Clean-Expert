@@ -67,12 +67,12 @@ const LpPaintFooter = () => {
 
           <ul className="lpPaintFooter-social">
             <li>
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/paintkraftblr/" target="_blank">
                 <FaFacebook className="lpPaintFooter-socialIco" />
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href="https://www.instagram.com/paintkraft.in/" target="_blank">
                 <FaInstagram className="lpPaintFooter-socialIco" />
               </a>
             </li>

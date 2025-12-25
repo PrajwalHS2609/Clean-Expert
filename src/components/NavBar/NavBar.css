@@ -7,8 +7,10 @@
   align-items: center;
   top: 0;
   z-index: 10;
-  padding: 2px 30px;
+  padding: 0px 30px;
   margin-top: 2px;
+  background-color: white;
+  position: sticky;
 }
 /* ----------------Logo----------------- */
 .logoContainer {
@@ -107,6 +109,7 @@
 .menuContainerList .active {
   color: var(--customColor1); /* Color when active */
   border-bottom: solid var(--customColor2);
+  height: 80%;
 }
 
 .menuContainerList > li:hover .menuDropDown {
@@ -131,7 +134,7 @@
   visibility: hidden;
   transition: 300ms ease-in-out;
   box-shadow: 0 0 5px rgb(189, 189, 189);
-  z-index: 3
+  z-index: 3;
 }
 .menuDropDown > li {
   /* border-bottom: 1px solid; */

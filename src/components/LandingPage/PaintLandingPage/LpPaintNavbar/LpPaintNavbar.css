@@ -103,7 +103,7 @@
   right: 0;
   transform: translateX(100%);
   transition: 1s ease;
-  background-color: #db3336ce;
+  /* background-color: #db3336ce; */
   display: flex;
   overflow: hidden;
 }

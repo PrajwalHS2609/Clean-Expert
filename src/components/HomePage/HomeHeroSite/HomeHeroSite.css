@@ -1,0 +1,257 @@
+/* CONTAINER */
+.hero2-container {
+  width: 100%;
+  height: 680px;
+  position: relative;
+}
+
+/* BANNER */
+.hero2-banner {
+  position: relative;
+  height: 85%;
+}
+
+.hero2-banner img {
+  object-fit: cover;
+}
+
+/* CONTENT */
+.hero2-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
+/* LEFT TEXT */
+.hero2-text {
+  max-width: 540px;
+}
+
+.hero2-badge {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--customColor1);
+}
+
+.hero2-text h1 {
+  font-size: 52px;
+  color: var(--customColor1);
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.hero2-text p {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #333;
+  max-width: 480px;
+}
+
+/* GLASS FORM */
+.hero2-formGlass {
+  width: 380px;
+  padding: 28px;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.hero2-formGlass h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: var(--customColor1);
+}
+
+.hero2-formGlass input,
+.hero2-formGlass select {
+  width: 100%;
+  padding: 13px 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #d0e4e7;
+  transition: border 0.2s ease;
+}
+
+.hero2-formGlass input:focus,
+.hero2-formGlass select:focus {
+  outline: none;
+  border-color: var(--customColor2);
+}
+
+.hero2-formGlass button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, var(--customColor2), #5cdbe1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero2-formGlass button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero2-formGlass span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* TRUST FLOAT */
+.hero2-trust {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 28px;
+}
+
+.trust-card {
+  background: white;
+  padding: 16px 24px;
+  border-radius: 32px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease;
+}
+
+.trust-card:hover {
+  transform: translateY(-4px);
+}
+
+.trust-card svg {
+  font-size: 24px;
+  color: var(--customColor2);
+}
+
+.trust-card b {
+  color: var(--customColor1);
+  font-size: 14px;
+}
+.hero2-buttonContainer > a {
+  text-decoration: none;
+}
+.hero2-buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.hero2-buttonContainer > a:nth-child(2) > button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  /* background-color: var(--customColor2); */
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--customColor2);
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #3bb1b7b1;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+
+  &:hover {
+    background-color: var(--customColor2);
+    color: #ffff;
+    border: 3px solid #ffffff4d;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+  .hero2-content {
+    padding: 50px;
+    gap: 30px;
+  }
+
+  .hero2-text h1 {
+    font-size: 40px;
+  }
+  .hero2-buttonContainer {
+    flex-direction: column;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .hero2-container {
+    height: auto;
+  }
+
+  .hero2-content {
+    position: relative;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero2-text {
+    margin-bottom: 30px;
+  }
+
+  .hero2-text h1 {
+    font-size: 30px;
+  }
+
+  .hero2-formGlass {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .hero2-trust {
+    position: static;
+    transform: none;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .hero2-buttonContainer {
+    flex-direction: column;
+  }
+}
+
+/* SMALL MOBILE */
+@media screen and (max-width: 480px) {
+  .hero2-text h1 {
+    font-size: 26px;
+  }
+
+  .trust-card {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero2-buttonContainer {
+    flex-direction: column;
+  }
+}

@@ -38,7 +38,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="./favicon.png" />
       </head>
-      <body style={{ backgroundColor: "var(--customColor3)" }}>
+      <body >
         {isPaintLanding ? <LpPaintNavbar /> : <NavBar />}
         {loading ? <Loader /> : children}
         {isPaintLanding ? <LpPaintFooter /> : <Footer />}

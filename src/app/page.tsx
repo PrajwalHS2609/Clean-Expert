@@ -5,10 +5,12 @@ import HomePestControl from './../components/HomePage/HomePestControl/HomePestCo
 import HomeTransformation from './../components/HomePage/HomeTransformation/HomeTransformation';
 import HomeAdvantage from './../components/HomePage/HomeAdvantage/HomeAdvantage';
 import HomeCleanService from './../components/HomePage/HomeCleanService/HomeCleanService';
+import HomeHeroSite from './../components/HomePage/HomeHeroSite/HomeHeroSite';
 
 export default function HomePage(){
   return(
     <div>
+      <HomeHeroSite/>
       <HomeHeader/>
       <HomeTransformation/>
       <HomeCleanService/>
