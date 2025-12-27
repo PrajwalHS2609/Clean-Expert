@@ -1,14 +1,6 @@
 import Image from "next/image";
 import "./ServiceHeader.css";
 import React from "react";
-import cleaningService from "./../../../images/serviceImgs/Cleaning Service.png";
-import civilWork from "./../../../images/serviceImgs/Civil Works.png";
-import bathroom from "./../../../images/serviceImgs/Bathroom Renovation.png";
-import marble from "./../../../images/serviceImgs/Marbles Polishing.png";
-import painting from "./../../../images/serviceImgs/Painting Services.png";
-import pest from "./../../../images/serviceImgs/Pest Control.png";
-import shower from "./../../../images/serviceImgs/Shower Cubicle.png";
-import waterProofing from "./../../../images/serviceImgs/Water Proofing.png";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -19,105 +11,69 @@ import {
 } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
+
 import offerImg1 from "./../../../images/offerImgs/Professional-Cleaning-Service.png";
 import offerImg2 from "./../../../images/offerImgs/Pest-Control-Offer.png";
 import offerImg3 from "./../../../images/offerImgs/Painting-Offer.png";
 
-const ServiceHeader = () => {
+const ServiceHeader = ({
+  banner,
+  title,
+  para,
+  services = [],
+  subServices = [],
+}) => {
   return (
     <div className="serviceHeader-container">
+      {/* SERVICES */}
       <div className="serviceHeader-wrapper">
         <div className="serviceHeader-servicesContent">
-          <div className="serviceHeader-servicesItem">
-            <Link href={""}>
-              <Image src={civilWork} alt="civil Work" />
-              <div className="serviceHeader-servicesItemCover">
-                <p>Civil work</p>
-              </div>
-            </Link>
-          </div>
-          <div className="serviceHeader-servicesItem">
-            <Link href={""}>
-              <Image src={bathroom} alt="bathroom" />
-              <div className="serviceHeader-servicesItemCover">
-                <p>Bathroom</p>
-              </div>
-            </Link>
-          </div>
-          <div className="serviceHeader-servicesItem">
-            <Link href={""}>
-              <Image src={marble} alt="marble" />
-              <div className="serviceHeader-servicesItemCover">
-                <p>Marble Polishing</p>
-              </div>
-            </Link>
-          </div>
-          <div className="serviceHeader-servicesItem">
-            <Link href={""}>
-              <Image src={painting} alt="painting" />
-              <div className="serviceHeader-servicesItemCover">
-                <p>Painting</p>
-              </div>
-            </Link>
-          </div>
-          <div className="serviceHeader-servicesItem">
-            <Link href={""}>
-              <Image src={pest} alt="pest" />
-              <div className="serviceHeader-servicesItemCover">
-                <p>Pest Control</p>
-              </div>
-            </Link>
-          </div>
-          <div className="serviceHeader-servicesItem">
-            <Link href={""}>
-              <Image src={shower} alt="shower" />
-              <div className="serviceHeader-servicesItemCover">
-                <p>House Renovation</p>
-              </div>
-            </Link>
-          </div>
-          <div className="serviceHeader-servicesItem">
-            <Link href={""}>
-              <Image src={waterProofing} alt="waterProofing" />
-              <div className="serviceHeader-servicesItemCover">
-                <p>Waterproofing</p>
-              </div>
-            </Link>
-          </div>
+          {services.map((service, index) => (
+            <div className="serviceHeader-servicesItem" key={index}>
+              <Link href={service.link || ""}>
+                <Image src={service.img} alt={service.title} />
+                <div className="serviceHeader-servicesItemCover">
+                  <p>{service.title}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
+
+      {/* BANNER */}
       <div className="serviceHeader-wrapper">
-        <Image src={cleaningService} alt="Cleaning Service" />
+        <Image src={banner} alt={title} />
       </div>
+
+      {/* CONTENT */}
       <div className="serviceHeader-wrapper">
         <div className="serviceHeader-content">
-          <h3>Cleaning Services</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
-            iure. Beatae culpa magni hic numquam eligendi, necessitatibus
-            corrupti accusantium ad animi veniam cum expedita iste, autem optio
-            sint quod at?
-          </p>
+          <h3>{title}</h3>
+          <p>{para}</p>
+
           <div className="serviceHeader-contentBtn">
             <button className="serviceHeader-btn">Book Now</button>
             <button className="serviceHeader-btn">
-              Chat with Us
-              <FaWhatsapp className="serviceHeader-btnIco" />
+              Chat with Us <FaWhatsapp className="serviceHeader-btnIco" />
             </button>
           </div>
         </div>
+
+        {/* SUB SERVICES */}
         <div className="serviceHeader-content">
-          {" "}
-          Cleaning Sub Services : <Link href={"/"}>Bathroom</Link>,{" "}
-          <Link href={"/"}>Kitchen</Link>, <Link href={"/"}>Full House</Link>,{" "}
-          <Link href={"/"}>Sofa</Link>, <Link href={"/"}>Chimney</Link>,{" "}
-          <Link href={"/"}>Mattress</Link>, <Link href={"/"}>Carpet</Link>,
-          <Link href={"/"}>Window</Link>, <Link href={"/"}>Chair</Link>,{" "}
-          <Link href={"/"}>Balcony</Link>
+          <strong>Cleaning Sub Services :</strong>{" "}
+          {subServices.map((item, index) => (
+            <span key={index}>
+              <Link href={item.link || "/"}>{item.name}</Link>
+              {index < subServices.length - 1 && ", "}
+            </span>
+          ))}
         </div>
+
+        {/* CONTACT */}
         <div className="serviceHeader-content">
           <a href="">
-            {" "}
             <IoLocationOutline className="serviceHeader-iconAdd" /> Bangalore,
             India
           </a>
@@ -125,6 +81,8 @@ const ServiceHeader = () => {
             <FiPhone className="serviceHeader-iconAdd" /> 91 9876543210
           </a>
         </div>
+
+        {/* SOCIAL */}
         <div className="serviceHeader-content">
           <a href="">
             <FaInstagram className="serviceHeader-socialIco" />
@@ -140,17 +98,15 @@ const ServiceHeader = () => {
           </a>
         </div>
       </div>
+
+      {/* ADS */}
       <div className="serviceHeader-wrapper">
         <div className="serviceHeader-adsContent">
-          <div className="serviceHeader-adsItem">
-            <Image src={offerImg1} alt="" />
-          </div>
-          <div className="serviceHeader-adsItem">
-            <Image src={offerImg2} alt="" />
-          </div>
-          <div className="serviceHeader-adsItem">
-            <Image src={offerImg3} alt="" />
-          </div>
+          {[offerImg1, offerImg2, offerImg3].map((img, i) => (
+            <div className="serviceHeader-adsItem" key={i}>
+              <Image src={img} alt="offer" />
+            </div>
+          ))}
         </div>
       </div>
     </div>
