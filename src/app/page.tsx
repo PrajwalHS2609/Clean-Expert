@@ -6,12 +6,14 @@ import HomeTransformation from './../components/HomePage/HomeTransformation/Home
 import HomeAdvantage from './../components/HomePage/HomeAdvantage/HomeAdvantage';
 import HomeCleanService from './../components/HomePage/HomeCleanService/HomeCleanService';
 import HomeHeroSite from './../components/HomePage/HomeHeroSite/HomeHeroSite';
+import HomeServices from './../components/HomePage/HomeServices/HomeServices';
 
 export default function HomePage(){
   return(
     <div>
       <HomeHeroSite/>
-      <HomeHeader/>
+      <HomeServices/>
+      {/* <HomeHeader/> */}
       <HomeTransformation/>
       <HomeCleanService/>
       <HomePaintingService/>
