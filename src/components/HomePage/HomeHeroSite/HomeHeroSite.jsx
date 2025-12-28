@@ -1,13 +1,64 @@
 import React from "react";
 import "./HomeHeroSite.css";
 import Image from "next/image";
-import bannerImg from "@/images/LpBannerImg.png";
-import { LuSearchCheck } from "react-icons/lu";
-import { GiPaintRoller } from "react-icons/gi";
+import bannerImg from "@/images/Banner Image.png";
+import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
 import { RxTimer } from "react-icons/rx";
-import { MdPhone } from "react-icons/md";
+import {
+  MdCurrencyRupee,
+  MdPhone,
+} from "react-icons/md";
+import { ImLeaf } from "react-icons/im";
+import { GrPlan } from "react-icons/gr";
+import { FaEye } from "react-icons/fa6";
+import { BsTools } from "react-icons/bs";
+import { FaUsersCog } from "react-icons/fa";
 
 const HomeHeroSite = () => {
+  const content = [
+    {
+      id: 1,
+      icon: <FaUsersCog />,
+      text: "Trained Cleaning Experts",
+    },
+    {
+      id: 2,
+      icon: <RxTimer />,
+      text: "On-Time Service Promise",
+    },
+    {
+      id: 3,
+      icon: <LuPaintbrush />,
+      text: "Deep Hygienic Cleaning",
+    },
+    { id: 4, icon: <BsTools />, text: "Professional Tools" },
+    {
+      id: 5,
+      icon: <FaEye />,
+      text: "Expert Supervision",
+    },
+    {
+      id: 6,
+      icon: <ImLeaf />,
+      text: "Eco-Safe Cleaning Products",
+    },
+    {
+      id: 7,
+      icon: <GrPlan />,
+      text: "Custom Cleaning Plans",
+    },
+    {
+      id: 8,
+      icon: <LuPaintbrush />,
+      text: "Safe & Secure Service",
+    },
+    { id: 9, icon: <MdCurrencyRupee />, text: "Clear & Transparent Pricing" },
+    {
+      id: 10,
+      icon: <LuBadgeCheck />,
+      text: "Guaranteed Satisfaction",
+    },
+  ];
   return (
     <div className="hero2-container">
       {/* HERO */}
@@ -19,15 +70,15 @@ const HomeHeroSite = () => {
           <div className="hero2-text">
             <span className="hero2-badge">Trusted by 5,000+ Homeowners</span>
 
-            <h1>Beautiful Homes Start With Perfect Painting</h1>
+            <h1>Professional Cleaning You Can Trust</h1>
 
             <p>
-              Premium painting services with expert supervision and guaranteed
-              on-time delivery — designed for homes that deserve excellence.
+              High-quality cleaning services, expertly managed and delivered on
+              time, for homes that demand superior standards.
             </p>
             <div className="hero2-buttonContainer">
               <a href="">
-                <button className="button1" >
+                <button className="button1">
                   Browse Services
                   <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
                     <path
@@ -71,7 +122,13 @@ const HomeHeroSite = () => {
 
       {/* TRUST */}
       <div className="hero2-trust">
-        <div className="trust-card">
+        {content.map((x) => (
+          <div className="hero2-trustItem">
+            <span className="hero2-trustItemIcon">{x.icon}</span>
+            <p id="services">{x.text}</p>
+          </div>
+        ))}
+        {/* <div className="trust-card">
           <LuSearchCheck />
           <b>Site Supervision</b>
         </div>
@@ -82,7 +139,7 @@ const HomeHeroSite = () => {
         <div className="trust-card">
           <RxTimer />
           <b>On-Time Delivery</b>
-        </div>
+        </div> */}
       </div>
     </div>
   );
