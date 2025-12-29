@@ -8,6 +8,7 @@ import HomeCleanService from './../components/HomePage/HomeCleanService/HomeClea
 import HomeHeroSite from './../components/HomePage/HomeHeroSite/HomeHeroSite';
 import HomeServices from './../components/HomePage/HomeServices/HomeServices';
 import HomeHow from './../components/HomePage/HomeHow/HomeHow';
+import HomeTestimonial from '@/components/HomePage/HomeTestimonial/HomeTestimonial';
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <HomePestControl />
       <HomeHow />
       <HomeAdvantage />
+      <HomeTestimonial/>
     </div>
   )
 }
