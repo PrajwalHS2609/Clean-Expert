@@ -9,6 +9,7 @@ import HomeHeroSite from './../components/HomePage/HomeHeroSite/HomeHeroSite';
 import HomeServices from './../components/HomePage/HomeServices/HomeServices';
 import HomeHow from './../components/HomePage/HomeHow/HomeHow';
 import HomeTestimonial from '@/components/HomePage/HomeTestimonial/HomeTestimonial';
+import HomeFaq from './../components/HomePage/HomeFaq/HomeFaq';
 
 export default function HomePage() {
   return (
@@ -24,6 +25,7 @@ export default function HomePage() {
       <HomeHow />
       <HomeAdvantage />
       <HomeTestimonial/>
+      <HomeFaq/>
     </div>
   )
 }

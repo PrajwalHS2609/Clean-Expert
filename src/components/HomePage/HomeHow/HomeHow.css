@@ -19,24 +19,27 @@
 /* Step card */
 .info-step {
   width: 200px;
-  height: 230px;
-  padding: 20px;
+  height: 200px;
+  padding: 10px;
   border-radius: 12px;
   color: #fff;
   text-align: center;
   position: relative;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   background-color: var(--customColor1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .info-step h3 {
-  margin: 10px 0 5px;
   font-size: 18px;
 }
 
 .info-step p {
   font-size: 13px;
-  opacity: 0.9;
 }
 
 /* Big background number */
@@ -51,8 +54,11 @@
 }
 
 /* Icon */
-.icon {
+.icon-how {
   font-size: 34px;
+  color: white;
+  width: fit-content;
+  height: fit-content;
 }
 
 /* Connector */
@@ -73,6 +79,25 @@
 }
 /* Color themes */
 
+.infographic-PayContainer {
+  /* border: solid red; */
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 5px rgb(129, 129, 129);
+}
+
+.infographic-PayContent > img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .connector {
@@ -88,15 +113,15 @@
     font-size: 70px;
   }
   .info-step {
-  width: 300px;
-  max-width: 400px;
-  height: 100%;
-  padding: 20px;
-  border-radius: 12px;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  background-color: var(--customColor1);
-}
+    width: 300px;
+    max-width: 400px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--customColor1);
+  }
 }
