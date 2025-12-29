@@ -29,9 +29,9 @@ const HomeCleanService = () => {
     { id: 10, img: office, title: "Chair", link: "/" },
     { id: 11, img: work, title: "Office Cleaning", link: "/" },
   ];
-  const handlePop = () => {
-    document.querySelector(".popup-container").style.display = "flex";
-  };
+  // const handlePop = () => {
+  //   document.querySelector(".popup-container").style.display = "flex";
+  // };
   return (
     <div className="homeCleanService-container">
       <HeadingProps
@@ -41,11 +41,14 @@ const HomeCleanService = () => {
       <div className="homeCleanService-content">
         {card.map((x) => (
           <div className="homeCleanService-card" key={x.id}>
-            <span>
-              <Image src={x.img} alt={x.title} />
-            </span>
-            <h5>{x.title}</h5>
-            <div className="button-group">
+            <Link href="">
+              {" "}
+              <span>
+                <Image src={x.img} alt={x.title} />
+              </span>
+              <h5>{x.title}</h5>
+            </Link>
+            {/* <div className="button-group">
               <Link href={x.link}>
                 <button className="btn-primary">Details</button>
               </Link>
@@ -53,7 +56,7 @@ const HomeCleanService = () => {
               <button className="btn-secondary" onClick={handlePop}>
                 Book Now
               </button>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

@@ -1,91 +1,81 @@
 .homeCivicWork-container {
-  /* border: solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-padding: 20px;
-background-color: var(--customColor3);
+  padding: 10px;
+  background-color: var(--customColor3);
 }
+
 .homeCivicWork-content {
-  /* border: solid green; */
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
-.homeCivicWork-content > a {
-  text-decoration: none;
-  color: black;
-}
+
+/* SMALLER CARD */
 .homeCivicWork-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 220px;
-  width: 300px;
-  /* border: solid blue; */
-  margin: 20px;
-  box-shadow: 0 0 8px grey;
-  border-radius: 20px;
+  gap: 6px;
+  width: 110px;
+  height: 110px;
+  margin: 10px;
+  box-shadow: 0 0 5px #0003;
+  border-radius: 50%;
   background-color: white;
-  transition: 300ms ease-in-out;
-  padding: 16px;
-  &:hover {
-    box-shadow: 0 8px 0px var(--customColor1);
-  }
-}
-.homeCivicWork-card > span > img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-}
-.homeCivicWork-card > h5 {
-  font-weight: bold;
-  text-align: center;
-}
-.homeCivicWork-card > a > button {
+  transition: 200ms ease-in-out;
   padding: 10px;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  background-color: var(--customColor1);
-  &:hover {
-    background-color: var(--customColor2);
-  }
 }
-.button-group {
+
+.homeCivicWork-card:hover {
+  box-shadow: 0 5px 0 var(--customColor1);
+}
+
+.homeCivicWork-card > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.btn-primary,
-.btn-secondary {
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  cursor: pointer;
+/* SMALLER ICON */
+.homeCivicWork-card > a > span > img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
-.btn-primary {
-  background-color: var(--customColor1);
+/* SMALLER TEXT */
+.homeCivicWork-card > a > h5 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.2;
 }
+@media (max-width: 600px) {
+  .homeCivicWork-card {
+    width: 95px;
+    height: 95px;
+    margin: 8px;
+  }
 
-.btn-primary:hover {
-  background-color: var(--customColor2);
-}
+  .homeCivicWork-card > a > span > img {
+    width: 30px;
+    height: 30px;
+  }
 
-.btn-secondary {
-  background-color: var(--customColor2);
-  border: solid 2px white;
-}
-
-.btn-secondary:hover {
-  background-color: var(--customColor2);
-  border: solid 2px #fff9;
+  .homeCivicWork-card > a > h5 {
+    font-size: 9px;
+  }
 }

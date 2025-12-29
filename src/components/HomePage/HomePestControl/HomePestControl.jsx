@@ -30,18 +30,22 @@ const HomePestControl = () => {
       <div className="homePestControl-content">
         {card.map((x) => (
           <div className="homePestControl-card" key={x.id}>
-            <span>
-              <Image src={x.img} alt={x.title} />
-            </span>
-            <h5>{x.title}</h5>
-            <div className="button-group">
+            <Link href="">
+              {" "}
+              <span>
+                <Image src={x.img} alt={x.title} />
+              </span>
+              <h5>{x.title}</h5>
+            </Link>
+            {/* <div className="button-group">
               <Link href={x.link}>
                 <button className="btn-primary">Details</button>
               </Link>
+
               <button className="btn-secondary" onClick={handlePop}>
                 Book Now
               </button>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

@@ -26,16 +26,17 @@ const HomePaintingService = () => {
         para="Give your home a renewed charm with a perfectly applied coat of paint. Our skilled professionals are available across Bangalore to restore beauty and vibrance to your walls."
       />
 
-      <div className="homePaintingService-content">
+           <div className="homePaintingService-content">
         {card.map((x) => (
           <div className="homePaintingService-card" key={x.id}>
-            <span>
-              <Image src={x.img} alt={x.title} />
-            </span>
-
-            <h5>{x.title}</h5>
-
-            <div className="button-group">
+            <Link href="">
+              {" "}
+              <span>
+                <Image src={x.img} alt={x.title} />
+              </span>
+              <h5>{x.title}</h5>
+            </Link>
+            {/* <div className="button-group">
               <Link href={x.link}>
                 <button className="btn-primary">Details</button>
               </Link>
@@ -43,7 +44,7 @@ const HomePaintingService = () => {
               <button className="btn-secondary" onClick={handlePop}>
                 Book Now
               </button>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
