@@ -6,7 +6,7 @@ export default function HomeHow() {
   return (
     <div className="infographic-container">
       <HeadingProps
-        title="Our Process"
+        title="How It Works"
         para=""
       />{" "}
       <div className="infographic-wrapper">
