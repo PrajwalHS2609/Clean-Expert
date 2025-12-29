@@ -1,0 +1,109 @@
+.infographic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: #eaeaea;
+  padding: 20px;
+}
+.infographic-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #eaeaea;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Step card */
+.info-step {
+  width: 180px;
+  height: 230px;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-step h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.info-step p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Big background number */
+.step-number {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  font-size: 90px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Icon */
+.icon {
+  font-size: 34px;
+}
+
+/* Connector */
+.connector {
+  width: 80px;
+  height: 2px;
+  border-top: 3px dotted #999;
+  margin: 0 10px;
+  position: relative;
+}
+.connector::after {
+  content: ">";
+  position: absolute;
+  right: -5;
+  top: -18px;
+  color: #999;
+  font-size: 20px;
+}
+/* Color themes */
+.blue {
+  background: linear-gradient(135deg, #2b9cff, #1b6edc);
+}
+
+.pink {
+  background: linear-gradient(135deg, #ff3fa4, #d81b60);
+}
+
+.orange {
+  background: linear-gradient(135deg, #ff9800, #ef6c00);
+}
+
+.green {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+}
+
+.yellow {
+  background: linear-gradient(135deg, #ffc107, #f57f17);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .connector {
+    display: none;
+  }
+
+  .infographic-wrapper {
+    gap: 30px;
+  }
+
+  .step-number {
+    right: 0px;
+    font-size: 70px;
+  }
+}

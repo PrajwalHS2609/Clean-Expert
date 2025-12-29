@@ -7,19 +7,21 @@ import HomeAdvantage from './../components/HomePage/HomeAdvantage/HomeAdvantage'
 import HomeCleanService from './../components/HomePage/HomeCleanService/HomeCleanService';
 import HomeHeroSite from './../components/HomePage/HomeHeroSite/HomeHeroSite';
 import HomeServices from './../components/HomePage/HomeServices/HomeServices';
+import HomeHow from './../components/HomePage/HomeHow/HomeHow';
 
-export default function HomePage(){
-  return(
+export default function HomePage() {
+  return (
     <div>
-      <HomeHeroSite/>
-      <HomeServices/>
+      <HomeHeroSite />
+      <HomeServices />
       {/* <HomeHeader/> */}
-      <HomeTransformation/>
-      <HomeCleanService/>
-      <HomePaintingService/>
-      <HomeCivilWork/>
-      <HomePestControl/>
-      <HomeAdvantage/>
+      <HomeTransformation />
+      <HomeCleanService />
+      <HomePaintingService />
+      <HomeCivilWork />
+      <HomePestControl />
+      <HomeHow />
+      <HomeAdvantage />
     </div>
   )
 }
