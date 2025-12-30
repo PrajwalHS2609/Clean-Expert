@@ -67,9 +67,12 @@ export default function HomeHow() {
           <p>Thorough cleaning completed with strict quality inspection.</p>
         </div>
       </div>
-      {/* <div className="infographic-PayContainer">
+      <div className="infographic-PayContainer">
         <div className="infographic-PayContent">
-          <Image src={call} alt="call" />
+          <img
+            src="https://img.freepik.com/free-photo/person-paying-with-its-smartphone-wallet-app_23-2149167295.jpg?t=st=1767083498~exp=1767087098~hmac=d5ba7b6ae54f60b3fc2cee92bfd31db3b96e12d080facf8b49e7c43992787bfc&w=740"
+            alt="call"
+          />
         </div>
         <div className="infographic-PayContent">
           <div className="infographic-payItem">
@@ -79,7 +82,7 @@ export default function HomeHow() {
             <p>Pay securely only after service is fully completed.</p>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
