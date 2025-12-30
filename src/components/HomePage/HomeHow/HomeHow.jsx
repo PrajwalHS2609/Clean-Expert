@@ -6,6 +6,7 @@ import { IoCallSharp } from "react-icons/io5";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { LuBadgeCheck } from "react-icons/lu";
 import Image from "next/image";
+import payImg from "@/images/payImg.jpg"
 
 export default function HomeHow() {
   return (
@@ -69,9 +70,8 @@ export default function HomeHow() {
       </div>
       <div className="infographic-PayContainer">
         <div className="infographic-PayContent">
-          <img
-            src="https://img.freepik.com/free-photo/person-paying-with-its-smartphone-wallet-app_23-2149167295.jpg?t=st=1767083498~exp=1767087098~hmac=d5ba7b6ae54f60b3fc2cee92bfd31db3b96e12d080facf8b49e7c43992787bfc&w=740"
-            alt="call"
+          <Image
+            src={payImg}
           />
         </div>
         <div className="infographic-PayContent">
@@ -79,7 +79,11 @@ export default function HomeHow() {
             <h3>Pay After Service Completion</h3>
           </div>
           <div className="infographic-payItem">
-            <p>Pay securely only after service is fully completed.</p>
+            <p>
+              Pay only after the service is fully completed and
+              approved—ensuring transparency, trust, and complete peace of mind
+              with no advance payment required.
+            </p>
           </div>
         </div>
       </div>

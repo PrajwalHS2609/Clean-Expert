@@ -81,6 +81,7 @@
 .infographic-PayContainer {
   /* border: solid red; */
   padding: 20px;
+  width: 50%;
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -93,10 +94,11 @@
 .infographic-PayContent > img {
   object-fit: cover;
   width: 200px;
-  height: 200px;
   border-radius: 20px;
 }
-
+.infographic-payItem>p{
+  font-size: 18px;
+}
 /* Responsive */
 @media (max-width: 900px) {
   .connector {
@@ -105,8 +107,7 @@
 
   .infographic-wrapper {
     gap: 30px;
-      flex-wrap: wrap;
-
+    flex-wrap: wrap;
   }
 
   .step-number {
@@ -126,12 +127,12 @@
     background-color: var(--customColor1);
   }
   .infographic-PayContainer {
-  flex-direction: column;
+    flex-direction: column;
+    width: 100%;max-width: 400px;
   }
   .infographic-PayContent > img {
-  object-fit: cover;
-  width: 100%;
-  height: fit-content;
-
-}
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+  }
 }
