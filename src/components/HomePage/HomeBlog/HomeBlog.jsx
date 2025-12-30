@@ -2,6 +2,7 @@ import React from "react";
 import "./HomeBlog.css";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import HeadingProps from "@/components/HeadingProps/HeadingProps";
 const HomeBlog = () => {
   const posts = [
     {
@@ -25,12 +26,7 @@ const HomeBlog = () => {
   ];
   return (
     <div className="blogPage-container">
-      <div className="blogPage-heading">
-        <h2>
-          Read Our Latest <span>Blog</span>
-        </h2>
-      </div>
-
+      <HeadingProps title="Read Our Latest Blog" para="" />{" "}
       <div className="blogPage-content">
         {posts.map((post) => (
           <div className="blogPage-Card" key={post._id}>

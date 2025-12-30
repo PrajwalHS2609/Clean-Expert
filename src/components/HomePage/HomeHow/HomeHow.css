@@ -92,8 +92,8 @@
 }
 
 .infographic-PayContent > img {
-  object-fit: cover;
-  width: 200px;
+  object-fit: contain;
+  width: 200px;height: fit-content;
   border-radius: 20px;
 }
 .infographic-payItem>p{
