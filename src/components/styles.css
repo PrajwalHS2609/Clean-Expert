@@ -1,0 +1,74 @@
+.serviceReviews-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 600px;
+  height: 350px;
+}
+.serviceReviews-carouselItem {
+  /* border: solid blue; */
+  padding: 10px;
+  border-radius: 20px;
+  /* box-shadow: 0 0 10px grey; */
+  background-color: var(--customColor3);
+}
+.serviceReviews-content {
+  /* border: solid green; */
+  height: 100%;
+  gap: 10px;
+  padding: 40px;
+}
+.serviceReviews-itemWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+.serviceReviews-item {
+  /* border: solid yellow; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.serviceReviews-item > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.serviceReviews-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.serviceReviews-rating > img {
+  width: 100px;
+  height: fit-content;
+}
+.serviceReviews-item > p {
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .serviceReviews-container {
+    /* border: solid red; */
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+  }
+  .serviceReviews-item {
+    /* border: solid yellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+}

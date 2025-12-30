@@ -11,7 +11,7 @@ import PopupForm from "./../components/PopupForm/PopupForm";
 import { usePathname } from "next/navigation";
 import LpPaintNavbar from "./../components/LandingPage/PaintLandingPage/LpPaintNavbar/LpPaintNavbar";
 import LpPaintFooter from "./../components/LandingPage/PaintLandingPage/LpPaintFooter/LpPaintFooter";
-
+import "@/components/styles.css"
 const merri = Merriweather({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
