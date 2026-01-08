@@ -21,8 +21,8 @@
   object-fit: contain;
 }
 .homeTransformation-container > h2 {
-  font-weight: 40px !important;
-  font-weight: bold;
+  font-size: 40px !important;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .homeTransformation-container {

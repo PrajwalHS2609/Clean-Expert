@@ -27,7 +27,7 @@ const HomeAdvantage = () => {
         and other surfaces that accumulate hidden dirt over time.
       </p>
       <p>
-        We cater to all types of residential properties, whether it's an
+        We cater to all types of residential properties, whether its an
         apartment, villa, or independent home. Every service is tailored to the
         unique needs of each customer, ensuring a personalized, detail-oriented
         approach that makes your home shine.

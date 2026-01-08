@@ -6,12 +6,15 @@ import { IoCallSharp } from "react-icons/io5";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { LuBadgeCheck } from "react-icons/lu";
 import Image from "next/image";
-import payImg from "@/images/payImg.jpg"
+import payImg from "@/images/payImg.jpg";
 
 export default function HomeHow() {
   return (
     <div className="infographic-container">
-      <HeadingProps title="How it Works" para="" />{" "}
+      <HeadingProps
+        title="How it Works"
+        para="Prime Clean ensures a smooth, hassle-free experience with clear communication, timely service, skilled professionals, quality assurance, and complete peace of mind from start to finish."
+      />{" "}
       <div className="infographic-wrapper">
         <div className="info-step ">
           <span className="step-number">1</span>
@@ -70,9 +73,7 @@ export default function HomeHow() {
       </div>
       <div className="infographic-PayContainer">
         <div className="infographic-PayContent">
-          <Image
-            src={payImg}
-          />
+          <Image src={payImg} />
         </div>
         <div className="infographic-PayContent">
           <div className="infographic-payItem">

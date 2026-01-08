@@ -33,16 +33,6 @@ const ServiceEssentials = () => {
               Description
             </button>
           </li>
-
-          <li>
-            <button
-              className={activeTab === "reviews" ? "routeActives" : ""}
-              onClick={() => setActiveTab("reviews")}
-            >
-              Reviews
-            </button>
-          </li>
-
           <li>
             <button
               className={activeTab === "subservices" ? "routeActives" : ""}
@@ -51,12 +41,18 @@ const ServiceEssentials = () => {
               Benefits
             </button>
           </li>
+          <li>
+            <button
+              className={activeTab === "reviews" ? "routeActives" : ""}
+              onClick={() => setActiveTab("reviews")}
+            >
+              Reviews
+            </button>
+          </li>
         </ul>
       </div>
 
-      <div className="serviceEssentials-content">
-        {renderContent()}
-      </div>
+      <div className="serviceEssentials-content">{renderContent()}</div>
     </div>
   );
 };
