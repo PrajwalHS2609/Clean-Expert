@@ -73,7 +73,7 @@ export default function HomeHow() {
       </div>
       <div className="infographic-PayContainer">
         <div className="infographic-PayContent">
-          <Image src={payImg} />
+          <Image src={payImg} alt="pay"/>
         </div>
         <div className="infographic-PayContent">
           <div className="infographic-payItem">

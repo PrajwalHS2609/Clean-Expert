@@ -71,6 +71,14 @@ export default defineType({
     }),
 
     defineField({
+      name: 'subServicesLabel',
+      title: 'Sub Services Label',
+      type: 'string',
+      description: 'Label displayed above sub-services (e.g., "Cleaning Sub Services :")',
+      initialValue: 'Cleaning Sub Services :',
+    }),
+
+    defineField({
       name: 'subServices',
       title: 'Sub Services',
       type: 'array',
@@ -94,6 +102,11 @@ export default defineType({
           ],
         }),
       ],
+    }),
+    defineField({
+      name: 'essentials',
+      title: 'Service Essentials',
+      type: 'serviceEssentials',
     }),
   ],
 })

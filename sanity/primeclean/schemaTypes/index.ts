@@ -8,6 +8,7 @@ import faqContent from './faqContent'
 import highlightBlock from './highlightBlock'
 import post from './post'
 import quoteContent from './quoteContent'
+import serviceEssentials from './serviceEssentials'
 import services from './services'
 
 export const schemaTypes = [
@@ -21,5 +22,6 @@ export const schemaTypes = [
   quoteContent,
   highlightBlock,
   author,
-  services
+  services,
+  serviceEssentials,
 ]

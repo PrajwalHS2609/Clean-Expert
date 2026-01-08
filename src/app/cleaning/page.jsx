@@ -9,13 +9,13 @@ import pest from "../../images/serviceImgs/Pest Control.png";
 import shower from "../../images/serviceImgs/Shower Cubicle.png";
 import waterProofing from "../../images/serviceImgs/Water Proofing.png";
 import cleaningService from "../../images/serviceImgs/Cleaning Service.png";
-import ServiceEssentials from "../../components/ServiceComponents/ServiceEssentials/ServiceEssentials";
 import HomeHow from "../../components/HomePage/HomeHow/HomeHow";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeFaq from "../../components/HomePage/HomeFaq/HomeFaq";
 import HomePestControl from "../../components/HomePage/HomePestControl/HomePestControl";
 import HomePaintingService from "../../components/HomePage/HomePaintingService/HomePaintingService";
 import HomeCivilWork from "../../components/HomePage/HomeCivilWork/HomeCivilWork";
+import ServiceEssentials from './../../components/ServiceComponents/ServiceEssentials/ServiceEssentials';
 
 export default function CleaningServices() {
   const services = [
@@ -52,6 +52,7 @@ export default function CleaningServices() {
       />
       <HomeCleanService />
       <ServiceEssentials />
+
       <HomeHow />
       <HomePaintingService />
       <HomeCivilWork />
