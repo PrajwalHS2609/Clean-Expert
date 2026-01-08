@@ -2,8 +2,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import { client } from "../../sanity/client";
-import SanityServiceContent from "@/components/SanityComponents/SanityService";
-import { SanityServiceContentType } from '@/components/SanityComponents/SanityService';
+import SanityServiceContent,{SanityServiceContentType} from "@/components/SanityComponents/SanityService";
 
 // =========================
 // GROQ QUERY
@@ -15,7 +14,7 @@ const SERVICE_QUERY = `
     _id,
     title,
     slug,
-  banner{
+  mainImage{
     asset->{url}
   },
     description,

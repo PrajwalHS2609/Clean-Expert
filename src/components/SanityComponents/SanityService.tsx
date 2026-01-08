@@ -40,11 +40,7 @@ export type SubServiceItem = {
 
 export type SanityServiceContentType = {
   title: string;
-  banner?: {
-    asset?: {
-      url?: string;
-    };
-  };
+  mainImage?: SanityImage;
   description?: PortableTextBlock[];
   services?: ServiceItem[];
   subServices?: SubServiceItem[];
@@ -67,7 +63,7 @@ export default function SanityServiceContent({
 }: {
   content: SanityServiceContentType;
 }) {
-  const bannerUrl = content.banner?.asset?.url;
+  const bannerUrl = content.mainImage?.asset?.url;
   const services = content.services ?? [];
   const subServices = content.subServices ?? [];
 
