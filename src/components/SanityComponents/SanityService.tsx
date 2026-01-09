@@ -116,25 +116,22 @@ export default function SanityServiceContent({
         {/* BANNER */}
 
         <div className="serviceHeader-wrapper">
-          {content.mainImage?.asset?._ref && (() => {
-            const bannerUrl = urlFor(content.mainImage);
-            return bannerUrl ? (
-              <img
-                src={bannerUrl.url()}
-                alt={content.title}
-              />
-            ) : null;
-          })()}
+          {content.mainImage && (
+            <img
+              src={urlFor(content.mainImage)?.url()}
+              alt={content.title}
+            />
+          )}
         </div>
 
         {/* CONTENT */}
         <div className="serviceHeader-wrapper">
           <div className="serviceHeader-content">
             <h3>{content.title}</h3>
-            {content.mainImage && (
-              <img
-                src={urlFor(content.mainImage)?.url()}
-                alt={content.title}
+            {content.description && (
+              <PortableText
+                value={content.description}
+                components={portableTextComponents}
               />
             )}
 
