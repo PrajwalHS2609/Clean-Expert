@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image";
 import "./../ServiceComponents/ServiceHeader/ServiceHeader.css";
 import React from "react";
