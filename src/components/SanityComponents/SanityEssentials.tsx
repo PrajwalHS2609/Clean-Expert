@@ -10,6 +10,7 @@ import ratingImg from "@/images/rating.png";
 import { urlFor } from "../../../sanity/lib/image";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
+
 /* ---------------- TYPES ---------------- */
 
 type ServiceReview = {
@@ -102,7 +103,7 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
                       <div className="serviceReviews-item">
                         {review.image && (
                           <img
-                            src={urlFor(review.image).width(120).height(120).url()}
+                            src={urlFor(review.image)?.width(120)?.height(120)?.url() ?? ""}
                             alt={review.name || "review"}
                             className="serviceReviews-avatar"
                           />
@@ -112,7 +113,7 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
                       </div>
 
                       {/* RATING */}
-                      {review.rating && (
+                      {typeof review.rating === "number" && (
                         <div className="serviceReviews-rating">
                           <Image src={ratingImg} alt="rating" />
                         </div>

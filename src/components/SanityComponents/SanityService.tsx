@@ -26,7 +26,7 @@ import HomeCivilWork from "../HomePage/HomeCivilWork/HomeCivilWork";
 import HomePestControl from "../HomePage/HomePestControl/HomePestControl";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
-// import SanityEssentials from "./SanityEssentials";
+import SanityEssentials from "./SanityEssentials";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 /* ---------------- TYPES ---------------- */
@@ -190,9 +190,9 @@ export default function SanityServiceContent({
         </div>
       </div>
       <HomeCleanService />
-      {/* {content.essentials && (
+      {content.essentials && (
         <SanityEssentials data={content.essentials} />
-      )} */}
+      )}
       <HomeHow />
       <HomePaintingService />
       <HomeCivilWork />
