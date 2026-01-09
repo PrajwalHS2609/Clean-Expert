@@ -2,18 +2,14 @@ import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { projectId, dataset } from "../env";
 
-if (!projectId || !dataset) {
-  throw new Error(
-    "Sanity projectId or dataset is missing. Check NEXT_PUBLIC_SANITY_* env vars."
-  );
-}
-
-const builder = imageUrlBuilder({
-  projectId,
-  dataset,
-});
+const builder =
+  projectId && dataset
+    ? imageUrlBuilder({ projectId, dataset })
+    : null;
 
 export function urlFor(source?: SanityImageSource) {
-  if (!source) return null;
+  if (!builder || !source) {
+    return null;
+  }
   return builder.image(source);
 }
