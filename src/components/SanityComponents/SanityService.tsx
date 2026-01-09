@@ -31,6 +31,7 @@ import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
 
 import { urlFor } from "../../../sanity/lib/image";
 import SanityEssentials from "./SanityEssentials";
+import { log } from "console";
 
 /* ---------------- TYPES ---------------- */
 
@@ -86,6 +87,9 @@ export default function SanityServiceContent({
 }: {
   content: SanityServiceContentType;
 }) {
+  console.log("MAIN Image:", content.mainImage);
+  console.log("SERVICE Img:", content.services);
+  console.log("REVIEWS img:", content.essentials?.reviews)
   const services = content.services ?? [];
   const subServices = content.subServices ?? [];
 
