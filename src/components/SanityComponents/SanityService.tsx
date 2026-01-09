@@ -20,6 +20,7 @@ import { portableTextComponents } from "../PortableTextComponents";
 import offerImg1 from "@/images/offerImgs/Professional-Cleaning-Service.png";
 import offerImg2 from "@/images/offerImgs/Pest-Control-Offer.png";
 import offerImg3 from "@/images/offerImgs/Painting-Offer.png";
+
 import HomeCleanService from "../HomePage/HomeCleanService/HomeCleanService";
 import HomeHow from "../HomePage/HomeHow/HomeHow";
 import HomePaintingService from "../HomePage/HomePaintingService/HomePaintingService";
@@ -27,8 +28,9 @@ import HomeCivilWork from "../HomePage/HomeCivilWork/HomeCivilWork";
 import HomePestControl from "../HomePage/HomePestControl/HomePestControl";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
-import SanityEssentials from "./SanityEssentials";
+
 import { urlFor } from "../../../sanity/lib/image";
+import SanityEssentials from "./SanityEssentials";
 
 /* ---------------- TYPES ---------------- */
 
@@ -55,8 +57,8 @@ export type SanityServiceEssentialsType = {
   description?: PortableTextBlock[];
   benefits?: PortableTextBlock[];
   reviews?: {
-    name: string;
-    location: string;
+    name?: string;
+    location?: string;
     rating?: number;
     image?: SanityImage;
     comment?: PortableTextBlock[];
@@ -95,7 +97,7 @@ export default function SanityServiceContent({
             {services.map((service, index) => (
               <div className="serviceHeader-servicesItem" key={index}>
                 <Link href={service.link || "/"}>
-                  {service.image && (
+                  {service.image?.asset && (
                     <img
                       src={urlFor(service.image).width(300).height(300).url()}
                       alt={service.title}
@@ -111,7 +113,7 @@ export default function SanityServiceContent({
         </div>
 
         {/* BANNER */}
-        {content.mainImage && (
+        {content.mainImage?.asset && (
           <div className="serviceHeader-wrapper">
             <img
               src={urlFor(content.mainImage).url()}
@@ -124,7 +126,6 @@ export default function SanityServiceContent({
         <div className="serviceHeader-wrapper">
           <div className="serviceHeader-content">
             <h3>{content.title}</h3>
-
             {content.description && (
               <PortableText
                 value={content.description}
@@ -143,7 +144,7 @@ export default function SanityServiceContent({
           {/* SUB SERVICES */}
           {subServices.length > 0 && (
             <div className="serviceHeader-content">
-              <strong>{content.subServicesLabel}:</strong>{" "}
+              <strong>{content.subServicesLabel || "Sub Services"}:</strong>{" "}
               {subServices.map((item, index) => (
                 <span key={index}>
                   <Link href={item.link || "/"}>{item.name}</Link>
@@ -155,11 +156,11 @@ export default function SanityServiceContent({
 
           {/* CONTACT */}
           <div className="serviceHeader-content">
-            <a href="">
+            <a href="#">
               <IoLocationOutline className="serviceHeader-iconAdd" />
               Bangalore, India
             </a>
-            <a href="">
+            <a href="#">
               <FiPhone className="serviceHeader-iconAdd" />
               91 9876543210
             </a>
@@ -167,18 +168,10 @@ export default function SanityServiceContent({
 
           {/* SOCIAL */}
           <div className="serviceHeader-content">
-            <a href="#">
-              <FaInstagram className="serviceHeader-socialIco" />
-            </a>
-            <a href="#">
-              <FaYoutube className="serviceHeader-socialIco" />
-            </a>
-            <a href="#">
-              <FaFacebookF className="serviceHeader-socialIco" />
-            </a>
-            <a href="#">
-              <FaLinkedin className="serviceHeader-socialIco" />
-            </a>
+            <a href="#"><FaInstagram className="serviceHeader-socialIco" /></a>
+            <a href="#"><FaYoutube className="serviceHeader-socialIco" /></a>
+            <a href="#"><FaFacebookF className="serviceHeader-socialIco" /></a>
+            <a href="#"><FaLinkedin className="serviceHeader-socialIco" /></a>
           </div>
         </div>
 

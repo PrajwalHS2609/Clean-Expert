@@ -10,22 +10,22 @@ import ratingImg from "@/images/rating.png";
 import { urlFor } from "../../../sanity/lib/image";
 
 /* ---------------- TYPES ---------------- */
- type SanityImage = {
+type SanityImage = {
   _type: "image";
   asset?: {
     _ref: string;
     _type: "reference";
   };
 };
- type ServiceReview = {
+type ServiceReview = {
   name?: string;
   location?: string;
   rating?: number;
-  image?: SanityImage; // ✅ FIXED
+  image?: SanityImage;
   comment?: PortableTextBlock[];
 };
 
- type ServiceEssentialsProps = {
+type ServiceEssentialsProps = {
   data?: {
     description?: PortableTextBlock[];
     benefits?: PortableTextBlock[];
@@ -92,7 +92,7 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
           />
         )}
 
-        {/* REVIEWS (CAROUSEL + CARD DESIGN) */}
+        {/* REVIEWS */}
         {activeTab === "reviews" && data?.reviews?.length ? (
           <div className="serviceReviews-container">
             <Carousel className="serviceReviews-carouselContainer">
@@ -107,15 +107,11 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
                       <div className="serviceReviews-item">
                         {review.image?.asset ? (
                           <img
-                            src={urlFor(review.image)
-                              .width(120)
-                              .height(120)
-                              .url()}
+                            src={urlFor(review.image).width(120).height(120).url()}
                             alt={review.name || "review"}
                             className="serviceReviews-avatar"
                           />
                         ) : (
-                          /* Optional fallback avatar */
                           <div className="serviceReviews-avatarPlaceholder">
                             {review.name?.charAt(0) ?? "U"}
                           </div>
@@ -132,14 +128,14 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
                       )}
 
                       {/* COMMENT */}
-                      <div className="serviceReviews-item">
-                        {review.comment && (
+                      {review.comment && (
+                        <div className="serviceReviews-item">
                           <PortableText
                             value={review.comment}
                             components={portableTextComponents}
                           />
-                        )}
-                      </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </Carousel.Item>
