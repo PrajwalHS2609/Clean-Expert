@@ -103,15 +103,12 @@ export default function SanityServiceContent({
             {services.map((service, index) => (
               <div className="serviceHeader-servicesItem" key={index}>
                 <Link href={service.link || "/"}>
-                  {service.image && (() => {
-                    const imgUrl = urlFor(service.image);
-                    return imgUrl ? (
-                      <img
-                        src={imgUrl.url()}
-                        alt={service.title}
-                      />
-                    ) : null;
-                  })()}
+                  {service.image && (
+                    <img
+                      src={urlFor(service.image)?.url()}
+                      alt={service.title}
+                    />
+                  )}
                   <div className="serviceHeader-servicesItemCover">
                     <p>{service.title}</p>
                   </div>
