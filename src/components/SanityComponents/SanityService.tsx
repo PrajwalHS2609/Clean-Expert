@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import "./../ServiceComponents/ServiceHeader/ServiceHeader.css";
@@ -21,7 +20,6 @@ import offerImg1 from "@/images/offerImgs/Professional-Cleaning-Service.png";
 import offerImg2 from "@/images/offerImgs/Pest-Control-Offer.png";
 import offerImg3 from "@/images/offerImgs/Painting-Offer.png";
 import HomeCleanService from "../HomePage/HomeCleanService/HomeCleanService";
-import ServiceEssentials from './../ServiceComponents/ServiceEssentials/ServiceEssentials';
 import HomeHow from "../HomePage/HomeHow/HomeHow";
 import HomePaintingService from "../HomePage/HomePaintingService/HomePaintingService";
 import HomeCivilWork from "../HomePage/HomeCivilWork/HomeCivilWork";
