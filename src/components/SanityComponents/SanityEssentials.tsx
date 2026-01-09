@@ -107,7 +107,7 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
                       <div className="serviceReviews-item">
                         {review.image?.asset ? (
                           <img
-                            src={urlFor(review.image)?.width(120).height(120).url()}
+                            src={urlFor(review.image)?.url()}
                             alt={review.name || "review"}
                             className="serviceReviews-avatar"
                           />
