@@ -99,8 +99,8 @@ export default function SanityServiceContent({
             {services.map((service, index) => (
               <div className="serviceHeader-servicesItem" key={index}>
                 <Link href={service.link || "/"}>
-                  {service.image && (
-                    <img src={urlFor(service.image)?.url()} alt={service.title} />
+                  {service.image && urlFor(service.image)&& (
+                    <img src={urlFor(service.image)!.url()} alt={service.title} />
                   )}
 
 
