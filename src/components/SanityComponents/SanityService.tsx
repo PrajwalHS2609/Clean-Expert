@@ -91,7 +91,7 @@ export default function SanityServiceContent({
           <div className="serviceHeader-servicesContent">
             {services.map((service, index) => (
               <div className="serviceHeader-servicesItem" key={index}>
-                <Link href={service.link || ""}>
+                <Link href={service.link || "/"}>
                   {service.image?.asset?.url && (
                     <img
                       src={service.image.asset.url}
@@ -164,17 +164,17 @@ export default function SanityServiceContent({
 
           {/* SOCIAL */}
           <div className="serviceHeader-content">
-            <a href="">
+            <a href="#">
               <FaInstagram className="serviceHeader-socialIco" />
             </a>
-            <a href="">
+            <a href="#">
               <FaYoutube className="serviceHeader-socialIco" />
             </a>
-            <a href="">
+            <a href="#">
               <FaFacebookF className="serviceHeader-socialIco" />
             </a>
 
-            <a href="">
+            <a href="#">
               <FaLinkedin className="serviceHeader-socialIco" />
             </a>
           </div>
