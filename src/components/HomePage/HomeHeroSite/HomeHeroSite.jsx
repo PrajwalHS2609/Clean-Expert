@@ -123,7 +123,7 @@ const HomeHeroSite = () => {
       {/* TRUST */}
       <div className="hero2-trust">
         {content.map((x) => (
-          <div className="hero2-trustItem">
+          <div className="hero2-trustItem" key={x.id}>
             <span className="hero2-trustItemIcon">{x.icon}</span>
             <p id="services">{x.text}</p>
           </div>
