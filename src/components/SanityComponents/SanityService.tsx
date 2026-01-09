@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import Image from "next/image";
 import "./../ServiceComponents/ServiceHeader/ServiceHeader.css";
 import React from "react";
@@ -27,12 +28,16 @@ import HomePestControl from "../HomePage/HomePestControl/HomePestControl";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
 import SanityEssentials from "./SanityEssentials";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { urlFor } from "../../../sanity/lib/image";
 
 /* ---------------- TYPES ---------------- */
 
 export type SanityImage = {
-  asset?: { url?: string };
+  _type: "image";
+  asset?: {
+    _ref: string;
+    _type: "reference";
+  };
 };
 
 export type ServiceItem = {
@@ -45,6 +50,7 @@ export type SubServiceItem = {
   name: string;
   link?: string;
 };
+
 export type SanityServiceEssentialsType = {
   description?: PortableTextBlock[];
   benefits?: PortableTextBlock[];
@@ -52,19 +58,19 @@ export type SanityServiceEssentialsType = {
     name: string;
     location: string;
     rating?: number;
-    image?: SanityImageSource;  // <- Use this type for Sanity images
+    image?: SanityImage;
     comment?: PortableTextBlock[];
   }[];
 };
+
 export type SanityServiceContentType = {
   title: string;
   mainImage?: SanityImage;
   description?: PortableTextBlock[];
   services?: ServiceItem[];
   subServices?: SubServiceItem[];
-  subServicesLabel?: string;  // <-- Add this
+  subServicesLabel?: string;
   essentials?: SanityServiceEssentialsType;
-
 };
 
 const adImg = [offerImg1, offerImg2, offerImg3];
@@ -76,7 +82,6 @@ export default function SanityServiceContent({
 }: {
   content: SanityServiceContentType;
 }) {
-  const bannerUrl = content.mainImage?.asset?.url;
   const services = content.services ?? [];
   const subServices = content.subServices ?? [];
 
@@ -90,9 +95,9 @@ export default function SanityServiceContent({
             {services.map((service, index) => (
               <div className="serviceHeader-servicesItem" key={index}>
                 <Link href={service.link || "/"}>
-                  {service.image?.asset?.url && (
+                  {service.image && (
                     <img
-                      src={service.image.asset.url}
+                      src={urlFor(service.image).width(300).height(300).url()}
                       alt={service.title}
                     />
                   )}
@@ -106,10 +111,10 @@ export default function SanityServiceContent({
         </div>
 
         {/* BANNER */}
-        {bannerUrl && (
+        {content.mainImage && (
           <div className="serviceHeader-wrapper">
             <img
-              src={bannerUrl}
+              src={urlFor(content.mainImage).url()}
               alt={content.title}
             />
           </div>
@@ -171,14 +176,13 @@ export default function SanityServiceContent({
             <a href="#">
               <FaFacebookF className="serviceHeader-socialIco" />
             </a>
-
             <a href="#">
               <FaLinkedin className="serviceHeader-socialIco" />
             </a>
           </div>
         </div>
 
-        {/* ADS (PLACED EXACTLY LIKE ORIGINAL) */}
+        {/* ADS */}
         <div className="serviceHeader-wrapper">
           <div className="serviceHeader-adsContent">
             {adImg.map((img, i) => (
@@ -189,10 +193,10 @@ export default function SanityServiceContent({
           </div>
         </div>
       </div>
+
+      {/* SECTIONS */}
       <HomeCleanService />
-      {content.essentials && (
-        <SanityEssentials data={content.essentials} />
-      )}
+      {content.essentials && <SanityEssentials data={content.essentials} />}
       <HomeHow />
       <HomePaintingService />
       <HomeCivilWork />
