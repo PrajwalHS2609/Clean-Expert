@@ -11,19 +11,18 @@ import SanityServiceContent, { SanityServiceContentType } from "@/components/San
 const SERVICE_QUERY = `
 {
   "service": *[_type == "service" && slug.current == $slug][0]{
-    _id,
     title,
     slug,
-  mainImage,
+    mainImage,
     description,
     services[]{
       title,
       link,
-      image 
+      image
     },
-      subServicesLabel,
+    subServicesLabel,
     subServices[]{ name, link },
-     essentials{
+    essentials{
       description,
       benefits,
       reviews[]{
@@ -37,6 +36,7 @@ const SERVICE_QUERY = `
   }
 }
 `;
+
 
 export const revalidate = 10; // optional ISR, refresh every 10 seconds
 

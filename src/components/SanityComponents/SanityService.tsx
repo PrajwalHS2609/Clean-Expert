@@ -75,7 +75,9 @@ export type SanityServiceContentType = {
   essentials?: SanityServiceEssentialsType;
 };
 
-const adImg = [offerImg1, offerImg2, offerImg3];
+const adImg = [{ id: 1, img: offerImg1, alt: "adImg1" },
+{ id: 2, img: offerImg2, alt: "adImg2" },
+{ id: 3, img: offerImg3, alt: "adImg3" }];
 
 /* ---------------- COMPONENT ---------------- */
 
@@ -97,15 +99,10 @@ export default function SanityServiceContent({
             {services.map((service, index) => (
               <div className="serviceHeader-servicesItem" key={index}>
                 <Link href={service.link || "/"}>
-                  {service.image?.asset?._ref && (() => {
-                    const imgUrl = urlFor(service.image);
-                    return imgUrl ? (
-                      <img
-                        src={imgUrl.width(300).height(300).url()}
-                        alt={service.title}
-                      />
-                    ) : null;
-                  })()}
+                  {service.image && (
+                    <img src={urlFor(service.image)?.url()} alt={service.title} />
+                  )}
+
 
                   <div className="serviceHeader-servicesItemCover">
                     <p>{service.title}</p>
@@ -118,24 +115,26 @@ export default function SanityServiceContent({
 
         {/* BANNER */}
 
-        {content.mainImage?.asset?._ref && (() => {
-          const bannerUrl = urlFor(content.mainImage);
-          return bannerUrl ? (
-            <img
-              src={bannerUrl.width(1200).height(600).url()}
-              alt={content.title}
-            />
-          ) : null;
-        })()}
+        <div className="serviceHeader-wrapper">
+          {content.mainImage?.asset?._ref && (() => {
+            const bannerUrl = urlFor(content.mainImage);
+            return bannerUrl ? (
+              <img
+                src={bannerUrl.url()}
+                alt={content.title}
+              />
+            ) : null;
+          })()}
+        </div>
 
         {/* CONTENT */}
         <div className="serviceHeader-wrapper">
           <div className="serviceHeader-content">
             <h3>{content.title}</h3>
-            {content.description && (
-              <PortableText
-                value={content.description}
-                components={portableTextComponents}
+            {content.mainImage && (
+              <img
+                src={urlFor(content.mainImage)?.url()}
+                alt={content.title}
               />
             )}
 
@@ -184,9 +183,9 @@ export default function SanityServiceContent({
         {/* ADS */}
         <div className="serviceHeader-wrapper">
           <div className="serviceHeader-adsContent">
-            {adImg.map((img, i) => (
-              <div className="serviceHeader-adsItem" key={i}>
-                <Image src={img} alt="offer" />
+            {adImg.map((x) => (
+              <div className="serviceHeader-adsItem" key={x.id}>
+                <Image src={x.img} alt={x.alt} />
               </div>
             ))}
           </div>
