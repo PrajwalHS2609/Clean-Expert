@@ -189,7 +189,7 @@ export default function SanityServiceContent({
 
       {/* SECTIONS */}
       <HomeCleanService />
-      {content.essentials && <SanityEssentials data={content.essentials} />}
+      {/* {content.essentials && <SanityEssentials data={content.essentials} />} */}
       <HomeHow />
       <HomePaintingService />
       <HomeCivilWork />
