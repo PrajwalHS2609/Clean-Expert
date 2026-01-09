@@ -31,7 +31,6 @@ import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
 
 import { urlFor } from "../../../sanity/lib/image";
 import SanityEssentials from "./SanityEssentials";
-import { log } from "console";
 
 /* ---------------- TYPES ---------------- */
 
