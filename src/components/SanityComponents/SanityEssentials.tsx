@@ -105,17 +105,23 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
                     <div className="serviceReviews-itemWrapper">
                       {/* USER */}
                       <div className="serviceReviews-item">
-                        {review.image?.asset ? (
-                          <img
-                            src={urlFor(review.image)?.url()}
-                            alt={review.name || "review"}
-                            className="serviceReviews-avatar"
-                          />
+                        {review.image?.asset?._ref ? (
+                          (() => {
+                            const avatarUrl = urlFor(review.image);
+                            return avatarUrl ? (
+                              <img
+                                src={avatarUrl.width(120).height(120).url()}
+                                alt={review.name || "review"}
+                                className="serviceReviews-avatar"
+                              />
+                            ) : null;
+                          })()
                         ) : (
                           <div className="serviceReviews-avatarPlaceholder">
                             {review.name?.charAt(0) ?? "U"}
                           </div>
                         )}
+
 
                         <h5>{review.name}</h5>
                         {review.location && <h6>{review.location}</h6>}

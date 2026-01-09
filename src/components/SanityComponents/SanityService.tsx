@@ -97,11 +97,11 @@ export default function SanityServiceContent({
             {services.map((service, index) => (
               <div className="serviceHeader-servicesItem" key={index}>
                 <Link href={service.link || "/"}>
-                  {service.image && (() => {
+                  {service.image?.asset?._ref && (() => {
                     const imgUrl = urlFor(service.image);
                     return imgUrl ? (
                       <img
-                        src={imgUrl.url()}
+                        src={imgUrl.width(300).height(300).url()}
                         alt={service.title}
                       />
                     ) : null;
@@ -117,15 +117,16 @@ export default function SanityServiceContent({
 
         {/* BANNER */}
 
-        {content.mainImage && (() => {
+        {content.mainImage?.asset?._ref && (() => {
           const bannerUrl = urlFor(content.mainImage);
           return bannerUrl ? (
             <img
-              src={bannerUrl.url()}
+              src={bannerUrl.width(1200).height(600).url()}
               alt={content.title}
             />
           ) : null;
         })()}
+
         {/* CONTENT */}
         <div className="serviceHeader-wrapper">
           <div className="serviceHeader-content">
