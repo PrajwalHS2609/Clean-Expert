@@ -14,14 +14,12 @@ const SERVICE_QUERY = `
     _id,
     title,
     slug,
-  mainImage{
-    asset->{url}
-  },
+  mainImage,
     description,
     services[]{
       title,
       link,
-      image { asset->{ url } }
+      image 
     },
       subServicesLabel,
     subServices[]{ name, link },
@@ -32,7 +30,7 @@ const SERVICE_QUERY = `
         name,
         rating,
         location,
-        image { asset->{url} },
+        image,
         comment
       }
     }

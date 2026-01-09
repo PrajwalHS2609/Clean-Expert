@@ -106,6 +106,7 @@ export default function SanityServiceContent({
                       />
                     ) : null;
                   })()}
+
                   <div className="serviceHeader-servicesItemCover">
                     <p>{service.title}</p>
                   </div>
