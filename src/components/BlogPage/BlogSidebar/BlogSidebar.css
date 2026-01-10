@@ -1,0 +1,129 @@
+.blogSideBar-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.blogCategories-container {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blog-news {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.published-date {
+  /* border: solid; */
+  color: var(--customColor2);
+}
+.blogCategories-container > ul {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.blogCategories-container > ul > h2 {
+  color: var(--customColor1);
+}
+.blogCategories-container > ul > li {
+  border-bottom: solid var(--customColor1) 1px;
+  width: 100%;
+  list-style: none;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 10px;
+}
+.blogCategories-container > ul > li > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.blogCategories-container > ul > li:hover a {
+  color: var(--customColor1);
+}
+
+.blogPost-container {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blogPost-container > ul > h2 {
+  color: var(--customColor1);
+  /* border: solid; */
+}
+.blogPost-container > ul {
+  /* border: solid; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.blogPost-container > ul > a {
+  text-decoration: none;
+  color: black;
+}
+.blogPost-container > ul > a > ul {
+  /* border: solid green; */
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100%;
+}
+.blogPost-container > ul > a > ul > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+
+  &:hover {
+    box-shadow: 0 10px 10px grey;
+  }
+}
+.blogPost-container > ul > a > ul > li:hover h4 {
+  color: var(--customColor1);
+}
+.blogPost-container > ul > a > ul > li > h4 {
+  text-align: justify;
+  font-size: 15px;
+}
+.blogPostImg-content {
+  width: 100px;
+  height: 100px;
+}
+.blogPost-container > ul > a > ul > li > img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

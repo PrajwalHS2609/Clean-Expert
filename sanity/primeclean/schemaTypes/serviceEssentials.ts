@@ -11,6 +11,31 @@ export default defineType({
       type: 'array',
       of: [{type: 'block'}],
     }),
+    // ---------------- FAQ (INSIDE ESSENTIALS) ----------------
+defineField({
+  name: "faq",
+  title: "FAQ",
+  type: "array",
+  of: [
+    {
+      type: "object",
+      name: "faqItem",
+      fields: [
+        defineField({
+          name: "question",
+          title: "Question",
+          type: "string",
+        }),
+        defineField({
+          name: "answer",
+          title: "Answer",
+          type: "array",
+          of: [{ type: "block" }],
+        }),
+      ],
+    },
+  ],
+}),
 
     defineField({
       name: 'benefits',

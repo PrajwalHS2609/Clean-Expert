@@ -73,7 +73,6 @@
   }
 }
 
-
 /* ----------------------------------------Slug Table------------------------------------------------ */
 /* Custom table styling */
 .custom-table {
@@ -288,7 +287,14 @@
 .serviceHeader-btn:nth-child(2):hover {
   background-color: #25d366;
 }
-.serviceHeader-content>span > a {
+
+.serviceEssentials-content > ol > li {
+  margin-top: 15px;
+}
+.serviceEssentials-content > ul > li {
+  margin-top: 15px;
+}
+.serviceHeader-content > span > a {
   color: var(--customColor2);
   text-decoration: none;
 }
@@ -469,9 +475,12 @@
 }
 @media screen and (max-width: 768px) {
   .serviceEssentials-container {
-  /* border: solid red; */
-  padding: 20px;
-}
+    /* border: solid red; */
+    padding: 20px;
+  }
+  .serviceEssentials-navbar {
+    overflow-x: scroll;
+  }
   .serviceEssentials-navbar > ul {
     display: flex;
     justify-content: center;
@@ -479,11 +488,21 @@
     gap: 30px;
   }
   .serviceEssentials-navbar button {
-  position: relative;
-  background: transparent;
-  border: none;
-  padding: 10px 0;
-  font-size: 18px;
-  cursor: pointer;
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
 }
+/* -------------------------------------------Service faq---------------------------------------------- */
+.serviceEssentialFaq-container {
+  width: 800px;
+}
+@media screen and (max-width: 768px) {
+  .serviceEssentialFaq-container {
+    width: 300px;
+    max-width: 500px;
+  }
 }

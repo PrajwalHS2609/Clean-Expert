@@ -1,0 +1,96 @@
+.blogPage-heading > h2 {
+  font-weight: normal;
+  font-size: 40px;
+}
+.blogPage-heading > h2 > span {
+  color: var(--customColor1);
+}
+
+/* ----------------------------------Blog Author---------------------------------------- */
+.blogAuthorContainer {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-color: var(--customColor3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.blogAuthorContent {
+  /* border: solid yellowgreen; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin: 10px;
+}
+.blogAuthorImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.blogAuthorImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogAuthorName > h4 {
+  color: rgb(177, 177, 177);
+  font-size: 18px;
+}
+.blogAuthorName > h3 {
+  color: var(--customColor1);
+}
+.blogAuthorContent > p {
+  font-size: 20px;
+}
+.blogAuthorSocial {
+  /* border: solid brown; */
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.authorSocialIcon {
+  color: var(--customColor1);
+  font-size: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .blogAuthorContainer {
+    /* border: solid red; */
+    margin-left: 0px;
+  }
+  .blogAuthorContent {
+    /* border: solid yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .blogAuthorName > h3 {
+    text-align: center;
+    width: 100%;
+  }
+  .blogAuthorContent > p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .blogAuthorSocial {
+    /* border: solid brown; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}

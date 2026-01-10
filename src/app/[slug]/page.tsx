@@ -25,6 +25,7 @@ const SERVICE_QUERY = `
     essentials{
       description,
       benefits,
+      faq,
       reviews[]{
         name,
         rating,

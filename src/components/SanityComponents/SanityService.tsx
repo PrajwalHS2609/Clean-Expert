@@ -27,7 +27,7 @@ import HomePaintingService from "../HomePage/HomePaintingService/HomePaintingSer
 import HomeCivilWork from "../HomePage/HomeCivilWork/HomeCivilWork";
 import HomePestControl from "../HomePage/HomePestControl/HomePestControl";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
-import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
+// import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
 
 import { urlFor } from "../../../sanity/lib/image";
 import SanityEssentials from "./SanityEssentials";
@@ -52,10 +52,14 @@ export type SubServiceItem = {
   name: string;
   link?: string;
 };
-
+export type ServiceFAQItem = {
+  question: string
+  answer: PortableTextBlock[];
+}
 export type SanityServiceEssentialsType = {
   description?: PortableTextBlock[];
   benefits?: PortableTextBlock[];
+  faq?: ServiceFAQItem[];
   reviews?: {
     name?: string;
     location?: string;
@@ -91,6 +95,7 @@ export default function SanityServiceContent({
   console.log("REVIEWS img:", content.essentials?.reviews)
   const services = content.services ?? [];
   const subServices = content.subServices ?? [];
+
 
   return (
     <div>
@@ -201,7 +206,7 @@ export default function SanityServiceContent({
       <HomeCivilWork />
       <HomePestControl />
       <HomeTestimonial />
-      <HomeFaq />
+      {/* <HomeFaq /> */}
     </div>
   );
 }

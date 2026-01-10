@@ -44,8 +44,8 @@
   padding: 6px 14px;
   font-size: 13px;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.05);
-  color: var(--customColor1);
+  background: var(--customColor1);
+  color: white;
 }
 
 .hero2-text h1 {
