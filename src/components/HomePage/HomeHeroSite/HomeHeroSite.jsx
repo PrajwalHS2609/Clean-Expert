@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "./HomeHeroSite.css";
 import Image from "next/image";
@@ -59,6 +60,9 @@ const HomeHeroSite = () => {
       text: "Guaranteed Satisfaction",
     },
   ];
+    const handlePop = () => {
+    document.querySelector(".popup-container").style.display = "flex";
+  };
   return (
     <div className="hero2-container">
       {/* HERO */}
@@ -77,8 +81,7 @@ const HomeHeroSite = () => {
               time, for homes that demand superior standards.
             </p>
             <div className="hero2-buttonContainer">
-              <a href="">
-                <button className="button1">
+                <button className="button1" onClick={handlePop}>
                   Browse Services
                   <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
                     <path
@@ -88,7 +91,6 @@ const HomeHeroSite = () => {
                     ></path>
                   </svg>
                 </button>
-              </a>
               <a href="">
                 <button>
                   Contact Us <MdPhone />

@@ -90,13 +90,19 @@ export default function SanityServiceContent({
 }: {
   content: SanityServiceContentType;
 }) {
+
   console.log("MAIN Image:", content.mainImage);
   console.log("SERVICE Img:", content.services);
   console.log("REVIEWS img:", content.essentials?.reviews)
   const services = content.services ?? [];
   const subServices = content.subServices ?? [];
+  const handlePop = () => {
+    const popup = document.querySelector(".popup-container") as HTMLElement | null;
 
-
+    if (popup) {
+      popup.style.display = "flex";
+    }
+  }
   return (
     <div>
       <div className="serviceHeader-container">
@@ -143,9 +149,8 @@ export default function SanityServiceContent({
                 components={portableTextComponents}
               />
             )}
-
             <div className="serviceHeader-contentBtn">
-              <button className="serviceHeader-btn">Book Now</button>
+              <button className="serviceHeader-btn" onClick={handlePop}>Book Now</button>
               <button className="serviceHeader-btn">
                 Chat with Us <FaWhatsapp className="serviceHeader-btnIco" />
               </button>

@@ -500,6 +500,9 @@
 .serviceEssentialFaq-container {
   width: 800px;
 }
+.serviceEssentialFaq-head>h2>button{
+  font-weight: 500;
+}
 @media screen and (max-width: 768px) {
   .serviceEssentialFaq-container {
     width: 300px;

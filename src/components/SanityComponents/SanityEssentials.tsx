@@ -106,7 +106,7 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
           <Accordion defaultActiveKey="0" className="serviceEssentialFaq-container">
             {data.faq.map((item, index) => (
               <Accordion.Item eventKey={String(index)} key={index}>
-                <Accordion.Header>
+                <Accordion.Header className="serviceEssentialFaq-head">
                   {item.question}
                 </Accordion.Header>
 
