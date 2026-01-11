@@ -108,5 +108,15 @@ export default defineType({
       title: 'Service Essentials',
       type: 'serviceEssentials',
     }),
+    defineField({
+      name: 'metaTitle',
+      title: 'Meta Title',
+      type: 'string',
+    }),
+    defineField({
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'text',
+    }),
   ],
 })

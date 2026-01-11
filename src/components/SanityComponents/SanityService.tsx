@@ -74,6 +74,8 @@ export type SanityServiceContentType = {
   mainImage?: SanityImage;
   description?: PortableTextBlock[];
   services?: ServiceItem[];
+  metaTitle?: string;
+  metaDescription?: string;
   subServices?: SubServiceItem[];
   subServicesLabel?: string;
   essentials?: SanityServiceEssentialsType;

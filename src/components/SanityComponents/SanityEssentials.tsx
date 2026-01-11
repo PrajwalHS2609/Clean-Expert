@@ -62,18 +62,19 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
           </li>
           <li>
             <button
-              className={activeTab === "faq" ? "routeActives" : ""}
-              onClick={() => setActiveTab("faq")}
-            >
-              FAQ
-            </button>
-          </li>
-          <li>
-            <button
               className={activeTab === "benefits" ? "routeActives" : ""}
               onClick={() => setActiveTab("benefits")}
             >
               Why PrimeClean
+            </button>
+          </li>
+
+          <li>
+            <button
+              className={activeTab === "faq" ? "routeActives" : ""}
+              onClick={() => setActiveTab("faq")}
+            >
+              FAQ
             </button>
           </li>
 
@@ -102,7 +103,7 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
         {/* FAQ */}
 
         {/* FAQ (ACCORDION) */}
-       {activeTab === "faq" && data?.faq?.length ? (
+        {activeTab === "faq" && data?.faq?.length ? (
           <Accordion defaultActiveKey="0" className="serviceEssentialFaq-container">
             {data.faq.map((item, index) => (
               <Accordion.Item eventKey={String(index)} key={index}>
@@ -123,7 +124,7 @@ export default function SanityEssentials({ data }: ServiceEssentialsProps) {
           activeTab === "faq" && <p>No FAQs available.</p>
         )}
 
- 
+
 
         {/* BENEFITS */}
         {activeTab === "benefits" && data?.benefits && (
