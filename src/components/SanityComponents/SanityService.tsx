@@ -28,7 +28,14 @@ import HomeCivilWork from "../HomePage/HomeCivilWork/HomeCivilWork";
 import HomePestControl from "../HomePage/HomePestControl/HomePestControl";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 // import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
-
+import civilWork from "../../images/serviceImgs/Civil Works.png";
+import bathroom from "../../images/serviceImgs/Bathroom Renovation.png";
+import marble from "../../images/serviceImgs/Marbles Polishing.png";
+import painting from "../../images/serviceImgs/Painting Services.png";
+import pest from "../../images/serviceImgs/Pest Control.png";
+import shower from "../../images/serviceImgs/Shower Cubicle.png";
+import waterProofing from "../../images/serviceImgs/Water Proofing.png";
+import cleaningService from "../../images/serviceImgs/Cleaning Service.png";
 import { urlFor } from "../../../sanity/lib/image";
 import SanityEssentials from "./SanityEssentials";
 
@@ -85,6 +92,17 @@ const adImg = [{ id: 1, img: offerImg1, alt: "adImg1" },
 { id: 2, img: offerImg2, alt: "adImg2" },
 { id: 3, img: offerImg3, alt: "adImg3" }];
 
+const serviceImg = [
+  { id: 1, img: civilWork, title: "Civil Work", link: "" },
+  { id: 2, img: bathroom, title: "Bathroom Renovation", link: "" },
+  { id: 3, img: marble, title: "Marbles Polishing", link: "" },
+  { id: 4, img: painting, title: "Painting Services", link: "" },
+  { id: 5, img: pest, title: "Pest Control", link: "" },
+  { id: 6, img: shower, title: "Shower Cubical", link: "" },
+  { id: 7, img: waterProofing, title: "Water Proofing", link: "" },
+  { id: 8, img: cleaningService, title: "Cleaning Services", link: "" },
+
+]
 /* ---------------- COMPONENT ---------------- */
 
 export default function SanityServiceContent({
@@ -96,7 +114,6 @@ export default function SanityServiceContent({
   console.log("MAIN Image:", content.mainImage);
   console.log("SERVICE Img:", content.services);
   console.log("REVIEWS img:", content.essentials?.reviews)
-  const services = content.services ?? [];
   const subServices = content.subServices ?? [];
   const handlePop = () => {
     const popup = document.querySelector(".popup-container") as HTMLElement | null;
@@ -105,6 +122,7 @@ export default function SanityServiceContent({
       popup.style.display = "flex";
     }
   }
+
   return (
     <div>
       <div className="serviceHeader-container">
@@ -112,17 +130,12 @@ export default function SanityServiceContent({
         {/* SERVICES */}
         <div className="serviceHeader-wrapper">
           <div className="serviceHeader-servicesContent">
-            {services.map((service, index) => (
-              <div className="serviceHeader-servicesItem" key={index}>
-                <Link href={service.link || "/"}>
-                  {service.image && (
-                    <img
-                      src={urlFor(service.image)?.url()}
-                      alt={service.title}
-                    />
-                  )}
+            {serviceImg.map((x) => (
+              <div className="serviceHeader-servicesItem" key={x.id}>
+                <Link href={x.link}>
+                  <Image src={x.img} alt={x.title} />
                   <div className="serviceHeader-servicesItemCover">
-                    <p>{service.title}</p>
+                    <p>{x.title}</p>
                   </div>
                 </Link>
               </div>

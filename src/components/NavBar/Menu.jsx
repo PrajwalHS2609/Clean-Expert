@@ -56,8 +56,8 @@ const Menu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/cleaning-services"
-                  className={pathname === "/cleaning-services" ? "actives" : ""}
+                  href="/home-cleaning-services-in-bangalore"
+                  className={pathname === "/home-cleaning-services-in-bangalore" ? "actives" : ""}
                 >
                   Cleaning Services
                 </Link>
@@ -114,32 +114,32 @@ const Menu = () => {
                 </li>
                 <li>
                   <Link
-                    href="/mattress"
-                    className={pathname === "/mattress" ? "actives" : ""}
+                    href="/mattress-cleaning-services-in-bangalore"
+                    className={pathname === "/mattress-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Mattress
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/window"
-                    className={pathname === "/window" ? "actives" : ""}
+                    href="/window-cleaning-services-in-bangalore"
+                    className={pathname === "/window-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Window
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/balcony"
-                    className={pathname === "/balcony" ? "actives" : ""}
+                    href="/balcony-cleaning-services-in-bangalore "
+                    className={pathname === "/balcony-cleaning-services-in-bangalore " ? "actives" : ""}
                   >
                     Balcony
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/chair"
-                    className={pathname === "/chair" ? "actives" : ""}
+                    href="/chair-cleaning-services-in-bangalore"
+                    className={pathname === "/chair-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Chair
                   </Link>
@@ -512,8 +512,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/mattress-cleaning-services-in-bangalore`}
+                            className={pathname === "/mattress-cleaning-services-in-bangalore" ? "active" : ""}
                           >
                             Mattress
                           </Link>
@@ -523,8 +523,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/window-cleaning-services-in-bangalore`}
+                            className={pathname === "/window-cleaning-services-in-bangalore" ? "active" : ""}
                           >
                             Window
                           </Link>
@@ -534,8 +534,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/balcony-cleaning-services-in-bangalore `}
+                            className={pathname === "/balcony-cleaning-services-in-bangalore " ? "active" : ""}
                           >
                             Balcony
                           </Link>
@@ -545,8 +545,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/chair-cleaning-services-in-bangalore`}
+                            className={pathname === "/chair-cleaning-services-in-bangalore" ? "active" : ""}
                           >
                             Chair
                           </Link>
