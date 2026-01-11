@@ -93,7 +93,7 @@ const adImg = [{ id: 1, img: offerImg1, alt: "adImg1" },
 { id: 3, img: offerImg3, alt: "adImg3" }];
 
 const serviceImg = [
-  { id: 1, img: civilWork, title: "Civil Work", link: "" },
+  { id: 1, img: civilWork, title: "Civil Work", link: "civil-work" },
   { id: 2, img: bathroom, title: "Bathroom Renovation", link: "" },
   { id: 3, img: marble, title: "Marbles Polishing", link: "" },
   { id: 4, img: painting, title: "Painting Services", link: "" },

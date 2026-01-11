@@ -66,48 +66,48 @@ const Menu = () => {
               <div className="innerMenuDropDown">
                 <li>
                   <Link
-                    href="/full-house"
-                    className={pathname === "/full-house" ? "actives" : ""}
+                    href="/full-house-deep-cleaning-services-in-bangalore"
+                    className={pathname === "/full-house-deep-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
-                    Full-House
+                    Full House Cleaning
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/bathroom"
-                    className={pathname === "/bathroom" ? "actives" : ""}
+                    href="/bathroom-cleaning-services-in-bangalore"
+                    className={pathname === "/bathroom-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Bathroom
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/kitchen"
-                    className={pathname === "/kitchen" ? "actives" : ""}
+                    href="/kitchen-cleaning-services-in-bangalore"
+                    className={pathname === "/kitchen-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Kitchen{" "}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/chimney"
-                    className={pathname === "/chimney" ? "actives" : ""}
+                    href="/chimney-cleaning-services-in-bangalore"
+                    className={pathname === "/chimney-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Chimney
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/carpet"
-                    className={pathname === "/carpet" ? "actives" : ""}
+                    href="/carpet-cleaning-services-in-bangalore"
+                    className={pathname === "/carpet-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Carpet
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/sofa"
-                    className={pathname === "/sofa" ? "actives" : ""}
+                    href="/sofa-cleaning-services-in-bangalore"
+                    className={pathname === "/sofa-cleaning-services-in-bangalore" ? "actives" : ""}
                   >
                     Sofa
                   </Link>
@@ -436,18 +436,18 @@ const Menu = () => {
                       </Link>
                       <FaChevronRight
                         className="menuNavDropIcon"
-                        onClick={() => toggleSubDropdown("pregnancy")}
+                        onClick={() => toggleSubDropdown("cleaning")}
                       />
                     </span>
-                    {activeSubDropdown === "pregnancy" && (
+                    {activeSubDropdown === "cleaning" && (
                       <div className="innerRespMenuDropDown">
                         <li>
                           {" "}
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/full-house-deep-cleaning-services-in-bangalore`}
+                            className={pathname === "/full-house-deep-cleaning-services-in-bangalore" ? "active" : ""}
                           >
                             Full-House
                           </Link>
@@ -468,8 +468,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/kitchen-cleaning-services-in-bangalore`}
+                            className={pathname === "/kitchen-cleaning-services-in-bangalore" ? "active" : ""}
                           >
                             Kitchen
                           </Link>
@@ -479,8 +479,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/chimney-cleaning-services-in-bangalore`}
+                            className={pathname === "/chimney-cleaning-services-in-bangalore" ? "active" : ""}
                           >
                             Chimney
                           </Link>
@@ -490,8 +490,8 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/carpet-cleaning-services-in-bangalore`}
+                            className={pathname === "/carpet-cleaning-services-in-bangalore" ? "active" : ""}
                           >
                             Carpet
                           </Link>
@@ -584,10 +584,10 @@ const Menu = () => {
                       </Link>
                       <FaChevronRight
                         className="menuNavDropIcon"
-                        onClick={() => toggleSubDropdown("USG")}
+                        onClick={() => toggleSubDropdown("painting")}
                       />
                     </span>
-                    {activeSubDropdown === "USG" && (
+                    {activeSubDropdown === "painting" && (
                       <div className="innerRespMenuDropDown">
                         <li>
                           {" "}
@@ -631,9 +631,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/fetal-urosonogram`}
+                            href={`/wood-polishing`}
                             className={
-                              pathname === "/fetal-urosonogram" ? "active" : ""
+                              pathname === "/wood-polishing" ? "active" : ""
                             }
                           >
                             Wood Polishing
@@ -654,7 +654,7 @@ const Menu = () => {
                       </Link>
                       <FaChevronRight
                         className="menuNavDropIcon"
-                        onClick={() => toggleSubDropdown("infertile")}
+                        onClick={() => toggleSubDropdown("waterproof")}
                       />
                     </span>
                   </li>
@@ -671,19 +671,19 @@ const Menu = () => {
                       </Link>
                       <FaChevronRight
                         className="menuNavDropIcon"
-                        onClick={() => toggleSubDropdown("doppler")}
+                        onClick={() => toggleSubDropdown("renovation")}
                       />
                     </span>
-                    {activeSubDropdown === "infertile" && (
+                    {activeSubDropdown === "renovation" && (
                       <div className="innerRespMenuDropDown">
                         <li>
                           {" "}
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/3d-base-line-scan`}
+                            href={`/`}
                             className={
-                              pathname === "/3d-base-line-scan" ? "active" : ""
+                              pathname === "/" ? "active" : ""
                             }
                           >
                             Bathroom Remodelling{" "}
@@ -694,10 +694,10 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/3d-follicle-monitoring-with-doppler`}
+                            href={`/`}
                             className={
                               pathname ===
-                              "/3d-follicle-monitoring-with-doppler"
+                              "/"
                                 ? "active"
                                 : ""
                             }
@@ -721,9 +721,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/uterine-biophysical-profile`}
+                            href={`/`}
                             className={
-                              pathname === "/uterine-biophysical-profile"
+                              pathname === "/"
                                 ? "active"
                                 : ""
                             }
@@ -736,9 +736,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/uterine-biophysical-profile`}
+                            href={`/`}
                             className={
-                              pathname === "/uterine-biophysical-profile"
+                              pathname === "/"
                                 ? "active"
                                 : ""
                             }
@@ -751,9 +751,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/uterine-biophysical-profile`}
+                            href={`/`}
                             className={
-                              pathname === "/uterine-biophysical-profile"
+                              pathname === "/"
                                 ? "active"
                                 : ""
                             }
@@ -766,9 +766,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/uterine-biophysical-profile`}
+                            href={`/`}
                             className={
-                              pathname === "/uterine-biophysical-profile"
+                              pathname === "/"
                                 ? "active"
                                 : ""
                             }
@@ -781,9 +781,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/uterine-biophysical-profile`}
+                            href={`/`}
                             className={
-                              pathname === "/uterine-biophysical-profile"
+                              pathname === "/"
                                 ? "active"
                                 : ""
                             }
@@ -817,9 +817,9 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/3d-base-line-scan`}
+                            href={`/`}
                             className={
-                              pathname === "/3d-base-line-scan" ? "active" : ""
+                              pathname === "/" ? "active" : ""
                             }
                           >
                             Pest Control Services{" "}
@@ -830,10 +830,10 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/3d-follicle-monitoring-with-doppler`}
+                            href={`/`}
                             className={
                               pathname ===
-                              "/3d-follicle-monitoring-with-doppler"
+                              "/"
                                 ? "active"
                                 : ""
                             }
