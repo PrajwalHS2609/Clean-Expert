@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import { PortableText } from '@portabletext/react';
 import BlogAuthor from '../BlogPage/BlogAuthor';
+import "@/components/styles.css"
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type PostContentType = {

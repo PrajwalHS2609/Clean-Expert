@@ -7,7 +7,6 @@ import inspection from "./../../../images/civilWork/inspection.png";
 import bathroom from "./../../../images/civilWork/sink.png";
 import replastering from "./../../../images/civilWork/replastering.png";
 import tile from "./../../../images/civilWork/tile.png";
-import waterProof from "./../../../images/civilWork/water-proof.png";
 import grouting from "./../../../images/civilWork/grouting.png";
 
 import Image from "next/image";
@@ -24,8 +23,7 @@ const HomeCivilWork = () => {
     { id: 3, img: replastering, title: "Replastering", link: "/" },
     { id: 4, img: crack, title: "Wall Crack Filling", link: "/" },
     { id: 5, img: inspection, title: "Home Inspection", link: "/" },
-    { id: 6, img: waterProof, title: "Waterproofing​", link: "/" },
-    { id: 7, img: grouting, title: "Grouting", link: "/" },
+    { id: 6, img: grouting, title: "Grouting", link: "/" },
   ];
   const handlePop = () => {
     document.querySelector(".popup-container").style.display = "flex";

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { PortableText } from "@portabletext/react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import "./Blog.css";
+import "@/components/BlogPage/BlogSidebar/Blog.css";
 import { client } from "../../sanity/client";
 
 /* ---------------- TYPES ---------------- */

@@ -7,10 +7,25 @@ import { client } from "@/sanity/client";
 import SanityServiceContent, {
   SanityServiceContentType,
 } from "@/components/SanityComponents/SanityService";
+import PostContent, { PostContentType } from "@/components/SanityComponents/Post";
+import BlogSidebar from './../../components/BlogPage/BlogSidebar/BlogSidebar';
 
 /* =========================
    GROQ QUERY
 ========================= */
+const POST_QUERY = `{
+  "post": *[_type == "post" && slug.current == $slug][0]{
+    _id, title, slug, body,
+    mainImage{ asset->{url} },
+    publishedAt,
+    youtubeVideoUrl,
+    faq[]{ question, answer }
+  },
+  "carouselBlock": *[_type == "carouselBlock"][0]{
+    title,
+    images[]{ alt, caption, link, asset->{ url } }
+  }
+}`;
 
 const SERVICE_QUERY = `
 {
@@ -44,6 +59,19 @@ const SERVICE_QUERY = `
 }
 `;
 
+type SlugParams = { slug: string };
+
+type CarouselImage = {
+  alt?: string;
+  caption?: string;
+  link?: string;
+  asset?: { url?: string };
+};
+
+type CarouselBlock = {
+  title?: string;
+  images?: CarouselImage[];
+};
 /* =========================
    ISR
 ========================= */
@@ -53,7 +81,6 @@ export const revalidate = 60;
 /* =========================
    METADATA (SEO)
 ========================= */
-
 export async function generateMetadata({
   params,
 }: {
@@ -61,7 +88,29 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
 
-  const data = await client.fetch<{
+  // 1️⃣ Try POST first
+  const postData = await client.fetch<{
+    post: {
+      title?: string;
+      metaTitle?: string;
+      metaDescription?: string;
+    } | null;
+  }>(POST_QUERY, { slug });
+
+  if (postData?.post) {
+    return {
+      title:
+        postData.post.metaTitle ||
+        postData.post.title ||
+        "Prime Clean Blog",
+      description:
+        postData.post.metaDescription ||
+        "Read the latest blog articles from Prime Clean.",
+    };
+  }
+
+  // 2️⃣ Fallback to SERVICE
+  const serviceData = await client.fetch<{
     service: {
       title?: string;
       metaTitle?: string;
@@ -69,21 +118,22 @@ export async function generateMetadata({
     } | null;
   }>(SERVICE_QUERY, { slug });
 
-  if (!data?.service) {
+  if (serviceData?.service) {
     return {
-      title: "Service Not Found | Prime Clean",
-      description: "The requested service does not exist.",
+      title:
+        serviceData.service.metaTitle ||
+        serviceData.service.title ||
+        "Prime Clean Services",
+      description:
+        serviceData.service.metaDescription ||
+        "Professional services by Prime Clean.",
     };
   }
 
+  // 3️⃣ Not found
   return {
-    title:
-      data.service.metaTitle ||
-      data.service.title ||
-      "Prime Clean Services",
-    description:
-      data.service.metaDescription ||
-      "Professional cleaning services by Prime Clean.",
+    title: "Not Found | Prime Clean",
+    description: "The page you are looking for does not exist.",
   };
 }
 
@@ -97,6 +147,28 @@ export default async function SlugPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+
+  // 1️⃣ POST
+  const postData = await client.fetch<{
+    post: PostContentType | null;
+    carouselBlock: CarouselBlock | null;
+  }>(POST_QUERY, { slug });
+
+  if (postData.post) {
+    return (
+      <div className="blog-container">
+        <PostContent
+          content={{
+            ...postData.post,
+            carouselBlock: postData.carouselBlock ?? undefined,
+          }}
+        />
+        <div className="blog-wrapper2">
+        <BlogSidebar />
+      </div>
+      </div>
+    );
+  }
 
   const data = await client.fetch<{
     service: SanityServiceContentType | null;

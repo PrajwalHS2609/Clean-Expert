@@ -57,7 +57,11 @@ const Menu = () => {
                 {" "}
                 <Link
                   href="/home-cleaning-services-in-bangalore"
-                  className={pathname === "/home-cleaning-services-in-bangalore" ? "actives" : ""}
+                  className={
+                    pathname === "/home-cleaning-services-in-bangalore"
+                      ? "actives"
+                      : ""
+                  }
                 >
                   Cleaning Services
                 </Link>
@@ -67,7 +71,12 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/full-house-deep-cleaning-services-in-bangalore"
-                    className={pathname === "/full-house-deep-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname ===
+                      "/full-house-deep-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Full House Cleaning
                   </Link>
@@ -75,7 +84,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/bathroom-cleaning-services-in-bangalore"
-                    className={pathname === "/bathroom-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/bathroom-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Bathroom
                   </Link>
@@ -83,7 +96,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/kitchen-cleaning-services-in-bangalore"
-                    className={pathname === "/kitchen-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/kitchen-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Kitchen{" "}
                   </Link>
@@ -91,7 +108,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/chimney-cleaning-services-in-bangalore"
-                    className={pathname === "/chimney-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/chimney-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Chimney
                   </Link>
@@ -99,7 +120,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/carpet-cleaning-services-in-bangalore"
-                    className={pathname === "/carpet-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/carpet-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Carpet
                   </Link>
@@ -107,7 +132,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/sofa-cleaning-services-in-bangalore"
-                    className={pathname === "/sofa-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/sofa-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Sofa
                   </Link>
@@ -115,7 +144,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/mattress-cleaning-services-in-bangalore"
-                    className={pathname === "/mattress-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/mattress-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Mattress
                   </Link>
@@ -123,7 +156,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/window-cleaning-services-in-bangalore"
-                    className={pathname === "/window-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/window-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Window
                   </Link>
@@ -131,7 +168,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/balcony-cleaning-services-in-bangalore "
-                    className={pathname === "/balcony-cleaning-services-in-bangalore " ? "actives" : ""}
+                    className={
+                      pathname === "/balcony-cleaning-services-in-bangalore "
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Balcony
                   </Link>
@@ -139,7 +180,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/chair-cleaning-services-in-bangalore"
-                    className={pathname === "/chair-cleaning-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/chair-cleaning-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Chair
                   </Link>
@@ -167,52 +212,63 @@ const Menu = () => {
               <div className="innerMenuDropDown">
                 <li>
                   <Link
-                    href="/interior-painting"
-                    className={
-                      pathname === "/interior-painting" ? "actives" : ""
-                    }
+                    href="/home-painting"
+                    className={pathname === "/home-painting" ? "actives" : ""}
                   >
-                    Interior Painting
+                    Home Painting
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/textured-painting"
+                    href="/apartment-painting"
                     className={
-                      pathname === "/textured-painting" ? "actives" : ""
+                      pathname === "/apartment-painting" ? "actives" : ""
                     }
                   >
-                    Textured Painting
+                    Apartment Painting
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/exterior-painting"
-                    className={
-                      pathname === "/exterior-painting" ? "actives" : ""
-                    }
+                    href="/spray-painting"
+                    className={pathname === "/spray-painting" ? "actives" : ""}
                   >
-                    Exterior Painting
+                    Spray Painting
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/wood-polishing"
-                    className={pathname === "/wood-polishing" ? "actives" : ""}
+                    href="/1-day-express-painting"
+                    className={
+                      pathname === "/1-day-express-painting" ? "actives" : ""
+                    }
                   >
-                    Wood Polishing
+                    1 Day Express Painting
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/texture-and-designer-walls"
+                    className={
+                      pathname === "/texture-and-designer-walls"
+                        ? "actives"
+                        : ""
+                    }
+                  >
+                    Texture & Designer Walls
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/water-proofing"
+                    className={pathname === "/water-proofing" ? "actives" : ""}
+                  >
+                    Waterproofing
                   </Link>
                 </li>
               </div>
             </li>
-            <li>
-              <Link
-                href="/water-proofing"
-                className={pathname === "/water-proofing" ? "actives" : ""}
-              >
-                Waterproofing
-              </Link>
-            </li>
+
             <li>
               <span>
                 {" "}
@@ -295,17 +351,42 @@ const Menu = () => {
                     False Ceiling
                   </Link>
                 </li>
+                <li>
+                  {" "}
+                  <Link
+                    href="/false-ceiling"
+                    className={pathname === "/grouting" ? "actives" : ""}
+                  >
+                    Grouting
+                  </Link>
+                </li>
               </div>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/grouting"
                 className={pathname === "/grouting" ? "actives" : ""}
               >
                 Grouting
               </Link>
+            </li> */}
+            <li>
+              <Link
+                href="/office-cleaning"
+                className={pathname === "/office-cleaning" ? "actives" : ""}
+              >
+                Office Cleaning
+              </Link>
             </li>
             <li>
+              <Link
+                href="/pest-control"
+                className={pathname === "/pest-control" ? "actives" : ""}
+              >
+                Pest Control Services
+              </Link>
+            </li>
+            {/* <li>
               <span>
                 {" "}
                 <Link
@@ -336,7 +417,7 @@ const Menu = () => {
                   </Link>
                 </li>
               </div>
-            </li>
+            </li> */}
           </div>
         </li>
         <li>
@@ -429,8 +510,8 @@ const Menu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/`}
-                        className={pathname === "/" ? "active" : ""}
+                        href={`/home-cleaning-services-in-bangalore`}
+                        className={pathname === "/home-cleaning-services-in-bangalore" ? "active" : ""}
                       >
                         Cleaning Services{" "}
                       </Link>
@@ -447,7 +528,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/full-house-deep-cleaning-services-in-bangalore`}
-                            className={pathname === "/full-house-deep-cleaning-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/full-house-deep-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Full-House
                           </Link>
@@ -469,7 +555,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/kitchen-cleaning-services-in-bangalore`}
-                            className={pathname === "/kitchen-cleaning-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/kitchen-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Kitchen
                           </Link>
@@ -480,7 +571,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/chimney-cleaning-services-in-bangalore`}
-                            className={pathname === "/chimney-cleaning-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/chimney-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Chimney
                           </Link>
@@ -491,7 +587,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/carpet-cleaning-services-in-bangalore`}
-                            className={pathname === "/carpet-cleaning-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/carpet-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Carpet
                           </Link>
@@ -513,7 +614,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/mattress-cleaning-services-in-bangalore`}
-                            className={pathname === "/mattress-cleaning-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/mattress-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Mattress
                           </Link>
@@ -524,7 +630,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/window-cleaning-services-in-bangalore`}
-                            className={pathname === "/window-cleaning-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/window-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Window
                           </Link>
@@ -535,7 +646,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/balcony-cleaning-services-in-bangalore `}
-                            className={pathname === "/balcony-cleaning-services-in-bangalore " ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/balcony-cleaning-services-in-bangalore "
+                                ? "active"
+                                : ""
+                            }
                           >
                             Balcony
                           </Link>
@@ -546,7 +662,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/chair-cleaning-services-in-bangalore`}
-                            className={pathname === "/chair-cleaning-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/chair-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Chair
                           </Link>
@@ -559,15 +680,15 @@ const Menu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/`}
-                        className={pathname === "/" ? "active" : ""}
+                        href={`/marble`}
+                        className={pathname === "/marble" ? "active" : ""}
                       >
                         Marble Polishing{" "}
                       </Link>
-                      <FaChevronRight
+                      {/* <FaChevronRight
                         className="menuNavDropIcon"
                         onClick={() => toggleSubDropdown("")}
-                      />
+                      /> */}
                     </span>
                   </li>
                   <li>
@@ -597,7 +718,7 @@ const Menu = () => {
                             href={`/`}
                             className={pathname === "/" ? "active" : ""}
                           >
-                            Interior Painting
+                            Home Painting
                           </Link>
                         </li>
                         <li>
@@ -605,12 +726,12 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/growth-scan`}
+                            href={`/apartment-painting`}
                             className={
-                              pathname === "/growth-scan" ? "active" : ""
+                              pathname === "/apartment-painting" ? "active" : ""
                             }
                           >
-                            Textured Painting
+                            Apartment Painting
                           </Link>
                         </li>
                         <li>
@@ -618,12 +739,12 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/fetal-echo`}
+                            href={`/spray-painting`}
                             className={
-                              pathname === "/fetal-echo" ? "active" : ""
+                              pathname === "/spray-painting" ? "active" : ""
                             }
                           >
-                            Exterior Painting
+                            Spray Painting
                           </Link>
                         </li>
                         <li>
@@ -631,41 +752,58 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/wood-polishing`}
+                            href={`/1-day-express-painting`}
                             className={
-                              pathname === "/wood-polishing" ? "active" : ""
+                              pathname === "/1-day-express-painting"
+                                ? "active"
+                                : ""
                             }
                           >
-                            Wood Polishing
+                            1 Day Express Painting
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link
+                            id="menuNavLink"
+                            onClick={hideSideBar}
+                            href={`/texture-and-designer-walls`}
+                            className={
+                              pathname === "/texture-and-designer-walls"
+                                ? "active"
+                                : ""
+                            }
+                          >
+                            Texture & Designer Walls
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link
+                            id="menuNavLink"
+                            onClick={hideSideBar}
+                            href={`/water-proofing`}
+                            className={
+                              pathname === "/water-proofing" ? "active" : ""
+                            }
+                          >
+                            Waterproofing{" "}
                           </Link>
                         </li>
                       </div>
                     )}
                   </li>
-                  <li>
-                    <span>
-                      <Link
-                        id="menuNavLink"
-                        onClick={hideSideBar}
-                        href={`/`}
-                        className={pathname === "/" ? "active" : ""}
-                      >
-                        Waterproofing
-                      </Link>
-                      <FaChevronRight
-                        className="menuNavDropIcon"
-                        onClick={() => toggleSubDropdown("waterproof")}
-                      />
-                    </span>
-                  </li>
+
                   <li>
                     <span>
                       {" "}
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/`}
-                        className={pathname === "/" ? "active" : ""}
+                        href={`/house-renovation`}
+                        className={
+                          pathname === "/house-renovation" ? "active" : ""
+                        }
                       >
                         House Renovation
                       </Link>
@@ -682,9 +820,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/" ? "active" : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Bathroom Remodelling{" "}
                           </Link>
@@ -695,12 +831,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname ===
-                              "/"
-                                ? "active"
-                                : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Shower Enclosure
                           </Link>
@@ -722,11 +853,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/"
-                                ? "active"
-                                : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Replastering
                           </Link>
@@ -737,11 +864,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/"
-                                ? "active"
-                                : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Wall Crack Filling{" "}
                           </Link>
@@ -752,11 +875,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/"
-                                ? "active"
-                                : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Home Inspection
                           </Link>
@@ -767,13 +886,21 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/"
-                                ? "active"
-                                : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Kitchen Renovation
+                          </Link>
+                        </li>
+
+                        <li>
+                          {" "}
+                          <Link
+                            id="menuNavLink"
+                            onClick={hideSideBar}
+                            href={`/`}
+                            className={pathname === "/" ? "active" : ""}
+                          >
+                            False Ceiling
                           </Link>
                         </li>
                         <li>
@@ -781,20 +908,52 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={
-                              pathname === "/"
-                                ? "active"
-                                : ""
-                            }
+                            href={`/grouting`}
+                            className={pathname === "/grouting" ? "active" : ""}
                           >
-                            False Ceiling
+                            Grouting
                           </Link>
                         </li>
                       </div>
                     )}
                   </li>
                   <li>
+                    <span>
+                      <Link
+                        id="menuNavLink"
+                        onClick={hideSideBar}
+                        href={`/pest-control`}
+                        className={pathname === "/pest-control" ? "active" : ""}
+                      >
+                        Pest Control Services
+                      </Link>
+                      {/* <FaChevronRight
+                        className="menuNavDropIcon"
+                        onClick={() => toggleSubDropdown("")}
+                      /> */}
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <Link
+                        id="menuNavLink"
+                        onClick={hideSideBar}
+                        href={`/office-cleaningpest-control`}
+                        className={
+                          pathname === "/office-cleaningpest-control"
+                            ? "active"
+                            : ""
+                        }
+                      >
+                        Office Cleaning
+                      </Link>
+                      {/* <FaChevronRight
+                        className="menuNavDropIcon"
+                        onClick={() => toggleSubDropdown("")}
+                      /> */}
+                    </span>
+                  </li>
+                  {/* <li>
                     <span>
                       {" "}
                       <Link
@@ -818,9 +977,7 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname === "/" ? "active" : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Pest Control Services{" "}
                           </Link>
@@ -831,19 +988,14 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/`}
-                            className={
-                              pathname ===
-                              "/"
-                                ? "active"
-                                : ""
-                            }
+                            className={pathname === "/" ? "active" : ""}
                           >
                             Office Cleaning
                           </Link>
                         </li>
                       </div>
                     )}
-                  </li>
+                  </li> */}
                 </div>
               )}
             </li>
