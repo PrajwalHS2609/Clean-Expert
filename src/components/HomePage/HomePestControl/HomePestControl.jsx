@@ -30,7 +30,7 @@ const HomePestControl = () => {
       <div className="homePestControl-content">
         {card.map((x) => (
           <div className="homePestControl-card" key={x.id}>
-            <Link href="">
+            <Link href={x.link}>
               {" "}
               <span>
                 <Image src={x.img} alt={x.title} />
