@@ -17,27 +17,52 @@ const HomeCivilWork = () => {
       id: 1,
       img: bathroom,
       title: "Bathroom Remodeling",
-      link: "/",
+      link: "/bathroom-remodeling-service-in-bangalore",
     },
-    { id: 2, img: tile, title: "Tiles/Stones Replacement", link: "/" },
-    { id: 3, img: replastering, title: "Replastering", link: "/" },
-    { id: 4, img: crack, title: "Wall Crack Filling", link: "/" },
-    { id: 5, img: inspection, title: "Home Inspection", link: "/" },
-    { id: 6, img: grouting, title: "Grouting", link: "/" },
+    {
+      id: 2,
+      img: tile,
+      title: "Tiles/Stones Replacement",
+      link: "/tiles-and-stones-replacement-service-in-bangalore",
+    },
+    {
+      id: 3,
+      img: replastering,
+      title: "Replastering",
+      link: "/re-plastering-service-in-bangalore",
+    },
+    {
+      id: 4,
+      img: crack,
+      title: "Wall Crack Filling",
+      link: "/wall-crack-filling-in-bangalore",
+    },
+    {
+      id: 5,
+      img: inspection,
+      title: "Home Inspection",
+      link: "/home-inspection-services-in-bangalore",
+    },
+    {
+      id: 6,
+      img: grouting,
+      title: "Grouting",
+      link: "/grouting-services-in-bangalore",
+    },
   ];
-  const handlePop = () => {
-    document.querySelector(".popup-container").style.display = "flex";
-  };
+  // const handlePop = () => {
+  //   document.querySelector(".popup-container").style.display = "flex";
+  // };
   return (
     <div className="homeCivicWork-container">
       <HeadingProps
         title="Civil Works in Bangalore"
         para="Ready to give your space a fresh new look? Prime Clean provide top-quality civil works and renovation services across Bangalore. From minor fixes to complete transformations, we make your renovation journey smooth and extraordinary."
       />
-     <div className="homeCivicWork-content">
+      <div className="homeCivicWork-content">
         {card.map((x) => (
           <div className="homeCivicWork-card" key={x.id}>
-            <Link href="">
+            <Link href={x.link}>
               {" "}
               <span>
                 <Image src={x.img} alt={x.title} />

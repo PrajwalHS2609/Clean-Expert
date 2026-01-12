@@ -17,17 +17,16 @@ import "./HomeCleanService.css";
 import HeadingProps from "@/components/HeadingProps/HeadingProps";
 const HomeCleanService = () => {
   const card = [
-    { id: 1, img: house, title: "Full-house Deep Cleaning", link: "/" },
-    { id: 2, img: bathroom, title: "Bathroom", link: "/" },
-    { id: 3, img: kitchen, title: "Kitchen", link: "/" },
-    { id: 4, img: hood, title: "Chimney", link: "/" },
-    { id: 5, img: carpet, title: "Carpet", link: "/" },
-    { id: 6, img: sofa, title: "Sofa", link: "/" },
-    { id: 7, img: beds, title: "Mattress", link: "/" },
-    { id: 8, img: windows, title: "Window", link: "/" },
-    { id: 9, img: balcony, title: "Balcony", link: "/" },
-    { id: 10, img: office, title: "Chair", link: "/" },
-    { id: 11, img: work, title: "Office Cleaning", link: "/" },
+    { id: 1, img: house, title: "Full-house Deep Cleaning", link: "/full-house-deep-cleaning-services-in-bangalore" },
+    { id: 2, img: bathroom, title: "Bathroom", link: "/bathroom-cleaning-services-in-bangalore" },
+    { id: 3, img: kitchen, title: "Kitchen", link: "/kitchen-cleaning-services-in-bangalore" },
+    { id: 4, img: hood, title: "Chimney", link: "/chimney-cleaning-services-in-bangalore" },
+    { id: 5, img: carpet, title: "Carpet", link: "/carpet-cleaning-services-in-bangalore" },
+    { id: 6, img: sofa, title: "Sofa", link: "/sofa-cleaning-services-in-bangalore" },
+    { id: 7, img: beds, title: "Mattress", link: "/mattress-cleaning-services-in-bangalore" },
+    { id: 8, img: windows, title: "Window", link: "/window-cleaning-services-in-bangalore" },
+    { id: 9, img: balcony, title: "Balcony", link: "/balcony-cleaning-services-in-bangalore" },
+    { id: 10, img: office, title: "Chair", link: "/chair-cleaning-services-in-bangalore" },
   ];
   // const handlePop = () => {
   //   document.querySelector(".popup-container").style.display = "flex";
@@ -41,7 +40,7 @@ const HomeCleanService = () => {
       <div className="homeCleanService-content">
         {card.map((x) => (
           <div className="homeCleanService-card" key={x.id}>
-            <Link href="">
+            <Link href={x.link}>
               {" "}
               <span>
                 <Image src={x.img} alt={x.title} />

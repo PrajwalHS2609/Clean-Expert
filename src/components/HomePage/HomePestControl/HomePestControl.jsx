@@ -5,22 +5,22 @@ import HeadingProps from "../../HeadingProps/HeadingProps";
 import pestControl from "./../../../images/pestIcons/pest-control.png";
 import termite from "./../../../images/pestIcons/termite.png";
 import bedbug from "./../../../images/pestIcons/bedbug.png";
-import pesticide from "./../../../images/pestIcons/pesticide.png";
+// import pesticide from "./../../../images/pestIcons/pesticide.png";
 import mosquito from "./../../../images/pestIcons/mosquito.png";
 
 import Link from "next/link";
 import Image from "next/image";
 const HomePestControl = () => {
   const card = [
-    { id: 1, img: pestControl, title: "General Pest Control", link: "/" },
-    { id: 2, img: termite, title: "Termite", link: "/" },
-    { id: 3, img: bedbug, title: "Bed Bugs", link: "/" },
-    { id: 4, img: pesticide, title: "Combo: Best value for money", link: "/" },
-    { id: 5, img: mosquito, title: "Mosquito", link: "/" },
+    { id: 1, img: pestControl, title: "General Pest Control", link: "/general-pest-control-service-in-bangalore" },
+    { id: 2, img: termite, title: "Termite", link: "/termite-pest-control-service-in-bangalore" },
+    { id: 3, img: bedbug, title: "Bed Bugs", link: "/bed-bugs-pest-control-service-in-bangalore" },
+    // { id: 4, img: pesticide, title: "Combo: Best value for money", link: "/" },
+    { id: 5, img: mosquito, title: "Mosquito", link: "/mosquito-pest-control-service-in-bangalore" },
   ];
-  const handlePop = () => {
-    document.querySelector(".popup-container").style.display = "flex";
-  };
+  // const handlePop = () => {
+  //   document.querySelector(".popup-container").style.display = "flex";
+  // };
   return (
     <div className="homePestControl-container">
       <HeadingProps
