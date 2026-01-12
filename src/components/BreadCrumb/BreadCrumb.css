@@ -1,0 +1,19 @@
+.bread-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.bread-container > a {
+  font-size: 20px;
+}
+.bread-container > a:nth-child(1) {
+  color: var(--customColor2);
+  font-weight: 500;
+  text-decoration: none;
+}
+.bread-container > a:nth-child(3) {
+  color: var(--customColor1);
+  font-weight: 500;
+  text-decoration: none;
+}

@@ -23,11 +23,10 @@ const WhatsApp = () => {
       </a> */}
       <FloatingWhatsApp
         phoneNumber="919742232700"
-        accountName="Aura "
+        accountName="PrimeCleanCo "
         avatar={Logo.src} // Optional
         statusMessage="Typically replies within 5 min" // Optional
-        chatMessage="Welcome to Aura Diagnostics!
-Trusted scans & advanced diagnostics in Girinagar. Pregnancy, USG, Doppler, ECG & full blood tests with free home sample collection. Call +91 9611156622." // Optional
+        chatMessage="Book Now" // Optional
         placeholder="Type a message..." // Optional
       />
     </div>

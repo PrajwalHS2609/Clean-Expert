@@ -1,0 +1,35 @@
+.serviceHero-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.serviceHero-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+.serviceHero-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background:linear-gradient(to right, white, transparent);
+  padding: 50px;
+}
+.serviceHero-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.serviceHero-content > h2 {
+  font-size: 50px;
+  color: var(--customColor1);
+}

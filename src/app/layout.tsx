@@ -12,6 +12,7 @@ import { usePathname } from "next/navigation";
 import LpPaintNavbar from "./../components/LandingPage/PaintLandingPage/LpPaintNavbar/LpPaintNavbar";
 import LpPaintFooter from "./../components/LandingPage/PaintLandingPage/LpPaintFooter/LpPaintFooter";
 import "@/components/styles.css"
+import WhatsApp from './../components/WhatsApp/WhatsApp';
 const merri = Merriweather({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
@@ -43,6 +44,7 @@ export default function RootLayout({
         {loading ? <Loader /> : children}
         {isPaintLanding ? <LpPaintFooter /> : <Footer />}
         <PopupForm />
+        <WhatsApp/>
       </body>
     </html>
   );
