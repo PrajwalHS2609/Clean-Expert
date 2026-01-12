@@ -2,7 +2,7 @@
 import React from "react";
 import "./WhatsApp.css";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import Logo from "./../../Images/favicon.png";
+import Logo from "./../../images/favicon.png";
 const WhatsApp = () => {
   // let [visible, setVisible] = useState();
   // useEffect(() => {
@@ -22,7 +22,7 @@ const WhatsApp = () => {
         <Image src={whatsApp} alt="" />
       </a> */}
       <FloatingWhatsApp
-        phoneNumber="919742232700"
+        phoneNumber="917090234446"
         accountName="PrimeCleanCo "
         avatar={Logo.src} // Optional
         statusMessage="Typically replies within 5 min" // Optional
