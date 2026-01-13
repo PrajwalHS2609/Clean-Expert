@@ -194,7 +194,11 @@ const Menu = () => {
             <li>
               <Link
                 href="/marble-polishing-services-in-bangalore"
-                className={pathname === "/marble-polishing-services-in-bangalore" ? "actives" : ""}
+                className={
+                  pathname === "/marble-polishing-services-in-bangalore"
+                    ? "actives"
+                    : ""
+                }
               >
                 Marble Polishing
               </Link>
@@ -203,7 +207,11 @@ const Menu = () => {
               <span>
                 <Link
                   href="/home-painting-services-in-bangalore"
-                  className={pathname === "/home-painting-services-in-bangalore" ? "actives" : ""}
+                  className={
+                    pathname === "/home-painting-services-in-bangalore"
+                      ? "actives"
+                      : ""
+                  }
                 >
                   Painting Services
                 </Link>
@@ -213,7 +221,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/best-home-painting-in-bangalore"
-                    className={pathname === "/best-home-painting-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/best-home-painting-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Home Painting
                   </Link>
@@ -222,7 +234,9 @@ const Menu = () => {
                   <Link
                     href="/apartment-painting-services-in-bangalore"
                     className={
-                      pathname === "/apartment-painting-services-in-bangalore" ? "actives" : ""
+                      pathname === "/apartment-painting-services-in-bangalore"
+                        ? "actives"
+                        : ""
                     }
                   >
                     Apartment Painting
@@ -231,7 +245,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/spray-painting-services-in-bangalore"
-                    className={pathname === "/spray-painting-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/spray-painting-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Spray Painting
                   </Link>
@@ -240,7 +258,10 @@ const Menu = () => {
                   <Link
                     href="/1-day-express-painting-services-in-bangalore"
                     className={
-                      pathname === "/1-day-express-painting-services-in-bangalore" ? "actives" : ""
+                      pathname ===
+                      "/1-day-express-painting-services-in-bangalore"
+                        ? "actives"
+                        : ""
                     }
                   >
                     1 Day Express Painting
@@ -250,7 +271,8 @@ const Menu = () => {
                   <Link
                     href="/texture-and-designer-walls-service-in-bangalore"
                     className={
-                      pathname === "/texture-and-designer-walls-service-in-bangalore"
+                      pathname ===
+                      "/texture-and-designer-walls-service-in-bangalore"
                         ? "actives"
                         : ""
                     }
@@ -261,7 +283,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/waterproofing-service-in-bangalore"
-                    className={pathname === "/waterproofing-service-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/waterproofing-service-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Waterproofing
                   </Link>
@@ -274,7 +300,11 @@ const Menu = () => {
                 {" "}
                 <Link
                   href="/civil-works-service-in-bangalore"
-                  className={pathname === "/civil-works-service-in-bangalore" ? "actives" : ""}
+                  className={
+                    pathname === "/civil-works-service-in-bangalore"
+                      ? "actives"
+                      : ""
+                  }
                 >
                   Civil Works
                 </Link>
@@ -285,7 +315,11 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/bathroom-remodeling-service-in-bangalore"
-                    className={pathname === "/bathroom-remodeling-service-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/bathroom-remodeling-service-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Bathroom Remodelling{" "}
                   </Link>
@@ -293,8 +327,12 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/shower"
-                    className={pathname === "/shower" ? "actives" : ""}
+                    href="/shower-enclosure-installation-in-bangalore"
+                    className={
+                      pathname === "/shower-enclosure-installation-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Shower Enclosure
                   </Link>
@@ -302,7 +340,12 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/tiles-and-stones-replacement-service-in-bangalore"
-                    className={pathname === "/tiles-and-stones-replacement-service-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname ===
+                      "/tiles-and-stones-replacement-service-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Tiles/Stone Replacement
                   </Link>
@@ -310,7 +353,11 @@ const Menu = () => {
                 <li>
                   <Link
                     href="/re-plastering-service-in-bangalore"
-                    className={pathname === "/re-plastering-service-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/re-plastering-service-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Replastering
                   </Link>
@@ -319,7 +366,11 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/wall-crack-filling-in-bangalore"
-                    className={pathname === "/wall-crack-filling-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/wall-crack-filling-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Wall Crack Filling{" "}
                   </Link>
@@ -328,7 +379,11 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/home-inspection-services-in-bangalore"
-                    className={pathname === "/home-inspection-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/home-inspection-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Home Inspection
                   </Link>
@@ -336,8 +391,12 @@ const Menu = () => {
                 <li>
                   {" "}
                   <Link
-                    href="/kitchen"
-                    className={pathname === "/kitchen" ? "actives" : ""}
+                    href="/kitchen-renovation-in-bangalore"
+                    className={
+                      pathname === "/kitchen-renovation-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Kitchen Renovation
                   </Link>
@@ -346,7 +405,11 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/false-ceiling-in-bangalore"
-                    className={pathname === "/false-ceiling-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/false-ceiling-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     False Ceiling
                   </Link>
@@ -355,7 +418,11 @@ const Menu = () => {
                   {" "}
                   <Link
                     href="/grouting-services-in-bangalore"
-                    className={pathname === "/grouting-services-in-bangalore" ? "actives" : ""}
+                    className={
+                      pathname === "/grouting-services-in-bangalore"
+                        ? "actives"
+                        : ""
+                    }
                   >
                     Grouting
                   </Link>
@@ -373,7 +440,11 @@ const Menu = () => {
             <li>
               <Link
                 href="/office-cleaning-services-in-bangalore"
-                className={pathname === "/office-cleaning-services-in-bangalore" ? "actives" : ""}
+                className={
+                  pathname === "/office-cleaning-services-in-bangalore"
+                    ? "actives"
+                    : ""
+                }
               >
                 Office Cleaning
               </Link>
@@ -723,7 +794,11 @@ const Menu = () => {
                         id="menuNavLink"
                         onClick={hideSideBar}
                         href={`/marble-polishing-services-in-bangalore`}
-                        className={pathname === "/marble-polishing-services-in-bangalore" ? "active" : ""}
+                        className={
+                          pathname === "/marble-polishing-services-in-bangalore"
+                            ? "active"
+                            : ""
+                        }
                       >
                         Marble Polishing{" "}
                       </Link>
@@ -740,7 +815,9 @@ const Menu = () => {
                         onClick={hideSideBar}
                         href={`/home-painting-services-in-bangalore`}
                         className={
-                          pathname === "/home-painting-services-in-bangalore" ? "active" : ""
+                          pathname === "/home-painting-services-in-bangalore"
+                            ? "active"
+                            : ""
                         }
                       >
                         Painting Services{" "}
@@ -758,7 +835,11 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/best-home-painting-in-bangalore`}
-                            className={pathname === "/best-home-painting-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname === "/best-home-painting-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Home Painting
                           </Link>
@@ -770,7 +851,10 @@ const Menu = () => {
                             onClick={hideSideBar}
                             href={`/apartment-painting-services-in-bangalore`}
                             className={
-                              pathname === "/apartment-painting-services-in-bangalore" ? "active" : ""
+                              pathname ===
+                              "/apartment-painting-services-in-bangalore"
+                                ? "active"
+                                : ""
                             }
                           >
                             Apartment Painting
@@ -783,7 +867,10 @@ const Menu = () => {
                             onClick={hideSideBar}
                             href={`/spray-painting-services-in-bangalore`}
                             className={
-                              pathname === "/spray-painting-services-in-bangalore" ? "active" : ""
+                              pathname ===
+                              "/spray-painting-services-in-bangalore"
+                                ? "active"
+                                : ""
                             }
                           >
                             Spray Painting
@@ -796,7 +883,8 @@ const Menu = () => {
                             onClick={hideSideBar}
                             href={`/1-day-express-painting-services-in-bangalore`}
                             className={
-                              pathname === "/1-day-express-painting-services-in-bangalore"
+                              pathname ===
+                              "/1-day-express-painting-services-in-bangalore"
                                 ? "active"
                                 : ""
                             }
@@ -811,7 +899,8 @@ const Menu = () => {
                             onClick={hideSideBar}
                             href={`/texture-and-designer-walls-service-in-bangalore`}
                             className={
-                              pathname === "/texture-and-designer-walls-service-in-bangalore"
+                              pathname ===
+                              "/texture-and-designer-walls-service-in-bangalore"
                                 ? "active"
                                 : ""
                             }
@@ -826,7 +915,9 @@ const Menu = () => {
                             onClick={hideSideBar}
                             href={`/waterproofing-service-in-bangalore`}
                             className={
-                              pathname === "/waterproofing-service-in-bangalore" ? "active" : ""
+                              pathname === "/waterproofing-service-in-bangalore"
+                                ? "active"
+                                : ""
                             }
                           >
                             Waterproofing{" "}
@@ -844,7 +935,9 @@ const Menu = () => {
                         onClick={hideSideBar}
                         href={`/civil-works-service-in-bangalore`}
                         className={
-                          pathname === "/civil-works-service-in-bangalore" ? "active" : ""
+                          pathname === "/civil-works-service-in-bangalore"
+                            ? "active"
+                            : ""
                         }
                       >
                         Civil Works
@@ -862,7 +955,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/bathroom-remodeling-service-in-bangalore`}
-                            className={pathname === "/bathroom-remodeling-service-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/bathroom-remodeling-service-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Bathroom Remodelling{" "}
                           </Link>
@@ -872,8 +970,13 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/shower-enclosure-installation-in-bangalore`}
+                            className={
+                              pathname ===
+                              "/shower-enclosure-installation-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Shower Enclosure
                           </Link>
@@ -884,7 +987,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/tiles-and-stones-replacement-service-in-bangalore`}
-                            className={pathname === "/tiles-and-stones-replacement-service-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/tiles-and-stones-replacement-service-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Tiles/Stone Replacement
                           </Link>
@@ -895,7 +1003,11 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/re-plastering-service-in-bangalore`}
-                            className={pathname === "/re-plastering-service-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname === "/re-plastering-service-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Replastering
                           </Link>
@@ -906,7 +1018,11 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/wall-crack-filling-in-bangalore`}
-                            className={pathname === "/wall-crack-filling-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname === "/wall-crack-filling-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Wall Crack Filling{" "}
                           </Link>
@@ -917,7 +1033,12 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/home-inspection-services-in-bangalore`}
-                            className={pathname === "/home-inspection-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname ===
+                              "/home-inspection-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Home Inspection
                           </Link>
@@ -927,8 +1048,12 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/kitchen-renovation-in-bangalore`}
+                            className={
+                              pathname === "/kitchen-renovation-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Kitchen Renovation
                           </Link>
@@ -940,7 +1065,11 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/false-ceiling-in-bangalore`}
-                            className={pathname === "/false-ceiling-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname === "/false-ceiling-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             False Ceiling
                           </Link>
@@ -951,7 +1080,11 @@ const Menu = () => {
                             id="menuNavLink"
                             onClick={hideSideBar}
                             href={`/grouting-services-in-bangalore`}
-                            className={pathname === "/grouting-services-in-bangalore" ? "active" : ""}
+                            className={
+                              pathname === "/grouting-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Grouting
                           </Link>

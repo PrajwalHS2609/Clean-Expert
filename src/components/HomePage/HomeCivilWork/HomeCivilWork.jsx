@@ -8,6 +8,9 @@ import bathroom from "./../../../images/civilWork/sink.png";
 import replastering from "./../../../images/civilWork/replastering.png";
 import tile from "./../../../images/civilWork/tile.png";
 import grouting from "./../../../images/civilWork/grouting.png";
+import kitchen from "./../../../images/civilWork/kitchenRenovation.png";
+import shower from "./../../../images/civilWork/shower.png";
+import celing from "./../../../images/civilWork/ceiling.png";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -48,6 +51,24 @@ const HomeCivilWork = () => {
       img: grouting,
       title: "Grouting",
       link: "/grouting-services-in-bangalore",
+    },
+    {
+      id: 7,
+      img: celing,
+      title: "False Celing",
+      link: "/false-ceiling-in-bangalore",
+    },
+    {
+      id: 8,
+      img: kitchen,
+      title: "Kitchen Renovation",
+      link: "/kitchen-renovation-in-bangalore",
+    },
+    {
+      id: 9,
+      img: shower,
+      title: "Shower Enclosure",
+      link: "/shower-enclosure-installation-in-bangalore",
     },
   ];
   // const handlePop = () => {
