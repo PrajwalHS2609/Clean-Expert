@@ -2,7 +2,12 @@ import Link from "next/link";
 import React from "react";
 import "./Footer.css";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaLinkedin,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa6";
 
 const FooterTop = () => {
   return (
@@ -15,11 +20,15 @@ const FooterTop = () => {
         <div className="footerTop-item">
           <h4>
             {" "}
-            <a href="">+919876543210</a>
+            <a href="tel:8792446647">+91 8792446647</a>
+          </h4>
+          <h4>
+            {" "}
+            <a href="tel:7090234446">+91 7090234446</a>
           </h4>
           <a href="">
             <button>
-              <FaWhatsapp className="footerTop-socialIco"/>
+              <FaWhatsapp className="footerTop-socialIco" />
               Chat With Us
             </button>
           </a>

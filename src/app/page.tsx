@@ -11,7 +11,14 @@ import HomeHow from './../components/HomePage/HomeHow/HomeHow';
 import HomeTestimonial from '@/components/HomePage/HomeTestimonial/HomeTestimonial';
 import HomeFaq from './../components/HomePage/HomeFaq/HomeFaq';
 import HomeBlog from './../components/HomePage/HomeBlog/HomeBlog';
+export const metadata = {
+  title: "Home Cleaning Services in Bangalore | Office Cleaning Services in Bangalore",
+  description:
+    "Home & Office Cleaning Services in Bangalore at Best Price. Our trained experts use safe products and advanced methods to deliver deep cleaning with minimal disruption, ensuring a healthier and more comfortable living environment.",
+  canonical:
+    "https://primecleanco.in/",
 
+};
 export default function HomePage() {
   return (
     <div>
@@ -25,9 +32,9 @@ export default function HomePage() {
       <HomePestControl />
       <HomeHow />
       <HomeAdvantage />
-      <HomeTestimonial/>
-      <HomeFaq/>
-      <HomeBlog/>
+      <HomeTestimonial />
+      <HomeFaq />
+      <HomeBlog />
     </div>
   )
 }
