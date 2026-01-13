@@ -545,8 +545,8 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/gallery"
-            className={pathname === "/gallery" ? "active" : ""}
+            href="/our-gallery"
+            className={pathname === "/our-gallery" ? "active" : ""}
           >
             Our Work Gallery
           </Link>
