@@ -1,14 +1,11 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "./HomeHeroSite.css";
 import Image from "next/image";
 import bannerImg from "@/images/Banner Image.png";
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
 import { RxTimer } from "react-icons/rx";
-import {
-  MdCurrencyRupee,
-  MdPhone,
-} from "react-icons/md";
+import { MdCurrencyRupee, MdPhone } from "react-icons/md";
 import { ImLeaf } from "react-icons/im";
 import { GrPlan } from "react-icons/gr";
 import { FaEye } from "react-icons/fa6";
@@ -16,6 +13,42 @@ import { BsTools } from "react-icons/bs";
 import { FaUsersCog } from "react-icons/fa";
 
 const HomeHeroSite = () => {
+  const [service, setService] = useState("");
+
+  const cleaningOptions = [
+    "Full-House",
+    "Bathroom ",
+    "Kitchen ",
+    "Carpet",
+    "Sofa ",
+    "Mattress",
+    "Window",
+    "Balcony",
+    "Chair",
+  ];
+  const paintingOptions = [
+    "Interior Painting",
+    "Textured Painting ",
+    "Exterior Painting ",
+    "Wood Polishing",
+  ];
+  const renovationOptions = [
+    "Bathroom Remodelling/Renovation ",
+    "Shower Enclosure ",
+    "Tiles/Stone Replacement",
+    "Replastering ",
+    "Wall Crack Filling",
+    "Window",
+    "Balcony",
+    "Chair",
+  ];
+  const pestControlOptions = [
+    "General Pest Control",
+    "Bed Bugs",
+    "Mosquito ",
+    "Combo: Best value for money",
+    "Termites",
+  ];
   const content = [
     {
       id: 1,
@@ -60,7 +93,7 @@ const HomeHeroSite = () => {
       text: "Guaranteed Satisfaction",
     },
   ];
-    const handlePop = () => {
+  const handlePop = () => {
     document.querySelector(".popup-container").style.display = "flex";
   };
   return (
@@ -81,16 +114,16 @@ const HomeHeroSite = () => {
               time, for homes that demand superior standards.
             </p>
             <div className="hero2-buttonContainer">
-                <button className="button1" onClick={handlePop}>
-                  Browse Services
-                  <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
-                    <path
-                      clipRule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fillRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
+              <button className="button1" onClick={handlePop}>
+                Browse Services
+                <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+                  <path
+                    clipRule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fillRule="evenodd"
+                  ></path>
+                </svg>
+              </button>
               <a href="">
                 <button>
                   Contact Us <MdPhone />
@@ -108,13 +141,66 @@ const HomeHeroSite = () => {
               <input type="tel" placeholder="Phone Number*" required />
               <input type="text" placeholder="Pincode*" required />
 
-              <select required>
-                <option>Select Service</option>
-                <option>Home Painting</option>
-                <option>Apartment Painting</option>
-                <option>Waterproofing</option>
+              <select
+                value={service}
+                onChange={(e) => setService(e.target.value)}
+                required
+              >
+                <option value="">Select Service </option>
+                <option value="Cleaning Services">Cleaning Services</option>
+                <option value="Marble Polishing">Marble Polishing</option>
+                <option value="Painting Services">Painting Services</option>
+                <option value="Waterproofing">Waterproofing</option>
+                <option value="House Renovation">House Renovation</option>
+                <option value="Shower Enclosure">Shower Enclosure</option>
+                <option value="Grouting">Grouting</option>
+                <option value="Pest Control Services">
+                  Pest Control Services
+                </option>
+                <option value="Office Cleaning">Office Cleaning</option>
               </select>
 
+              {/* Dynamic Second Select */}
+              {service === "Cleaning Services" && (
+                <select required>
+                  <option value="">Select Cleaning Type</option>
+                  {cleaningOptions.map((item, idx) => (
+                    <option key={idx} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              )}
+              {service === "Painting Services" && (
+                <select required>
+                  <option value="">Select Cleaning Type</option>
+                  {paintingOptions.map((item, idx) => (
+                    <option key={idx} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              )}
+              {service === "House Renovation0" && (
+                <select required>
+                  <option value="">Select Cleaning Type</option>
+                  {renovationOptions.map((item, idx) => (
+                    <option key={idx} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              )}
+              {service === "Pest Control Services" && (
+                <select required>
+                  <option value="">Select Pest Control Type</option>
+                  {pestControlOptions.map((item, idx) => (
+                    <option key={idx} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              )}
               <button type="submit">Request Callback</button>
               <span>No spam • 100% privacy</span>
             </form>
