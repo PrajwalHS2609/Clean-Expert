@@ -1,27 +1,32 @@
 import React from "react";
 import "./AboutUs.css";
+import largeImg from "./../../images/AboutUs/aboutImg1.jpg"
+import smallImg1 from "./../../images/AboutUs/aboutImg2.jpg"
+import smallImg2 from "./../../images/AboutUs/aboutImg3.jpg"
+import Image from "next/image";
+
 const AboutUsKnowUs = () => {
   return (
     <section className="aboutUsKnowUs-container">
       {/* LEFT SIDE */}
       <div className="aboutUs-images">
         <div className="img-small">
-          <img
-            src="https://templates.hibootstrap.com/pentu/assets/images/get-to-know2.jpg"
+          <Image
+            src={largeImg}
             alt="Worker painting wall"
           />
         </div>
 
         <div className="aboutUs-imgLargeContainer">
           <div className="img-large">
-            <img
-              src="https://templates.hibootstrap.com/pentu/assets/images/get-to-know1.jpg"
+            <Image
+              src={smallImg1}
               alt="Team painting wall"
             />
           </div>
           <div className="img-large">
-            <img
-              src="https://templates.hibootstrap.com/pentu/assets/images/get-to-know1.jpg"
+            <Image
+              src={smallImg2}
               alt="Team painting wall"
             />
           </div>

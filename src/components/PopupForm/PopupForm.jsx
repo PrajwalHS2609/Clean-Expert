@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import "./PopupForm.css";
 import { HiMiniXMark } from "react-icons/hi2";
 import Swal from "sweetalert2";
-
+import Image from "next/image";
+import popUpImg from "@/images/popFormImg.jpeg";
 const PopupForm = () => {
   const [service, setService] = useState("");
 
@@ -89,10 +90,7 @@ const PopupForm = () => {
       <div className="popup-wrapper">
         {/* Left Side Image */}
         <div className="popup-content">
-          <img
-            src="https://images.pexels.com/photos/4440521/pexels-photo-4440521.jpeg"
-            alt="popup"
-          />
+          <Image src={popUpImg} alt="popup" />
         </div>
 
         {/* Right Side Form */}
