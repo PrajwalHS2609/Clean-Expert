@@ -118,5 +118,10 @@ export default defineType({
       title: 'Meta Description',
       type: 'text',
     }),
+    defineField({
+      name: 'seoContent',
+      title: 'SEO Content Section',
+      type: 'seoContent',
+    }),
   ],
 })

@@ -8,6 +8,7 @@ import faqContent from './faqContent'
 import highlightBlock from './highlightBlock'
 import post from './post'
 import quoteContent from './quoteContent'
+import seoContent from './seoContent'
 import serviceEssentials from './serviceEssentials'
 import services from './services'
 
@@ -24,4 +25,5 @@ export const schemaTypes = [
   author,
   services,
   serviceEssentials,
+  seoContent,
 ]

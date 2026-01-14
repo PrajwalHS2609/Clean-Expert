@@ -54,7 +54,11 @@ const SERVICE_QUERY = `
         image,
         comment
       }
-    }
+    },
+       seoContent {
+    intro,
+    expanded,
+  } 
   }
 }
 `;
@@ -164,8 +168,8 @@ export default async function SlugPage({
           }}
         />
         <div className="blog-wrapper2">
-        <BlogSidebar />
-      </div>
+          <BlogSidebar />
+        </div>
       </div>
     );
   }

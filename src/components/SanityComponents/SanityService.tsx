@@ -38,6 +38,7 @@ import waterProofing from "../../images/serviceImgs/Water Proofing.png";
 import cleaningService from "../../images/serviceImgs/Cleaning Service.png";
 import { urlFor } from "../../../sanity/lib/image";
 import SanityEssentials from "./SanityEssentials";
+import SanitySeoContent from "./SanitySeoContent";
 
 /* ---------------- TYPES ---------------- */
 
@@ -86,6 +87,10 @@ export type SanityServiceContentType = {
   subServices?: SubServiceItem[];
   subServicesLabel?: string;
   essentials?: SanityServiceEssentialsType;
+  seoContent?: {
+    intro?: PortableTextBlock[],
+    expanded?: PortableTextBlock[],
+  },
 };
 
 const adImg = [{ id: 1, img: offerImg1, alt: "adImg1" },
@@ -226,6 +231,9 @@ export default function SanityServiceContent({
       <HomeCivilWork />
       <HomePestControl />
       <HomeTestimonial />
+      {content.seoContent && (
+        <SanitySeoContent data={content.seoContent} />
+      )}
       {/* <HomeFaq /> */}
     </div>
   );
