@@ -38,13 +38,14 @@ export default function RootLayout({
     <html lang="en" className={merri.className}>
       <head>
         <link rel="icon" type="image/png" href="./favicon.png" />
+        <meta name="google-site-verification" content="HB8Fb5pElFDLcAuCFjaqSH7QqvC05IEMD52NGQuPO_M" />
       </head>
       <body >
         {isPaintLanding ? <LpPaintNavbar /> : <NavBar />}
         {loading ? <Loader /> : children}
         {isPaintLanding ? <LpPaintFooter /> : <Footer />}
         <PopupForm />
-        <WhatsApp/>
+        <WhatsApp />
       </body>
     </html>
   );
