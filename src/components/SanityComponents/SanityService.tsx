@@ -39,6 +39,7 @@ import cleaningService from "../../images/serviceImgs/Cleaning Service.png";
 import { urlFor } from "../../../sanity/lib/image";
 import SanityEssentials from "./SanityEssentials";
 import SanitySeoContent from "./SanitySeoContent";
+import SanitySeoKeywords from "./SanitySeoKeyword";
 
 /* ---------------- TYPES ---------------- */
 
@@ -87,6 +88,9 @@ export type SanityServiceContentType = {
   subServices?: SubServiceItem[];
   subServicesLabel?: string;
   essentials?: SanityServiceEssentialsType;
+  seoKeywords?: {
+  keywords?: string[];
+};
   seoContent?: {
     intro?: PortableTextBlock[],
     expanded?: PortableTextBlock[],
@@ -231,6 +235,9 @@ export default function SanityServiceContent({
       <HomeCivilWork />
       <HomePestControl />
       <HomeTestimonial />
+      {content.seoKeywords?.keywords && (
+        <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
+      )}
       {content.seoContent && (
         <SanitySeoContent data={content.seoContent} />
       )}

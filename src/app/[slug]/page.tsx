@@ -55,6 +55,9 @@ const SERVICE_QUERY = `
         comment
       }
     },
+    seoKeywords{
+  keywords
+},
        seoContent {
     intro,
     expanded,

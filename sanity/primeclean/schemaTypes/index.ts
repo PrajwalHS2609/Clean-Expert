@@ -9,6 +9,7 @@ import highlightBlock from './highlightBlock'
 import post from './post'
 import quoteContent from './quoteContent'
 import seoContent from './seoContent'
+import seoKeywords from './seoKeywords'
 import serviceEssentials from './serviceEssentials'
 import services from './services'
 
@@ -26,4 +27,5 @@ export const schemaTypes = [
   services,
   serviceEssentials,
   seoContent,
+  seoKeywords,
 ]
