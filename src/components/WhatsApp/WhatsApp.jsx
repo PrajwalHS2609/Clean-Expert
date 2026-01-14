@@ -26,7 +26,7 @@ const WhatsApp = () => {
         accountName="PrimeCleanCo "
         avatar={Logo.src} // Optional
         statusMessage="Typically replies within 5 min" // Optional
-        chatMessage="Book Now" // Optional
+        chatMessage="Welcome to PrimeClean! Trusted experts for cleaning, maintenance, and home care services. How can we help today? - 7090234446" // Optional
         placeholder="Type a message..." // Optional
       />
     </div>

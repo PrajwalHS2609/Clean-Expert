@@ -1,13 +1,15 @@
-"use client"
+"use client";
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 const ContactUsLocation = () => {
   const [service, setService] = useState("");
 
   const cleaningOptions = [
-    "Full-House",
+    "Full House Cleaning",
     "Bathroom ",
     "Kitchen ",
+    "Chimney",
     "Carpet",
     "Sofa ",
     "Mattress",
@@ -16,28 +18,66 @@ const ContactUsLocation = () => {
     "Chair",
   ];
   const paintingOptions = [
-    "Interior Painting",
-    "Textured Painting ",
-    "Exterior Painting ",
-    "Wood Polishing",
+    "Home Painting",
+    "Apartment Painting ",
+    "Spray Painting ",
+    "1 Day Express Polishing",
+    "Texture & Designer Walls",
+    "Waterproofing",
   ];
   const renovationOptions = [
-    "Bathroom Remodelling/Renovation ",
+    "Bathroom Remodelling ",
     "Shower Enclosure ",
     "Tiles/Stone Replacement",
     "Replastering ",
     "Wall Crack Filling",
-    "Window",
-    "Balcony",
-    "Chair",
+    "Home Inspection",
+    "Kitchen Renovation",
+    "False Ceiling",
+    "Grouting",
   ];
   const pestControlOptions = [
     "General Pest Control",
-    "Bed Bugs",
-    "Mosquito ",
-    "Combo: Best value for money",
-    "Termites",
+    "Bed Bugs Control",
+    "Mosquito Control ",
+    "Termite Control",
   ];
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // ✅ Add your Web3Forms access key
+    formData.append("access_key", "2e63432e-e411-4617-8563-fa5f8bb00932");
+
+    const object = Object.fromEntries(formData.entries());
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Mail Sent successfully",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again later.",
+        icon: "error",
+      });
+    }
+  };
   return (
     <div className="contactUsLocation-container">
       <div className="contactUsLocation-wrapper">
@@ -50,72 +90,89 @@ const ContactUsLocation = () => {
       </div>
       <div className="contactUsLocation-wrapper">
         <h2>BOOK NOW</h2>
-        <form className="popup-form">
-          <input type="text" placeholder="Full Name" required />
-          <input type="tel" placeholder="Phone Number" required />
-          <input type="email" placeholder="Email Address" required />
+        <form className="popup-form" onSubmit={handleSubmit}>
+          <input type="text" placeholder="Full Name" name="Name" required />
+          <input type="tel" placeholder="Phone Number" name="Phone" required />
+          <input type="email" placeholder="Email Address" name="Email" required />
 
           {/* First Select */}
           <select
             value={service}
             onChange={(e) => setService(e.target.value)}
             required
+            name="Service"
           >
-            <option value="">Select Service </option>
-            <option value="Cleaning Services">Cleaning Services</option>
-            <option value="Marble Polishing">Marble Polishing</option>
-            <option value="Painting Services">Painting Services</option>
-            <option value="Waterproofing">Waterproofing</option>
-            <option value="House Renovation">House Renovation</option>
-            <option value="Shower Enclosure">Shower Enclosure</option>
-            <option value="Grouting">Grouting</option>
-            <option value="Pest Control Services">Pest Control Services</option>
-            <option value="Office Cleaning">Office Cleaning</option>
+            <option value="" name="Service">
+              Select Service{" "}
+            </option>
+            <option value="Cleaning Services" name="Cleaning Services">
+              Cleaning Services
+            </option>
+            <option value="Marble Polishing" name="Marble Polishing">
+              Marble Polishing
+            </option>
+            <option value="Painting Services" name="Painting Services">
+              Painting Services
+            </option>
+            <option value="Civil Works" name="Civil Works">
+              Civil Works
+            </option>
+            <option value="Pest Control Services" name="Pest Control Services">
+              Pest Control Services
+            </option>
+            <option value="Office Cleaning" name="Office Cleaning">
+              Office Cleaning
+            </option>
           </select>
 
           {/* Dynamic Second Select */}
+          {/* Dynamic Second Select */}
           {service === "Cleaning Services" && (
-            <select required>
+            <select required name="Sub Service">
               <option value="">Select Cleaning Type</option>
               {cleaningOptions.map((item, idx) => (
-                <option key={idx} value={item}>
+                <option key={idx} value={item} name={item}>
                   {item}
                 </option>
               ))}
             </select>
           )}
           {service === "Painting Services" && (
-            <select required>
+            <select required name="Sub Service">
               <option value="">Select Cleaning Type</option>
               {paintingOptions.map((item, idx) => (
-                <option key={idx} value={item}>
+                <option key={idx} value={item} name={item}>
                   {item}
                 </option>
               ))}
             </select>
           )}
-          {service === "House Renovation0" && (
-            <select required>
+          {service === "Civil Works" && (
+            <select required name="Sub Service">
               <option value="">Select Cleaning Type</option>
               {renovationOptions.map((item, idx) => (
-                <option key={idx} value={item}>
+                <option key={idx} value={item} name={item}>
                   {item}
                 </option>
               ))}
             </select>
           )}
           {service === "Pest Control Services" && (
-            <select required>
+            <select required name="Sub Service">
               <option value="">Select Pest Control Type</option>
               {pestControlOptions.map((item, idx) => (
-                <option key={idx} value={item}>
+                <option key={idx} value={item} name={item}>
                   {item}
                 </option>
               ))}
             </select>
           )}
 
-          <textarea placeholder="Your Message" rows="4"></textarea>
+          <textarea
+            placeholder="Your Message"
+            rows="4"
+            name="Message"
+          ></textarea>
 
           <button type="submit">Submit</button>
         </form>

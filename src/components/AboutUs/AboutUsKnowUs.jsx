@@ -59,25 +59,31 @@ const AboutUsKnowUs = () => {
         </h2>
 
         <p>
-          Perfect for business cards invitation packaging and promotional
-          materials digital foiling enhances visual appeal and leaves a lasting
-          impression with its elegant finish.
+          Prime Clean is a trusted professional service provider dedicated to
+          enhancing homes and commercial spaces with quality-driven solutions.
+          From cleaning and maintenance to renovation and specialized services,
+          we focus on skilled workmanship, reliable processes, and customer
+          satisfaction. Our team delivers efficient, transparent, and
+          hassle-free services designed to keep your spaces clean, functional,
+          and beautifully maintained.
         </p>
 
         <div className="info-cards">
           <div className="info-card">
             <h4>Our Mission</h4>
             <p>
-              Our mission is to deliver painting solutions that enhance the
-              character of every space we touch.
+              Is to deliver reliable, high-quality cleaning and maintenance
+              services with professionalism, transparency, and customer
+              satisfaction, creating cleaner, safer, and better living spaces.
             </p>
           </div>
 
           <div className="info-card">
             <h4>Our Vision</h4>
             <p>
-              We aim to inspire and transform through innovative, sustainable
-              practices and dedication to every brushstroke.
+              Is to become a trusted leader in professional cleaning and
+              maintenance services, setting standards for quality, reliability,
+              and long-term customer trust.
             </p>
           </div>
         </div>

@@ -321,7 +321,7 @@ const Menu = () => {
                         : ""
                     }
                   >
-                    Bathroom Remodelling{" "}
+                    Bathroom Remodelling
                   </Link>
                 </li>
                 <li>
@@ -1227,9 +1227,16 @@ const Menu = () => {
                 Blog
               </Link>
             </li>
-            <li className="respDropdownList">
+            <li className="">
               {" "}
-              <span>Our Work Gallery</span>
+              <Link
+                id="menuNavLink"
+                onClick={hideSideBar}
+                href={`/our-gallery`}
+                className={pathname === "/our-gallery" ? "active" : ""}
+              >
+                Our Gallery
+              </Link>
             </li>
             <li className="">
               {" "}
