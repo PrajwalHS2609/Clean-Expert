@@ -39,6 +39,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="./favicon.png" />
         <meta name="google-site-verification" content="HB8Fb5pElFDLcAuCFjaqSH7QqvC05IEMD52NGQuPO_M" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJMDDEKF85"></script>
+        <script>
+          {` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJMDDEKF85');`}
+        </script>
       </head>
       <body >
         {isPaintLanding ? <LpPaintNavbar /> : <NavBar />}
