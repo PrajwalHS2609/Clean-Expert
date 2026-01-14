@@ -93,14 +93,14 @@ const adImg = [{ id: 1, img: offerImg1, alt: "adImg1" },
 { id: 3, img: offerImg3, alt: "adImg3" }];
 
 const serviceImg = [
-  { id: 1, img: civilWork, title: "Civil Work", link: "civil-work" },
-  { id: 2, img: bathroom, title: "Bathroom Renovation", link: "" },
-  { id: 3, img: marble, title: "Marbles Polishing", link: "" },
-  { id: 4, img: painting, title: "Painting Services", link: "" },
-  { id: 5, img: pest, title: "Pest Control", link: "" },
-  { id: 6, img: shower, title: "Shower Cubical", link: "" },
-  { id: 7, img: waterProofing, title: "Water Proofing", link: "" },
-  { id: 8, img: cleaningService, title: "Cleaning Services", link: "" },
+  { id: 1, img: civilWork, title: "Civil Work", link: "/civil-works-service-in-bangalore" },
+  { id: 2, img: bathroom, title: "Bathroom Renovation", link: "/bathroom-remodeling-service-in-bangalore" },
+  { id: 3, img: marble, title: "Marbles Polishing", link: "/marble-polishing-services-in-bangalore" },
+  { id: 4, img: painting, title: "Painting Services", link: "/home-painting-services-in-bangalore" },
+  { id: 5, img: pest, title: "Pest Control", link: "/pest-control-service-in-bangalore" },
+  { id: 6, img: shower, title: "Shower Cubical", link: "/shower-enclosure-installation-in-bangalore" },
+  { id: 7, img: waterProofing, title: "Water Proofing", link: "/waterproofing-service-in-bangalore" },
+  { id: 8, img: cleaningService, title: "Cleaning Services", link: "/home-cleaning-services-in-bangalore" },
 
 ]
 /* ---------------- COMPONENT ---------------- */
