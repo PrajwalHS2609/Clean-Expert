@@ -47,6 +47,39 @@ export default function RootLayout({
 
   gtag('config', 'G-QJMDDEKF85');`}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Prime Clean ",
+            "image": "https://primecleanco.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.71430d74.png&w=3840&q=75",
+            "description": "Say goodbye to mediocre cleaning that never meets your expectations. It’s time to upgrade your space with Prime Clean’ premium deep cleaning services. Our skilled cleaning professionals take on even the toughest grime, transforming your home or workplace into a spotless, revitalized environment. Don’t compromise on cleanliness — choose Prime Clean and experience the remarkable difference of truly professional deep cleaning.At Prime Clean, we go beyond basic cleaning — we create living spaces that are spotless, healthy, and welcoming. As one of Bangalore’s most trusted home service providers, we offer a complete range of solutions designed to elevate the comfort and cleanliness of your home.",
+            "brand": {
+              "@type": "Thing",
+              "name": "Prime Clean"
+            },
+            "review": {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Rishi"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "bestRating": "5",
+              "worstRating": "1",
+              "ratingCount": "2792"
+            }
+
+          })}</script>
       </head>
       <body >
         {isPaintLanding ? <LpPaintNavbar /> : <NavBar />}
