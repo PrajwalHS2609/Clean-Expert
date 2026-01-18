@@ -191,18 +191,7 @@ const Menu = () => {
                 </li>
               </div>
             </li>
-            <li>
-              <Link
-                href="/marble-polishing-services-in-bangalore"
-                className={
-                  pathname === "/marble-polishing-services-in-bangalore"
-                    ? "actives"
-                    : ""
-                }
-              >
-                Marble Polishing
-              </Link>
-            </li>
+
             <li>
               <span>
                 <Link
@@ -437,18 +426,7 @@ const Menu = () => {
                 Grouting
               </Link>
             </li> */}
-            <li>
-              <Link
-                href="/office-cleaning-services-in-bangalore"
-                className={
-                  pathname === "/office-cleaning-services-in-bangalore"
-                    ? "actives"
-                    : ""
-                }
-              >
-                Office Cleaning
-              </Link>
-            </li>
+
             {/* <li>
               <Link
                 href="/pest-control"
@@ -526,6 +504,30 @@ const Menu = () => {
                   </Link>
                 </li>
               </div>
+            </li>
+            <li>
+              <Link
+                href="/marble-polishing-services-in-bangalore"
+                className={
+                  pathname === "/marble-polishing-services-in-bangalore"
+                    ? "actives"
+                    : ""
+                }
+              >
+                Marble Polishing
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/office-cleaning-services-in-bangalore"
+                className={
+                  pathname === "/office-cleaning-services-in-bangalore"
+                    ? "actives"
+                    : ""
+                }
+              >
+                Office Cleaning
+              </Link>
             </li>
           </div>
         </li>
@@ -656,8 +658,13 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/bathroom-remodeling-service-in-bangalore`}
+                            className={
+                              pathname ===
+                              "/bathroom-remodeling-service-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Bathroom
                           </Link>
@@ -715,8 +722,13 @@ const Menu = () => {
                           <Link
                             id="menuNavLink"
                             onClick={hideSideBar}
-                            href={`/`}
-                            className={pathname === "/" ? "active" : ""}
+                            href={`/sofa-cleaning-services-in-bangalore`}
+                            className={
+                              pathname ===
+                              "/sofa-cleaning-services-in-bangalore"
+                                ? "active"
+                                : ""
+                            }
                           >
                             Sofa
                           </Link>
@@ -788,26 +800,7 @@ const Menu = () => {
                       </div>
                     )}
                   </li>
-                  <li>
-                    <span>
-                      <Link
-                        id="menuNavLink"
-                        onClick={hideSideBar}
-                        href={`/marble-polishing-services-in-bangalore`}
-                        className={
-                          pathname === "/marble-polishing-services-in-bangalore"
-                            ? "active"
-                            : ""
-                        }
-                      >
-                        Marble Polishing{" "}
-                      </Link>
-                      {/* <FaChevronRight
-                        className="menuNavDropIcon"
-                        onClick={() => toggleSubDropdown("")}
-                      /> */}
-                    </span>
-                  </li>
+
                   <li>
                     <span>
                       <Link
@@ -1108,22 +1101,7 @@ const Menu = () => {
                       />
                     </span>
                   </li> */}
-                  <li>
-                    <span>
-                      <Link
-                        id="menuNavLink"
-                        onClick={hideSideBar}
-                        href={`/office-cleaning-services-in-bangalore`}
-                        className={
-                          pathname === "/office-cleaning-services-in-bangalore"
-                            ? "active"
-                            : ""
-                        }
-                      >
-                        Office Cleaning
-                      </Link>
-                    </span>
-                  </li>
+
                   <li>
                     <span>
                       {" "}
@@ -1212,6 +1190,42 @@ const Menu = () => {
                         </li>
                       </div>
                     )}
+                  </li>
+                  <li>
+                    <span>
+                      <Link
+                        id="menuNavLink"
+                        onClick={hideSideBar}
+                        href={`/marble-polishing-services-in-bangalore`}
+                        className={
+                          pathname === "/marble-polishing-services-in-bangalore"
+                            ? "active"
+                            : ""
+                        }
+                      >
+                        Marble Polishing{" "}
+                      </Link>
+                      {/* <FaChevronRight
+                        className="menuNavDropIcon"
+                        onClick={() => toggleSubDropdown("")}
+                      /> */}
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <Link
+                        id="menuNavLink"
+                        onClick={hideSideBar}
+                        href={`/office-cleaning-services-in-bangalore`}
+                        className={
+                          pathname === "/office-cleaning-services-in-bangalore"
+                            ? "active"
+                            : ""
+                        }
+                      >
+                        Office Cleaning
+                      </Link>
+                    </span>
                   </li>
                 </div>
               )}

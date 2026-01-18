@@ -80,7 +80,7 @@
 .menuDropDown > li > span {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   align-items: center;
 }
 
@@ -137,14 +137,15 @@
   z-index: 3;
 }
 .menuDropDown > li {
-  /* border-bottom: 1px solid; */
+  /* border: solid red; */
   margin: 0px;
+  padding: 20px;
   width: 100%;
   height: 50px;
   transition: 300ms ease-in-out;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   &:hover {
     background-color: var(--customColor2);
@@ -152,10 +153,13 @@
 }
 
 .menuDropDown > li > a {
-  /* border: solid; */
   text-decoration: none;
   color: black;
-  width: fit-content;
+  width: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
 }
 .menuDropIcon {
   font-size: 15px;
