@@ -192,14 +192,17 @@ export default function SanityServiceContent({
               </div>
             )}
             <div className="serviceHeader-contentPrice">
-              <h5>₹{content.pricing?.originalPrice}</h5>
-              <h3>₹{content.pricing?.discountPrice}</h3>
+              <h5>{content.pricing?.originalPrice}</h5>
+              <h3>{content.pricing?.discountPrice}</h3>
             </div>
             <div className="serviceHeader-contentBtn">
               <button className="serviceHeader-btn" onClick={handlePop}>Book Now</button>
-              <button className="serviceHeader-btn">
-                Chat with Us <FaWhatsapp className="serviceHeader-btnIco" />
-              </button>
+              <a href="https://api.whatsapp.com/send?phone=917090234446">
+                <button className="serviceHeader-btn">
+                  Chat with Us <FaWhatsapp className="serviceHeader-btnIco" />
+                </button>
+              </a>
+
             </div>
           </div>
 

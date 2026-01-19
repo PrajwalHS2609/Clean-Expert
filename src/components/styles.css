@@ -307,6 +307,10 @@
   gap: 20px;
   flex-wrap: wrap;
 }
+
+.serviceHeader-contentBtn > a {
+  text-decoration: none;
+}
 .serviceHeader-btn {
   background-color: black;
   color: white;
@@ -321,7 +325,12 @@
     background-color: var(--customColor2);
   }
 }
-.serviceHeader-btn:nth-child(2):hover {
+
+.serviceHeader-btn {
+  color: white;
+  text-decoration: none;
+}
+.serviceHeader-contentBtn > a > .serviceHeader-btn:hover {
   background-color: #25d366;
 }
 

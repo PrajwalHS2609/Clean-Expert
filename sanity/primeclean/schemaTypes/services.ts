@@ -137,8 +137,8 @@ export default defineType({
       title: 'Pricing & Offers',
       type: 'object',
       fields: [
-        {name: 'originalPrice', title: 'Original Price', type: 'number'},
-        {name: 'discountPrice', title: 'Discount Price', type: 'number'},
+        {name: 'originalPrice', title: 'Original Price', type: 'string'},
+        {name: 'discountPrice', title: 'Discount Price', type: 'string'},
         {name: 'offerLabel', title: 'Offer Label', type: 'string'},
         {
           name: 'monthlyBookings',
