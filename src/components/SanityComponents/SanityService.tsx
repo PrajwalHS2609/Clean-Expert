@@ -194,7 +194,7 @@ export default function SanityServiceContent({
             )}
             <div className="serviceHeader-contentPrice">
               <h5>{content.pricing?.originalPrice}</h5>
-              <h3>{content.pricing?.discountPrice}<b className="serviceHeader-unit">{content.pricing?.unit}</b> </h3>
+              <h3>{content.pricing?.discountPrice}{" "}<b className="serviceHeader-unit">{content.pricing?.unit}</b> </h3>
             </div>
             <div className="serviceHeader-contentBtn">
               <button className="serviceHeader-btn" onClick={handlePop}>Book Now</button>
