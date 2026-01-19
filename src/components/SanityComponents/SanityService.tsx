@@ -40,6 +40,7 @@ import { urlFor } from "../../../sanity/lib/image";
 import SanityEssentials from "./SanityEssentials";
 import SanitySeoContent from "./SanitySeoContent";
 import SanitySeoKeywords from "./SanitySeoKeyword";
+import ServiceHeaderCarousel from './../ServiceComponents/ServiceHeaderCarousel';
 
 /* ---------------- TYPES ---------------- */
 
@@ -78,6 +79,13 @@ export type SanityServiceEssentialsType = {
   }[];
 };
 
+export type ServicePricing = {
+  originalPrice?: number;
+  discountPrice?: number;
+  offerLabel?: string;
+  monthlyBookings?: number;
+};
+
 export type SanityServiceContentType = {
   title: string;
   mainImage?: SanityImage;
@@ -89,8 +97,10 @@ export type SanityServiceContentType = {
   subServicesLabel?: string;
   essentials?: SanityServiceEssentialsType;
   seoKeywords?: {
-  keywords?: string[];
-};
+    keywords?: string[];
+  };
+  pricing?: ServicePricing; // ✅ ADD THIS
+
   seoContent?: {
     intro?: PortableTextBlock[],
     expanded?: PortableTextBlock[],
@@ -173,6 +183,18 @@ export default function SanityServiceContent({
                 components={portableTextComponents}
               />
             )}
+            <div className="serviceHeader-contentPrice" id="serviceHeader-booking">
+              <b>{content.pricing?.monthlyBookings} Bookings in the Past Month</b>
+            </div>
+            {content.pricing?.offerLabel && (
+              <div className="serviceHeader-contentOffer">
+                <b>{content.pricing.offerLabel}</b>
+              </div>
+            )}
+            <div className="serviceHeader-contentPrice">
+              <h5>₹{content.pricing?.originalPrice}</h5>
+              <h3>₹{content.pricing?.discountPrice}</h3>
+            </div>
             <div className="serviceHeader-contentBtn">
               <button className="serviceHeader-btn" onClick={handlePop}>Book Now</button>
               <button className="serviceHeader-btn">
@@ -200,18 +222,15 @@ export default function SanityServiceContent({
               <IoLocationOutline className="serviceHeader-iconAdd" />
               Bangalore, India
             </a>
-            <a href="#">
+            <a href="tel:8792446647">
               <FiPhone className="serviceHeader-iconAdd" />
-              91 9876543210
+              91 8792446647
             </a>
           </div>
 
           {/* SOCIAL */}
           <div className="serviceHeader-content">
-            <a href="#"><FaInstagram className="serviceHeader-socialIco" /></a>
-            <a href="#"><FaYoutube className="serviceHeader-socialIco" /></a>
-            <a href="#"><FaFacebookF className="serviceHeader-socialIco" /></a>
-            <a href="#"><FaLinkedin className="serviceHeader-socialIco" /></a>
+            <ServiceHeaderCarousel />
           </div>
         </div>
 

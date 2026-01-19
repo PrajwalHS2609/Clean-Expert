@@ -265,6 +265,43 @@
   padding: 20px;
   width: 100%;
 }
+.serviceHeader-contentPrice {
+  border-bottom: solid 1px grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.serviceHeader-contentPrice > h5 {
+  text-decoration: line-through;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.serviceHeader-contentPrice > h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.serviceHeader-contentOffer {
+  background-color: var(--customColor1);
+  color: white;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.serviceHeader-contentOffer > b {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#serviceHeader-booking {
+  margin-bottom: 20px;
+}
 .serviceHeader-contentBtn {
   display: flex;
   gap: 20px;
@@ -423,6 +460,24 @@
   }
 }
 
+.serviceHeaderCarousel-container {
+  /* border: solid blue; */
+  width: 100%;
+  gap: 20px;
+}
+
+.serviceHeaderCarousel-wrapper > p {
+  font-size: 10px;
+  text-align: center;
+}
+.serviceHeaderCarousel-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: var(--customColor1);
+  font-size: 20px;
+}
+/* ------------------------------------------------------------------------------- */
 .serviceEssentials-container {
   /* border: solid red; */
   width: 100%;

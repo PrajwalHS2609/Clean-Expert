@@ -13,6 +13,7 @@ import LpPaintNavbar from "./../components/LandingPage/PaintLandingPage/LpPaintN
 import LpPaintFooter from "./../components/LandingPage/PaintLandingPage/LpPaintFooter/LpPaintFooter";
 import "@/components/styles.css"
 import WhatsApp from './../components/WhatsApp/WhatsApp';
+import Script from "next/script";
 const merri = Merriweather({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
@@ -80,6 +81,30 @@ export default function RootLayout({
             }
 
           })}</script>
+
+        <Script
+          id="google-ads-conversion"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('event', 'conversion', {
+                'send_to': 'AW-17441114317/vVPECIDiwc4bEM2RyfxA'
+              });
+            `,
+          }}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17441114317');
+    `,
+          }}
+        />
       </head>
       <body >
         {isPaintLanding ? <LpPaintNavbar /> : <NavBar />}

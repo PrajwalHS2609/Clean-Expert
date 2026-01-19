@@ -41,6 +41,12 @@ const SERVICE_QUERY = `
       link,
       image
     },
+        pricing{
+      originalPrice,
+      discountPrice,
+      offerLabel,
+      monthlyBookings
+    },
     subServicesLabel,
     subServices[]{ name, link },
     essentials{

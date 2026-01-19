@@ -118,7 +118,7 @@ export default defineType({
       title: 'Meta Description',
       type: 'text',
     }),
-    
+
     defineField({
       name: 'seoKeywords',
       title: 'SEO Keywords',
@@ -129,6 +129,23 @@ export default defineType({
       name: 'seoContent',
       title: 'SEO Content Section',
       type: 'seoContent',
+    }),
+    /* ---------------- PRICING ---------------- */
+
+    defineField({
+      name: 'pricing',
+      title: 'Pricing & Offers',
+      type: 'object',
+      fields: [
+        {name: 'originalPrice', title: 'Original Price', type: 'number'},
+        {name: 'discountPrice', title: 'Discount Price', type: 'number'},
+        {name: 'offerLabel', title: 'Offer Label', type: 'string'},
+        {
+          name: 'monthlyBookings',
+          title: 'Bookings Last Month',
+          type: 'string',
+        },
+      ],
     }),
   ],
 })
