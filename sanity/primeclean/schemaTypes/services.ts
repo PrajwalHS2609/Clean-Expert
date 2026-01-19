@@ -139,6 +139,7 @@ export default defineType({
       fields: [
         {name: 'originalPrice', title: 'Original Price', type: 'string'},
         {name: 'discountPrice', title: 'Discount Price', type: 'string'},
+        {name: 'unit', title: 'Unit', type: 'string'},
         {name: 'offerLabel', title: 'Offer Label', type: 'string'},
         {
           name: 'monthlyBookings',

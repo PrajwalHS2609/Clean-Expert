@@ -80,10 +80,11 @@ export type SanityServiceEssentialsType = {
 };
 
 export type ServicePricing = {
-  originalPrice?: number;
-  discountPrice?: number;
+  originalPrice?: string;
+  discountPrice?: string;
   offerLabel?: string;
-  monthlyBookings?: number;
+  monthlyBookings?: string;
+  unit?: string;
 };
 
 export type SanityServiceContentType = {
@@ -193,7 +194,7 @@ export default function SanityServiceContent({
             )}
             <div className="serviceHeader-contentPrice">
               <h5>{content.pricing?.originalPrice}</h5>
-              <h3>{content.pricing?.discountPrice}</h3>
+              <h3>{content.pricing?.discountPrice}<b className="serviceHeader-unit">{content.pricing?.unit}</b> </h3>
             </div>
             <div className="serviceHeader-contentBtn">
               <button className="serviceHeader-btn" onClick={handlePop}>Book Now</button>

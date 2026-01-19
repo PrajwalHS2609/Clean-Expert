@@ -284,6 +284,10 @@
   font-weight: bold;
   font-size: 40px;
 }
+.serviceHeader-unit {
+  font-size: 20px;
+  font-weight: 500;
+}
 .serviceHeader-contentOffer {
   background-color: var(--customColor1);
   color: white;
