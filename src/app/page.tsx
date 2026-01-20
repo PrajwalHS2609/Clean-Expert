@@ -1,4 +1,3 @@
-import HomeHeader from './../components/HomePage/HomeHeader/HomeHeader';
 import HomePaintingService from './../components/HomePage/HomePaintingService/HomePaintingService';
 import HomeCivilWork from './../components/HomePage/HomeCivilWork/HomeCivilWork';
 import HomePestControl from './../components/HomePage/HomePestControl/HomePestControl';
@@ -10,7 +9,7 @@ import HomeServices from './../components/HomePage/HomeServices/HomeServices';
 import HomeHow from './../components/HomePage/HomeHow/HomeHow';
 import HomeTestimonial from '@/components/HomePage/HomeTestimonial/HomeTestimonial';
 import HomeFaq from './../components/HomePage/HomeFaq/HomeFaq';
-import HomeBlog from './../components/HomePage/HomeBlog/HomeBlog';
+import HomeBlogPage from './../components/HomePage/HomeBlog/HomeBlog';
 export const metadata = {
   title: "Home Cleaning Services in Bangalore | Office Cleaning Services in Bangalore",
   description:
@@ -34,7 +33,7 @@ export default function HomePage() {
       <HomeAdvantage />
       <HomeTestimonial />
       <HomeFaq />
-      <HomeBlog />
+      <HomeBlogPage />
     </div>
   )
 }
