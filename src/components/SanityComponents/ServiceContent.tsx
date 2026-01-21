@@ -40,47 +40,86 @@ export type ServiceContentType = {
   tableOfContent?: TableContentItem[];
 };
 
-    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const formData = new FormData(form);
+const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const formData = new FormData(form);
 
-    // ✅ Add your Web3Forms access key
-    formData.append("access_key", "");
+  // ✅ Add your Web3Forms access key
+  formData.append("access_key", "2e63432e-e411-4617-8563-fa5f8bb00932");
 
-    const object = Object.fromEntries(formData.entries());
-    const json = JSON.stringify(object);
+  const object = Object.fromEntries(formData.entries());
+  const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: json,
+  }).then((res) => res.json());
 
-    if (res.success) {
-      Swal.fire({
-        title: "Success!",
-        text: "Mail Sent successfully",
-        icon: "success",
-        confirmButtonText: "OK",
-      });
-      form.reset();
-    } else {
-      Swal.fire({
-        title: "Error!",
-        text: "Something went wrong. Please try again later.",
-        icon: "error",
-      });
-    }
-  };  
+  if (res.success) {
+    Swal.fire({
+      title: "Success!",
+      text: "Mail Sent successfully",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+    form.reset();
+  } else {
+    Swal.fire({
+      title: "Error!",
+      text: "Something went wrong. Please try again later.",
+      icon: "error",
+    });
+  }
+};
 export default function ServiceContent({
   content,
 }: {
   content: ServiceContentType;
 }) {
+  const [service, setService] = useState("");
+
+  const cleaningOptions = [
+    "Full House Cleaning",
+    "Bathroom ",
+    "Kitchen ",
+    "Chimney",
+    "Carpet",
+    "Sofa ",
+    "Mattress",
+    "Window",
+    "Balcony",
+    "Chair",
+  ];
+  const paintingOptions = [
+    "Home Painting",
+    "Apartment Painting ",
+    "Spray Painting ",
+    "1 Day Express Polishing",
+    "Texture & Designer Walls",
+    "Waterproofing",
+  ];
+  const renovationOptions = [
+    "Bathroom Remodelling ",
+    "Shower Enclosure ",
+    "Tiles/Stone Replacement",
+    "Replastering ",
+    "Wall Crack Filling",
+    "Home Inspection",
+    "Kitchen Renovation",
+    "False Ceiling",
+    "Grouting",
+  ];
+  const pestControlOptions = [
+    "General Pest Control",
+    "Bed Bugs Control",
+    "Mosquito Control ",
+    "Termite Control",
+  ];
   const imageUrl = content?.mainImage?.asset?.url;
   const [index, setIndex] = useState(0);
 
@@ -91,7 +130,7 @@ export default function ServiceContent({
 
       <div className="componentDivider-container">
         <div className="componentDivider-content">
-          {/* {content.tableOfContent?.length && (
+          {content.tableOfContent?.length && (
             <div className="tableOfContent-container">
               <h3>Table of Content</h3>
               <ul>
@@ -100,8 +139,8 @@ export default function ServiceContent({
                 ))}
               </ul>
             </div>
-          )} */}
-          {/* <h1 className="service-heading">{content.title}</h1> */}
+          )}
+          <h1 className="service-heading">{content.title}</h1>
 
           {content.body1 && (
             <div className="slugContent-wrapper">
@@ -128,14 +167,12 @@ export default function ServiceContent({
                             <img
                               src={img.asset?.url}
                               alt={img.alt || `Slide ${i + 1}`}
-                              className="d-block w-100 rounded"
                             />
                           </a>
                         ) : (
                           <img
                             src={img.asset?.url}
                             alt={img.alt || `Slide ${i + 1}`}
-                            className="d-block w-100 rounded"
                           />
                         )}
                         {img.caption && (
@@ -222,7 +259,7 @@ export default function ServiceContent({
             <div className="componentDivider-formContainer">
               <div className="componentDivider-formContent">
                 <h2>Get in Touch</h2>
-                <form className="componentDivider-form"  onSubmit={onSubmit}>
+                <form className="componentDivider-form" onSubmit={onSubmit}>
                   <input
                     type="text"
                     placeholder="Full Name"
@@ -242,29 +279,64 @@ export default function ServiceContent({
                     required
                   />
 
-                  <select name="course" id="" required>
-                    <option value="">Select Course</option>
-                    <option value="MBA (General Management)">
-                      MBA (General Management)
-                    </option>
-                    <option value="MBA (Finance)">MBA (Finance)</option>
-                    <option value="MBA (Marketing)">MBA (Marketing)</option>
-                    <option value="MBA (HR Management)">
-                      MBA (HR Management)
-                    </option>
-                    <option value="MBA (Information Technology)">
-                      MBA (Information Technology)
-                    </option>
-                    <option value="MBA (Supply Chain Management)">
-                      MBA (Supply Chain Management)
-                    </option>
-                    <option value="MBA (Data Analytics)">
-                      MBA (Data Analytics)
-                    </option>
-                    <option value="MBA (Business Analytics)">
-                      MBA (Business Analytics)
-                    </option>
+                  <select
+                    value={service}
+                    onChange={(e) => setService(e.target.value)}
+                    required
+                    name="Service"
+                  >
+                    <option value="">Select Service</option>
+
+                    <option value="Cleaning Services">Cleaning Services</option>
+                    <option value="Marble Polishing">Marble Polishing</option>
+                    <option value="Painting Services">Painting Services</option>
+                    <option value="Civil Works">Civil Works</option>
+                    <option value="Pest Control Services">Pest Control Services</option>
+                    <option value="Office Cleaning">Office Cleaning</option>
                   </select>
+
+
+                  {/* Dynamic Second Select */}
+                  {service === "Cleaning Services" && (
+                    <select required name="Sub Service">
+                      <option value="">Select Cleaning Type</option>
+                      {cleaningOptions.map((item, idx) => (
+                        <option key={idx} value={item} >
+                          {item}
+                        </option>
+                      ))}
+                    </select>
+                  )}
+                  {service === "Painting Services" && (
+                    <select required name="Sub Service">
+                      <option value="">Select Cleaning Type</option>
+                      {paintingOptions.map((item, idx) => (
+                        <option key={idx} value={item} >
+                          {item}
+                        </option>
+                      ))}
+                    </select>
+                  )}
+                  {service === "Civil Works" && (
+                    <select required name="Sub Service">
+                      <option value="">Select Cleaning Type</option>
+                      {renovationOptions.map((item, idx) => (
+                        <option key={idx} value={item} >
+                          {item}
+                        </option>
+                      ))}
+                    </select>
+                  )}
+                  {service === "Pest Control Services" && (
+                    <select required name="Sub Service">
+                      <option value="">Select Pest Control Type</option>
+                      {pestControlOptions.map((item, idx) => (
+                        <option key={idx} value={item} >
+                          {item}
+                        </option>
+                      ))}
+                    </select>
+                  )}
 
                   <textarea
                     name="message"

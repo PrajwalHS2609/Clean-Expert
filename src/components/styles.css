@@ -1967,7 +1967,7 @@
   width: 25%;
   padding: 20px;
   position: sticky;
-  top: 120px;
+  top: 80px;
   left: 0;
 }
 
@@ -2041,7 +2041,7 @@
 }
 
 .componentDivider-form button:hover {
-  background: var(--neutralColor);
+  background-color: #0be9f54b;
   color: var(--customColor1);
 }
 

@@ -1,108 +1,84 @@
-
-import { PortableTextComponents, PortableTextBlock } from "@portabletext/react";
+import { PortableText, PortableTextBlock, PortableTextComponents } from "@portabletext/react";
 import imageUrlBuilder from "@sanity/image-url";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
-import { PortableText } from "@portabletext/react";
-import "@/components/styles.css";
+import { client } from "@/sanity/client";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { client } from "../../sanity/client";
 import { FAQAccordion } from "./SanityComponents/SanityFAQAccordion";
-const builder = imageUrlBuilder(client);
-function urlFor(source: SanityImageSource) {
-  return builder.image(source);
-}
+import "@/components/styles.css";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
-// ✅ Define types
-interface CustomTableRow {
-  cells: string[];
-}
+const builder = imageUrlBuilder(client);
+const urlFor = (source: SanityImageSource) => {
+  return builder.image(source);
+};
+/* ================= TYPES ================= */
+
 interface CustomTableValue {
   title?: string;
   headers: string[];
-  rows: CustomTableRow[];
-}
-interface AccordionBlockValue {
-  title: string;
-  content: PortableTextBlock[]; // ✅ Proper type instead of any[]
+  rows: { cells: string[] }[];
 }
 
-// interface FAQItem {
-//   question: string;
-//   answer: PortableTextBlock[];
-// }
-// interface FAQBlockValue {
-//   title?: string;
-//   items: FAQItem[];
-// }
+interface AccordionBlockValue {
+  title: string;
+  content: PortableTextBlock[];
+}
+
 interface QuoteBlockValue {
   text: string;
   author?: string;
 }
-export interface ContentHighlight {
-  title: string;
-  description?: string;
-}
+
 interface CarouselImage {
   _type: "image";
-  asset: {
-    _ref: string;
-  };
+  asset?: { _ref?: string };
   alt?: string;
   caption?: string;
   link?: string;
 }
+
 interface CarouselBlockValue {
   title?: string;
-  images: CarouselImage[];
+  images?: CarouselImage[];
 }
+
+/* ================= PORTABLE TEXT ================= */
+
 export const portableTextComponents: PortableTextComponents = {
   types: {
-    // 🖼️ Image Renderer
+    /* ---------- IMAGE ---------- */
     image: ({ value }) => {
       if (!value?.asset?._ref) return null;
-      const imageUrl = urlFor(value).url();
-      const href = value.link || null;
+
+      const imageUrl = urlFor(value.asset).width(1200).auto("format").url();
 
       return (
         <div className="portableImg">
-          {href ? (
-            <a href={href} target="_blank" rel="noopener noreferrer">
-              <img
-                src={imageUrl}
-                alt={value.alt || "img"}
-
-              />
-            </a>
-          ) : (
-            <img
-              src={imageUrl}
-              alt={value.alt || "img"}
-            />
-          )}
+          <img src={imageUrl} alt={value.alt || "image"} />
         </div>
       );
     },
 
-    // 📊 Custom Table Renderer
+    /* ---------- CUSTOM TABLE ---------- */
     customTable: ({ value }: { value: CustomTableValue }) => {
-      if (!value?.rows || !value?.headers) return null;
+      if (!value?.headers?.length || !value?.rows?.length) return null;
+
       return (
         <div className="custom-table">
           {value.title && <h3>{value.title}</h3>}
-          <table className="customTable-table">
+          <table>
             <thead>
               <tr>
-                {value.headers.map((header, idx) => (
-                  <th key={idx}>{header}</th>
+                {value.headers.map((h, i) => (
+                  <th key={i}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {value.rows.map((row, rowIndex) => (
-                <tr key={rowIndex}>
-                  {row.cells.map((cell, cellIndex) => (
-                    <td key={cellIndex}>{cell}</td>
+              {value.rows.map((row, i) => (
+                <tr key={i}>
+                  {row.cells.map((cell, j) => (
+                    <td key={j}>{cell}</td>
                   ))}
                 </tr>
               ))}
@@ -112,6 +88,7 @@ export const portableTextComponents: PortableTextComponents = {
       );
     },
 
+    /* ---------- ACCORDION ---------- */
     // 🔽 Accordion Renderer
     accordionBlock: ({ value }: { value: AccordionBlockValue }) => {
       if (!value?.content) return null;
@@ -130,74 +107,63 @@ export const portableTextComponents: PortableTextComponents = {
       );
     },
 
-    // ------------------------------FAQ----------------------------------
-
+    /* ---------- FAQ ---------- */
     faq: ({ value }) => {
-      return (
-        <FAQAccordion
-          value={value}
-          components={portableTextComponents}
-        />
-      );
+      return <FAQAccordion value={value} components={portableTextComponents} />;
     },
 
-    // --------------------------------------Quote------------------------------------
-    // 📝 Quote Block Renderer
+    /* ---------- QUOTE ---------- */
     quoteBlock: ({ value }: { value: QuoteBlockValue }) => {
       if (!value?.text) return null;
 
       return (
-        <blockquote className="quote-block">
-          <p className="quote-text"> {value.text} </p>
-          {value.author && (
-            <cite className="quote-author">— {value.author}</cite>
-          )}
+        <blockquote>
+          <p>{value.text}</p>
+          {value.author && <cite>— {value.author}</cite>}
         </blockquote>
       );
     },
 
-    // ----------------------------------HighlightBlock----------------------------------
+    /* ---------- HIGHLIGHT ---------- */
     highlightBlock: ({ value }) => {
       return (
         <div className="highlight-box">
-          {value.title && <h5 className="highlight-title">{value.title}</h5>}
-          <div className="highlight-content">
-            <PortableText
-              value={value.content}
-              components={portableTextComponents}
-            />
-          </div>
+          {value.title && <h5>{value.title}</h5>}
+          <PortableText value={value.content} components={portableTextComponents} />
         </div>
       );
     },
 
-    // ----------------------------Carousel--------------------------------
+    /* ---------- CAROUSEL (FIXED) ---------- */
     carouselBlock: ({ value }: { value: CarouselBlockValue }) => {
       if (!value?.images?.length) return null;
 
       return (
-        <Carousel className="carouselContainer" interval={3000}>
-          {value.images.map((img: CarouselImage, i: number) => {
-            // ✅ Build URL with Sanity's image URL builder
-            const imageUrl = img.asset?._ref ? urlFor(img.asset).url() : null;
+        <Carousel interval={3000} className="carouselContainer">
+          {value.images.map((img, i) => {
+            if (!img.asset?._ref) return null;
 
-            if (!imageUrl) return null;
+            const imageUrl = urlFor(img.asset)
+              .width(1200)
+              .auto("format")
+              .url();
 
-            const ImageElement = (
+            const image = (
               <img
                 src={imageUrl}
                 alt={img.alt || `Slide ${i + 1}`}
+                className="d-block w-100"
               />
             );
 
             return (
-              <Carousel.Item key={i} className="carouselItem">
+              <Carousel.Item key={i}>
                 {img.link ? (
                   <a href={img.link} target="_blank" rel="noopener noreferrer">
-                    {ImageElement}
+                    {image}
                   </a>
                 ) : (
-                  ImageElement
+                  image
                 )}
 
                 {img.caption && (

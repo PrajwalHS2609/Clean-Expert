@@ -1,7 +1,7 @@
 import React from 'react'
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
 import { RxTimer } from "react-icons/rx";
-import { MdCurrencyRupee, MdPhone } from "react-icons/md";
+import { MdCurrencyRupee } from "react-icons/md";
 import { ImLeaf } from "react-icons/im";
 import { GrPlan } from "react-icons/gr";
 import { FaEye } from "react-icons/fa6";

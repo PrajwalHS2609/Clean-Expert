@@ -148,7 +148,7 @@ export async function generateMetadata({
       metaTitle?: string;
       metaDescription?: string;
     } | null;
-  }>(SERVICE_QUERY, { slug });
+  }>(SERVICE_CONTENT_QUERY, { slug });
 
   if (serviceData?.service) {
     return {
@@ -161,7 +161,25 @@ export async function generateMetadata({
         "Professional services by Prime Clean.",
     };
   }
+  const serviceContentData = await client.fetch<{
+    service: {
+      title?: string;
+      metaTitle?: string;
+      metaDescription?: string;
+    } | null;
+  }>(SERVICE_QUERY, { slug });
 
+  if (serviceContentData?.service) {
+    return {
+      title:
+        serviceContentData.service.metaTitle ||
+        serviceContentData.service.title ||
+        "Prime Clean Services",
+      description:
+        serviceContentData.service.metaDescription ||
+        "Professional services by Prime Clean.",
+    };
+  }
   // 3️⃣ Not found
   return {
     title: "Not Found | Prime Clean",
