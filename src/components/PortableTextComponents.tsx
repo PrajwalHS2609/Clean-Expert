@@ -7,6 +7,7 @@ import "@/components/styles.css";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { client } from "../../sanity/client";
+import { FAQAccordion } from "./SanityComponents/SanityFAQAccordion";
 const builder = imageUrlBuilder(client);
 function urlFor(source: SanityImageSource) {
   return builder.image(source);
@@ -26,14 +27,14 @@ interface AccordionBlockValue {
   content: PortableTextBlock[]; // ✅ Proper type instead of any[]
 }
 
-interface FAQItem {
-  question: string;
-  answer: PortableTextBlock[];
-}
-interface FAQBlockValue {
-  title?: string;
-  items: FAQItem[];
-}
+// interface FAQItem {
+//   question: string;
+//   answer: PortableTextBlock[];
+// }
+// interface FAQBlockValue {
+//   title?: string;
+//   items: FAQItem[];
+// }
 interface QuoteBlockValue {
   text: string;
   author?: string;
@@ -131,26 +132,12 @@ export const portableTextComponents: PortableTextComponents = {
 
     // ------------------------------FAQ----------------------------------
 
-    faq: ({ value }: { value: FAQBlockValue }) => {
-      if (!value?.items?.length) return null;
-
+    faq: ({ value }) => {
       return (
-        <div className="faq-section">
-          {value.title && <h2 className="faq-title">{value.title}</h2>}
-          <div className="accordion-items">
-            {value.items.map((item: FAQItem, idx: number) => (
-              <details key={idx} className="faq-item">
-                <summary className="faq-question">{item.question}</summary>
-                <div className="faq-answer">
-                  <PortableText
-                    value={item.answer}
-                    components={portableTextComponents}
-                  />
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
+        <FAQAccordion
+          value={value}
+          components={portableTextComponents}
+        />
       );
     },
 

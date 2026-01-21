@@ -1,6 +1,4 @@
-import React from "react";
-import "./../HomePage/HomeHeroSite/HomeHeroSite.css";
-import Image from "next/image";
+import React from 'react'
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
 import { RxTimer } from "react-icons/rx";
 import { MdCurrencyRupee, MdPhone } from "react-icons/md";
@@ -9,9 +7,10 @@ import { GrPlan } from "react-icons/gr";
 import { FaEye } from "react-icons/fa6";
 import { BsTools } from "react-icons/bs";
 import { FaUsersCog } from "react-icons/fa";
+import "./../HomePage/HomeHeroSite/HomeHeroSite.css";
 
-const ServiceContentHeader = (props) => {
-  const content = [
+const SanityHeroSection = (props) => {
+      const content = [
     {
       id: 1,
       icon: <FaUsersCog />,
@@ -56,23 +55,23 @@ const ServiceContentHeader = (props) => {
     },
   ];
   return (
-    <div className="hero2-container">
+ <div className="hero2-container">
       {/* HERO */}
       <div className="hero2-banner">
-        <Image src={props.bannerImg} alt="banner" fill priority />
+        <img src={props.bannerImg} alt={props.title}/>
 
         <div className="hero2-content">
           {/* LEFT */}
-          <div className="hero2-text">
-            <span className="hero2-badge">Trusted by 5,000+ Homeowners</span>
+          <div className="hero2-text" id='hero2-title'>
+            {/* <span className="hero2-badge">Trusted by 5,000+ Homeowners</span> */}
 
             <h2>{props.title}</h2>
 
-            <p>
+            {/* <p>
               High-quality cleaning services, expertly managed and delivered on
               time, for homes that demand superior standards.
-            </p>
-            <div className="hero2-buttonContainer">
+            </p> */}
+            {/* <div className="hero2-buttonContainer">
               <a href="">
                 <button className="button1">
                   Browse Services
@@ -90,7 +89,7 @@ const ServiceContentHeader = (props) => {
                   Contact Us <MdPhone />
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* RIGHT FORM */}
@@ -138,7 +137,7 @@ const ServiceContentHeader = (props) => {
         </div> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ServiceContentHeader;
+export default SanityHeroSection

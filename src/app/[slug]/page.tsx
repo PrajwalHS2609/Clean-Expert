@@ -9,6 +9,7 @@ import SanityServiceContent, {
 } from "@/components/SanityComponents/SanityService";
 import PostContent, { PostContentType } from "@/components/SanityComponents/Post";
 import BlogSidebar from './../../components/BlogPage/BlogSidebar/BlogSidebar';
+import ServiceContent, { ServiceContentType } from "@/components/SanityComponents/ServiceContent";
 
 /* =========================
    GROQ QUERY
@@ -72,6 +73,23 @@ const SERVICE_QUERY = `
   }
 }
 `;
+const SERVICE_CONTENT_QUERY = `{
+  "service": *[_type == "ServiceCategory" && slug.current == $slug][0]{
+    _id, title, slug,metaTitle ,metaDescription,body1, body2,
+    mainImage{ asset->{url} },
+    youtubeVideoUrl,
+    faq[]{ question, answer },
+   tableOfContent[]{
+      title
+    },
+    customTable{ title, headers, rows[]{ cells } }
+  },
+  "carouselBlock": *[_type == "carouselBlock"][0]{
+    title,
+    images[]{ alt, caption, link, asset->{ url } }
+  },
+
+}`;
 
 type SlugParams = { slug: string };
 
@@ -183,7 +201,22 @@ export default async function SlugPage({
       </div>
     );
   }
+  // 2️⃣ SERVICE
+  const serviceData = await client.fetch<{
+    service: ServiceContentType | null;
+    carouselBlock: CarouselBlock | null;
+  }>(SERVICE_CONTENT_QUERY, { slug });
 
+  if (serviceData.service) {
+    return (
+      <ServiceContent
+        content={{
+          ...serviceData.service,
+          carouselBlock: serviceData.carouselBlock ?? undefined,
+        }}
+      />
+    );
+  }
   const data = await client.fetch<{
     service: SanityServiceContentType | null;
   }>(SERVICE_QUERY, { slug });
@@ -193,4 +226,6 @@ export default async function SlugPage({
   }
 
   return <SanityServiceContent content={data.service} />;
+
+
 }

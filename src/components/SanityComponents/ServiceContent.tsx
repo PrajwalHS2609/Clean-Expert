@@ -6,7 +6,7 @@ import type { PortableTextBlock } from "@portabletext/types";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Swal from "sweetalert2";
-import ServiceContentHeader from './../ServiceComponents/ServiceContentHeader';
+import SanityHeroSection from './SanityHeroSection';
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
@@ -46,7 +46,7 @@ export type ServiceContentType = {
     const formData = new FormData(form);
 
     // ✅ Add your Web3Forms access key
-    formData.append("access_key", "8e8187ed-fc3e-4bd8-b553-0755da89ab07");
+    formData.append("access_key", "");
 
     const object = Object.fromEntries(formData.entries());
     const json = JSON.stringify(object);
@@ -87,11 +87,11 @@ export default function ServiceContent({
   const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
     <div className="main-container service-wrapper1">
-      {imageUrl && <ServiceContentHeader title={content.title} banner={imageUrl} />}
+      {imageUrl && <SanityHeroSection title={content.title} bannerImg={imageUrl} />}
 
       <div className="componentDivider-container">
         <div className="componentDivider-content">
-          {content.tableOfContent?.length && (
+          {/* {content.tableOfContent?.length && (
             <div className="tableOfContent-container">
               <h3>Table of Content</h3>
               <ul>
@@ -100,8 +100,8 @@ export default function ServiceContent({
                 ))}
               </ul>
             </div>
-          )}
-          <h1 className="service-heading">{content.title}</h1>
+          )} */}
+          {/* <h1 className="service-heading">{content.title}</h1> */}
 
           {content.body1 && (
             <div className="slugContent-wrapper">

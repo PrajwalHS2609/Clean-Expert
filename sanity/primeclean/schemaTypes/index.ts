@@ -10,6 +10,7 @@ import post from './post'
 import quoteContent from './quoteContent'
 import seoContent from './seoContent'
 import seoKeywords from './seoKeywords'
+import serviceContents from './serviceContents'
 import serviceEssentials from './serviceEssentials'
 import services from './services'
 
@@ -28,4 +29,5 @@ export const schemaTypes = [
   serviceEssentials,
   seoContent,
   seoKeywords,
+  serviceContents,
 ]

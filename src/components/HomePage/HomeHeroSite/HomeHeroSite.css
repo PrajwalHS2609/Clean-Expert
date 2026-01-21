@@ -37,7 +37,9 @@
 .hero2-text {
   max-width: 540px;
 }
-
+#hero2-title>h2{
+  font-size: 40px;
+}
 .hero2-badge {
   display: inline-block;
   margin-bottom: 16px;

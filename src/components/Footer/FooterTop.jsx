@@ -8,14 +8,16 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa6";
-
+const handlePop = () => {
+  document.querySelector(".popup-container").style.display = "flex";
+};
 const FooterTop = () => {
   return (
     <div className="footerTop-container">
       <div className="footerTop-content">
         <div className="footerTop-item">
           <h4>Contact US</h4>
-          <button>Book Now</button>
+          <button onClick={handlePop}>Book Now</button>
         </div>
         <div className="footerTop-item">
           <h4>
@@ -26,7 +28,7 @@ const FooterTop = () => {
             {" "}
             <a href="tel:7090234446">+91 7090234446</a>
           </h4>
-          <a href="">
+          <a href="https://api.whatsapp.com/send?phone=917090234446">
             <button>
               <FaWhatsapp className="footerTop-socialIco" />
               Chat With Us
@@ -39,25 +41,16 @@ const FooterTop = () => {
 
         <ul>
           <li>
-            <Link href={"/"}>Our Reviews</Link>
+            <Link href={"/about-us"}>About Us</Link>
           </li>
           <li>
-            <Link href={"/"}>Services</Link>
+            <Link href={"/blog"}>Blogs</Link>
           </li>
           <li>
-            <Link href={"/"}>About Us</Link>
+            <Link href={"/our-gallery"}>Our Work</Link>
           </li>
           <li>
-            <Link href={"/"}>Blogs</Link>
-          </li>
-          <li>
-            <Link href={"/"}>All Things Cleaning</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Our Work</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Contact Us</Link>
+            <Link href={"/contact-us"}>Contact Us</Link>
           </li>
           <li>
             <Link href={"/"}>Careers</Link>
