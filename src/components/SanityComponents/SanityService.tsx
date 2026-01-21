@@ -221,7 +221,7 @@ export default function SanityServiceContent({
           )}
 
           {/* CONTACT */}
-          <div className="serviceHeader-content">
+          <div className="serviceHeader-content" id="serviceHeader-contactContent">
             <a href="#">
               <IoLocationOutline className="serviceHeader-iconAdd" />
               Bangalore, India

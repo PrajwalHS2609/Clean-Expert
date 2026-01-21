@@ -361,6 +361,16 @@
   color: var(--customColor1);
   text-decoration: none;
 }
+#serviceHeader-contactContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+#serviceHeader-contactContent > a {
+  color: var(--customColor1);
+  text-decoration: none;
+}
 .serviceHeader-iconAdd {
   font-size: 20px;
   margin-right: 5px;
