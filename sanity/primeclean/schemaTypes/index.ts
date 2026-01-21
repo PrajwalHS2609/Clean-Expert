@@ -12,6 +12,7 @@ import seoContent from './seoContent'
 import seoKeywords from './seoKeywords'
 import serviceContents from './serviceContents'
 import serviceEssentials from './serviceEssentials'
+import serviceLocality from './serviceLocality'
 import services from './services'
 
 export const schemaTypes = [
@@ -30,4 +31,5 @@ export const schemaTypes = [
   seoContent,
   seoKeywords,
   serviceContents,
+  serviceLocality
 ]

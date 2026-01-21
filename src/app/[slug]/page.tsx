@@ -10,6 +10,7 @@ import SanityServiceContent, {
 import PostContent, { PostContentType } from "@/components/SanityComponents/Post";
 import BlogSidebar from './../../components/BlogPage/BlogSidebar/BlogSidebar';
 import ServiceContent, { ServiceContentType } from "@/components/SanityComponents/ServiceContent";
+import SanityServiceLocality from "@/components/SanityComponents/SanityServiceLocality";
 
 /* =========================
    GROQ QUERY
@@ -90,6 +91,51 @@ const SERVICE_CONTENT_QUERY = `{
   },
 
 }`;
+
+const SERVICE_LOCALITY = `
+{
+  "service": *[_type == "serviceLocality" && slug.current == $slug][0]{
+    title,
+    slug,
+    metaTitle,
+    metaDescription,
+    mainImage,
+    description,
+    services[]{
+      title,
+      link,
+      image
+    },
+    pricing{
+      originalPrice,
+      discountPrice,
+      offerLabel,
+      monthlyBookings,
+      unit,
+    },
+    subServicesLabel,
+    subServices[]{ name, link },
+    essentials{
+      description,
+      benefits,
+      faq,
+      reviews[]{
+        name,
+        rating,
+        location,
+        image,
+        comment
+      }
+    },
+    seoKeywords{ keywords },
+    seoContent{
+      intro,
+      expanded
+    }
+  }
+}
+`;
+
 
 type SlugParams = { slug: string };
 
@@ -180,6 +226,25 @@ export async function generateMetadata({
         "Professional services by Prime Clean.",
     };
   }
+    const serviceLocalityData = await client.fetch<{
+    service: {
+      title?: string;
+      metaTitle?: string;
+      metaDescription?: string;
+    } | null;
+  }>(SERVICE_LOCALITY, { slug });
+
+  if (serviceLocalityData?.service) {
+    return {
+      title:
+        serviceLocalityData.service.metaTitle ||
+        serviceLocalityData.service.title ||
+        "Prime Clean Services",
+      description:
+        serviceLocalityData.service.metaDescription ||
+        "Professional services by Prime Clean.",
+    };
+  }
   // 3️⃣ Not found
   return {
     title: "Not Found | Prime Clean",
@@ -235,15 +300,26 @@ export default async function SlugPage({
       />
     );
   }
-  const data = await client.fetch<{
-    service: SanityServiceContentType | null;
-  }>(SERVICE_QUERY, { slug });
 
-  if (!data?.service) {
-    notFound();
+  // ----------------------------------Locality------------------------------------
+  const localityData = await client.fetch<{
+    service: SanityServiceContentType | null;
+  }>(SERVICE_LOCALITY, { slug });
+
+  if (localityData?.service) {
+    return <SanityServiceLocality content={localityData.service} />;
   }
 
+  // ---------------------------------ServiceSanity-------------------------------------------
+const data = await client.fetch<{
+  service: SanityServiceContentType | null;
+}>(SERVICE_QUERY, { slug });
+
+if (data?.service) {
   return <SanityServiceContent content={data.service} />;
-
-
 }
+
+// ✅ FINAL FALLBACK
+notFound();
+}
+

@@ -130,7 +130,7 @@ export default function ServiceContent({
 
       <div className="componentDivider-container">
         <div className="componentDivider-content">
-          {content.tableOfContent?.length && (
+          {/* {content.tableOfContent?.length && (
             <div className="tableOfContent-container">
               <h3>Table of Content</h3>
               <ul>
@@ -140,7 +140,7 @@ export default function ServiceContent({
               </ul>
             </div>
           )}
-          <h1 className="service-heading">{content.title}</h1>
+          <h1 className="service-heading">{content.title}</h1> */}
 
           {content.body1 && (
             <div className="slugContent-wrapper">
