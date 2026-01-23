@@ -8,58 +8,58 @@ const FooterBelow = () => {
         <h4>Service Locations</h4>
         <ul>
           <li>
-            <Link href="/">Jayanagar</Link>
+            <Link href="/home-cleaning-services-near-jayanagar">Jayanagar</Link>
           </li>
           <li>
-            <Link href="/">Indira Nagar</Link>
+            <Link href="/home-cleaning-services-near-indiranagar">Indira Nagar</Link>
           </li>
           <li>
-            <Link href="/">Koramangala</Link>
+            <Link href="/home-cleaning-services-near-koramangala">Koramangala</Link>
           </li>
           <li>
-            <Link href="/">Whitefield</Link>
+            <Link href="/home-cleaning-services-near-whitefield">Whitefield</Link>
           </li>
           <li>
-            <Link href="/">Marathahalli</Link>
+            <Link href="/home-cleaning-services-near-marathahalli">Marathahalli</Link>
           </li>
           <li>
-            <Link href="/">BTM Layout</Link>
+            <Link href="/home-cleaning-services-near-btm-layout">BTM Layout</Link>
           </li>
           <li>
-            <Link href="/">Vijaya Nagar</Link>
+            <Link href="/home-cleaning-services-near-vijayanagar">Vijaya Nagar</Link>
           </li>
           <li>
-            <Link href="/">JP Nagar</Link>
+            <Link href="/home-cleaning-services-near-jp-nagar">JP Nagar</Link>
           </li>
           <li>
-            <Link href="/">HSR Layout</Link>
+            <Link href="/home-cleaning-services-near-hsr-layout">HSR Layout</Link>
           </li>
           <li>
-            <Link href="/">Malleshwaram</Link>
+            <Link href="/home-cleaning-services-near-malleshwaram">Malleshwaram</Link>
           </li>
           <li>
-            <Link href="/">Bannerghatta Road</Link>
+            <Link href="/home-cleaning-services-near-bannerghatta-road">Bannerghatta Road</Link>
           </li>
           <li>
-            <Link href="/">Banashankari</Link>
+            <Link href="/home-cleaning-services-near-banashankari">Banashankari</Link>
           </li>
           <li>
             <Link href="/">Bellandur</Link>
           </li>
           <li>
-            <Link href="/">Basavanagudi</Link>
+            <Link href="/home-cleaning-services-near-basavanagudi">Basavanagudi</Link>
           </li>
           <li>
-            <Link href="/">Brookefield</Link>
+            <Link href="/home-cleaning-services-near-brookefield">Brookefield</Link>
           </li>
           <li>
-            <Link href="/">Yelahanka</Link>
+            <Link href="/home-cleaning-services-near-yelahanka">Yelahanka</Link>
           </li>
           <li>
-            <Link href="/">Sarjapur Road</Link>
+            <Link href="/home-cleaning-services-near-sarjapur-road">Sarjapur Road</Link>
           </li>
           <li>
-            <Link href="/">Sadashiva Nagar</Link>
+            <Link href="/home-cleaning-services-near-sadashiva-nagar">Sadashiva Nagar</Link>
           </li>
           <li>
             <Link href="/">Kalyan Nagar</Link>
@@ -245,7 +245,7 @@ const FooterBelow = () => {
             <Link href="/">Kodigehalli</Link>
           </li>
           <li>
-            <Link href="/">Sarjapur</Link>
+            <Link href="/home-cleaning-services-near-sarjapur-road">Sarjapur</Link>
           </li>
           <li>
             <Link href="/">Hennur Road</Link>
