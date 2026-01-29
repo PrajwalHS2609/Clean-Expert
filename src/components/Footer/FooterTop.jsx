@@ -53,7 +53,7 @@ const FooterTop = () => {
             <Link href={"/contact-us"}>Contact Us</Link>
           </li>
           <li>
-            <Link href={"/"}>Careers</Link>
+            <Link href={"/career"}>Careers</Link>
           </li>
         </ul>
       </div>

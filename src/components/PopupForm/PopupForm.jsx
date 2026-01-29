@@ -123,7 +123,7 @@ const PopupForm = () => {
               required
               name="Service"
             >
-              <option value="" name>
+              <option value="" name="">
                 Select Service{" "}
               </option>
               <option value="Cleaning Services" name="Cleaning Services">

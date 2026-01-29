@@ -10,6 +10,18 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
 }
+.careerPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex; /* ✅ MUST be flex */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999; /* ✅ ensure on top */
+}
 
 .popup-wrapper {
   background: white;

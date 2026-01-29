@@ -1,0 +1,152 @@
+/* Container */
+.career-container {
+  width: 100%;
+  background: #f5f7f8;
+  padding: 40px;
+}
+
+/* Hero */
+
+.career-hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.career-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Job Card */
+.career-job {
+  max-width: 900px;
+  margin: 40px auto 0;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.career-job h2 {
+  font-size: 30px;
+  color: var(--customColor1);
+  margin-bottom: 15px;
+}
+
+/* Meta Info */
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 25px;
+}
+.job-meta>span>strong{
+    color: var(--customColor2);
+}
+/* Sections */
+.job-section {
+  margin-bottom: 25px;
+}
+
+.job-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--customColor1);
+}
+
+.job-section ul {
+  padding-left: 20px;
+}
+
+.job-section li {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #eef7f5;
+  color: var(--customColor2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Footer */
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.salary p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Button */
+.apply-btn {
+  padding: 12px 28px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background: var(--customColor1);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: var(--customColor1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .career-hero h1 {
+    font-size: 32px;
+  }
+
+  .career-job {
+    margin: -30px 15px 0;
+    padding: 20px;
+  }
+
+  .career-job h2 {
+    font-size: 24px;
+  }
+
+  .job-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .apply-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-hero p {
+    font-size: 16px;
+  }
+
+  .job-section h3 {
+    font-size: 18px;
+  }
+}
