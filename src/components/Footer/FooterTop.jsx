@@ -71,6 +71,9 @@ const FooterTop = () => {
           <li>
             <Link href={"/"}>Refer a Friend</Link>
           </li>
+          <li>
+                    <a href="/sitemap.xml">Sitemap</a>
+          </li>
         </ul>
       </div>
       <div className="footerTop-content">
