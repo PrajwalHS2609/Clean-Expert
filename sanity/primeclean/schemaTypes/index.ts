@@ -5,6 +5,7 @@ import blogCategory from './blogCategory'
 import carouselBlock from './carouselBlock'
 import customTable from './customTable'
 import faqContent from './faqContent'
+import globalOffer from './globalOffer'
 import highlightBlock from './highlightBlock'
 import post from './post'
 import quoteContent from './quoteContent'
@@ -31,5 +32,6 @@ export const schemaTypes = [
   seoContent,
   seoKeywords,
   serviceContents,
-  serviceLocality
+  serviceLocality,
+  globalOffer,
 ]

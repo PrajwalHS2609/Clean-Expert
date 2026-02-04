@@ -46,7 +46,6 @@ const SERVICE_QUERY = `
         pricing{
       originalPrice,
       discountPrice,
-      offerLabel,
       monthlyBookings,
       unit,
     },
@@ -70,8 +69,12 @@ const SERVICE_QUERY = `
        seoContent {
     intro,
     expanded,
-  } 
-  }
+  },
+
+  },
+            "globalOffer": *[_type == "globalOffer"][0]{
+    label
+  },
 }
 `;
 const SERVICE_CONTENT_QUERY = `{
@@ -109,7 +112,6 @@ const SERVICE_LOCALITY = `
     pricing{
       originalPrice,
       discountPrice,
-      offerLabel,
       monthlyBookings,
       unit,
     },
@@ -132,7 +134,11 @@ const SERVICE_LOCALITY = `
       intro,
       expanded
     }
-  }
+
+  },
+"globalOffer": *[_type == "globalOffer"][0]{
+    label
+  },
 }
 `;
 
@@ -226,7 +232,7 @@ export async function generateMetadata({
         "Professional services by Prime Clean.",
     };
   }
-    const serviceLocalityData = await client.fetch<{
+  const serviceLocalityData = await client.fetch<{
     service: {
       title?: string;
       metaTitle?: string;
@@ -304,22 +310,26 @@ export default async function SlugPage({
   // ----------------------------------Locality------------------------------------
   const localityData = await client.fetch<{
     service: SanityServiceContentType | null;
+    globalOffer?: { label?: string };
   }>(SERVICE_LOCALITY, { slug });
 
   if (localityData?.service) {
-    return <SanityServiceLocality content={localityData.service} />;
+    return <SanityServiceLocality content={localityData.service} globalOffer={localityData.globalOffer} />;
   }
 
   // ---------------------------------ServiceSanity-------------------------------------------
-const data = await client.fetch<{
-  service: SanityServiceContentType | null;
-}>(SERVICE_QUERY, { slug });
+  const data = await client.fetch<{
+    service: SanityServiceContentType | null;
+    globalOffer?: { label?: string };
+  }>(SERVICE_QUERY, { slug });
 
-if (data?.service) {
-  return <SanityServiceContent content={data.service} />;
-}
+  if (data?.service) {
+    return <SanityServiceContent content={data.service}
+      globalOffer={data.globalOffer}
+    />;
+  }
 
-// ✅ FINAL FALLBACK
-notFound();
+  // ✅ FINAL FALLBACK
+  notFound();
 }
 

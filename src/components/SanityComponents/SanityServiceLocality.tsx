@@ -78,6 +78,9 @@ export type SanityServiceEssentialsType = {
     comment?: PortableTextBlock[];
   }[];
 };
+export type GlobalOfferType = {
+  label?: string;
+};
 
 export type ServicePricing = {
   originalPrice?: string;
@@ -126,9 +129,11 @@ const serviceImg = [
 /* ---------------- COMPONENT ---------------- */
 
 export default function SanityServiceLocality({
-  content,
+  content, globalOffer
 }: {
   content: SanityServiceContentType;
+  globalOffer?: GlobalOfferType;
+
 }) {
 
   console.log("MAIN Image:", content.mainImage);
@@ -187,9 +192,9 @@ export default function SanityServiceLocality({
             <div className="serviceHeader-contentPrice" id="serviceHeader-booking">
               <b>{content.pricing?.monthlyBookings} Bookings in the Past Month</b>
             </div>
-            {content.pricing?.offerLabel && (
+            {globalOffer?.label && (
               <div className="serviceHeader-contentOffer">
-                <b>{content.pricing.offerLabel}</b>
+                <b>{globalOffer.label}</b>
               </div>
             )}
             <div className="serviceHeader-contentPrice">
