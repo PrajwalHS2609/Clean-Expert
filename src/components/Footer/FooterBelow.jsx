@@ -152,76 +152,77 @@ const FooterBelow = () => {
             <Link href="/home-cleaning-services-in-hulimavu">Hulimavu</Link>
           </li>
           <li>
-            <Link href="/">Adugodi</Link>
+            <Link href="/home-cleaning-service-in-adugodi">Adugodi</Link>
           </li>
           <li>
-            <Link href="/">Kodihalli</Link>
+            <Link href="/home-cleaning-service-in-kodihalli">Kodihalli</Link>
           </li>
           <li>
-            <Link href="/">Chamarajpet</Link>
+            <Link href="/home-cleaning-service-in-chamarajpet">Chamarajpet</Link>
           </li>
           <li>
-            <Link href="/">Uttarahalli</Link>
+            <Link href="/home-cleaning-service-in-uttarahalli">Uttarahalli</Link>
           </li>
           <li>
-            <Link href="/">Nagavara</Link>
+            <Link href="/ome-cleaning-service-in-nagavara">Nagavara</Link>
           </li>
           <li>
-            <Link href="/">Ganga Nagar</Link>
+            <Link href="/home-cleaning-service-in-ganga-nagar">Ganga Nagar</Link>
           </li>
           <li>
-            <Link href="/">RT Nagar</Link>
+            <Link href="/home-cleaning-service-in-rt-nagar">RT Nagar</Link>
           </li>
           <li>
-            <Link href="/">Hoodi</Link>
+            <Link href="/home-cleaning-service-in-hoodi">Hoodi</Link>
           </li>
           <li>
-            <Link href="/">Kadubeesanahalli</Link>
+            <Link href="/home-cleaning-service-in-kadubeesanahalli">Kadubeesanahalli</Link>
           </li>
           <li>
-            <Link href="/">Konanakunte</Link>
+            <Link href="/home-cleaning-service-in-konanakunte">Konanakunte</Link>
           </li>
           <li>
-            <Link href="/">Jayamahal</Link>
+            <Link href="/home-cleaning-service-in-jayamahal">Jayamahal</Link>
           </li>
           <li>
-            <Link href="/">Begur</Link>
+            <Link href="/home-cleaning-service-in-begur">Begur</Link>
           </li>
           <li>
-            <Link href="/">Jeevanbheema Nagar</Link>
+            <Link href="/home-cleaning-service-in-jeevanbheema-nagar">Jeevanbheema Nagar</Link>
           </li>
           <li>
-            <Link href="/">Nandini Layout</Link>
+            <Link href="/home-cleaning-service-in-nandini-layout">Nandini Layout</Link>
           </li>
           <li>
-            <Link href="/">RMV 2nd Stage</Link>
+            <Link href="/home-cleaning-service-in-rmv-2nd-stage
+            ">RMV 2nd Stage</Link>
           </li>
           <li>
-            <Link href="/">Shanthi Nagar</Link>
+            <Link href="/home-cleaning-service-in-shanthi-nagar">Shanthi Nagar</Link>
           </li>
           <li>
-            <Link href="/">Bannerghatta</Link>
+            <Link href="/home-cleaning-service-in-bannerghatta">Bannerghatta</Link>
           </li>
           <li>
-            <Link href="/">Kamala Nagar</Link>
+            <Link href="/home-cleaning-service-in-kamala-nagar">Kamala Nagar</Link>
           </li>
           <li>
-            <Link href="/">Richmond Town</Link>
+            <Link href="/home-cleaning-service-in-richmond-town">Richmond Town</Link>
           </li>
           <li>
-            <Link href="/">Chikkalasandra</Link>
+            <Link href="/home-cleaning-service-in-chikkalasandra">Chikkalasandra</Link>
           </li>
           <li>
-            <Link href="/">Kadugodi</Link>
+            <Link href="/home-cleaning-service-in-kadugodi">Kadugodi</Link>
           </li>
           <li>
-            <Link href="/">Varthur</Link>
+            <Link href="/home-cleaning-service-in-varthur">Varthur</Link>
           </li>
           <li>
-            <Link href="/">Jakkur</Link>
+            <Link href="/home-cleaning-service-in-jakkur">Jakkur</Link>
           </li>
           <li>
-            <Link href="/">Battarahalli</Link>
+            <Link href="/home-cleaning-service-in-battarahalli">Battarahalli</Link>
           </li>
           <li>
             <Link href="/">Hegde Nagar</Link>
