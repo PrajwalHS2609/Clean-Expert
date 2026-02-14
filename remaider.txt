@@ -1,6 +1,4 @@
-  add meta description
-  make images changes for offer
-  add blog and test it
+
 
     // ------------------------------FAQ----------------------------------
 

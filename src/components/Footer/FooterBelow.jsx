@@ -44,7 +44,7 @@ const FooterBelow = () => {
             <Link href="/home-cleaning-services-near-banashankari">Banashankari</Link>
           </li>
           <li>
-            <Link href="/">Bellandur</Link>
+            <Link href="/home-cleaning-services-near-bellandur">Bellandur</Link>
           </li>
           <li>
             <Link href="/home-cleaning-services-near-basavanagudi">Basavanagudi</Link>
@@ -62,94 +62,94 @@ const FooterBelow = () => {
             <Link href="/home-cleaning-services-near-sadashiva-nagar">Sadashiva Nagar</Link>
           </li>
           <li>
-            <Link href="/">Kalyan Nagar</Link>
+            <Link href="/home-cleaning-services-in-kalyan-nagar">Kalyan Nagar</Link>
           </li>
           <li>
-            <Link href="/">KR Puram</Link>
+            <Link href="/home-cleaning-services-in-kr-puram">KR Puram</Link>
           </li>
           <li>
-            <Link href="/">Hebbal</Link>
+            <Link href="/home-cleaning-services-in-hebbal">Hebbal</Link>
           </li>
           <li>
-            <Link href="/">Ramamurthy Nagar</Link>
+            <Link href="/home-cleaning-services-in-ramamurthy-nagar">Ramamurthy Nagar</Link>
           </li>
           <li>
-            <Link href="/">Domlur</Link>
+            <Link href="/home-cleaning-services-in-domlur">Domlur</Link>
           </li>
           <li>
-            <Link href="/">Arekere</Link>
+            <Link href="/home-cleaning-services-in-arekere">Arekere</Link>
           </li>
           <li>
-            <Link href="/">Sanjay Nagar</Link>
+            <Link href="/home-cleaning-services-in-sanjay-nagar">Sanjay Nagar</Link>
           </li>
           <li>
-            <Link href="/">New Thippasandra</Link>
+            <Link href="/home-cleaning-services-in-new-thippasandra">New Thippasandra</Link>
           </li>
           <li>
-            <Link href="/">Banaswadi</Link>
+            <Link href="/home-cleaning-services-in-banaswadi">Banaswadi</Link>
           </li>
           <li>
-            <Link href="/">Vasanth Nagar</Link>
+            <Link href="/home-cleaning-services-in-vasanth-nagar">Vasanth Nagar</Link>
           </li>
           <li>
-            <Link href="/">CV Raman Nagar</Link>
+            <Link href="/home-cleaning-services-in-cv-raman-nagar">CV Raman Nagar</Link>
           </li>
           <li>
-            <Link href="/">Frazer Town</Link>
+            <Link href="/home-cleaning-services-in-frazer-town">Frazer Town</Link>
           </li>
           <li>
-            <Link href="/">Bommenahalli</Link>
+            <Link href="/home-cleaning-services-in-bommenahalli">Bommenahalli</Link>
           </li>
           <li>
-            <Link href="/">Sahakara Nagar</Link>
+            <Link href="/home-cleaning-services-in-sahakara-nagar">Sahakara Nagar</Link>
           </li>
           <li>
-            <Link href="/">Kumaraswamy Layout</Link>
+            <Link href="/home-cleaning-services-in-kumaraswamy-layout">Kumaraswamy Layout</Link>
           </li>
           <li>
-            <Link href="/">Yelahanka New Town</Link>
+            <Link href="/home-cleaning-services-in-yelahanka-new-town">Yelahanka New Town</Link>
           </li>
           <li>
-            <Link href="/">Seshadripuram</Link>
+            <Link href="/home-cleaning-services-in-seshadripuram">Seshadripuram</Link>
           </li>
           <li>
-            <Link href="/">Padmanabha Nagar</Link>
+            <Link href="/home-cleaning-services-in-padmanabha-nagar">Padmanabha Nagar</Link>
           </li>
           <li>
-            <Link href="/">Yeshwanthpur</Link>
+            <Link href="/home-cleaning-services-in-yeshwanthpur">Yeshwanthpur</Link>
           </li>
           <li>
-            <Link href="/">Kengeri Satellite Town</Link>
+            <Link href="/home-cleaning-services-in-kengeri-satellite-town">Kengeri Satellite Town</Link>
           </li>
           <li>
-            <Link href="/">Mathikere</Link>
+            <Link href="/home-cleaning-services-in-mathikere">Mathikere</Link>
           </li>
           <li>
-            <Link href="/">Attiguppe</Link>
+            <Link href="/home-cleaning-services-in-attiguppe">Attiguppe</Link>
           </li>
           <li>
-            <Link href="/">Doddanekkundi</Link>
+            <Link href="/home-cleaning-services-in-doddanekkundi">Doddanekkundi</Link>
           </li>
           <li>
-            <Link href="/">Mahadevapura</Link>
+            <Link href="/home-cleaning-services-in-mahadevapura">Mahadevapura</Link>
           </li>
           <li>
-            <Link href="/">Murugesh Palya</Link>
+            <Link href="/home-cleaning-services-in-murugesh-palya">Murugesh Palya</Link>
           </li>
           <li>
-            <Link href="/">Ejipura</Link>
+            <Link href="/home-cleaning-services-in-ejipura">Ejipura</Link>
           </li>
           <li>
-            <Link href="/">Kammanahalli</Link>
+            <Link href="/home-cleaning-services-in-kammanahalli">Kammanahalli</Link>
           </li>
           <li>
-            <Link href="/">Nagarabhavi</Link>
+            <Link href="/home-cleaning-services-in-nagarabhavi">Nagarabhavi</Link>
           </li>
           <li>
-            <Link href="/">Raja Rajeshwari Nagar</Link>
+            <Link href="/home-cleaning-services-in-raja-rajeshwari-nagar">Raja Rajeshwari Nagar</Link>
           </li>
           <li>
-            <Link href="/">Hulimavu</Link>
+            <Link href="/home-cleaning-services-in-hulimavu">Hulimavu</Link>
           </li>
           <li>
             <Link href="/">Adugodi</Link>
