@@ -3,6 +3,8 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { client } from "@/sanity/client";
 import"./HomeBlog.css"
+export const revalidate = 0;
+
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
   ]|order(publishedAt desc)[0...3]{
@@ -20,27 +22,6 @@ const POSTS_QUERY = `*[
   }`;
 export default async function HomeBlogPage() {
   const posts = await client.fetch(POSTS_QUERY);
-
-  // const card = [
-  //   {
-  //     id: 1,
-  //     title: "5 Essential Skills Every Digital Marketer Should Master",
-  //     link: "/",
-  //     img: "https://demo.themeies.com/edugen-html/assets/images/blog/blog1.jpg",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Graphic Design Trends Shaping Visual Communication",
-  //     link: "",
-  //     img: "https://demo.themeies.com/edugen-html/assets/images/blog/blog2.jpg",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Navigating the Data Science Job Market",
-  //     link: "",
-  //     img: "https://demo.themeies.com/edugen-html/assets/images/blog/blog3.jpg",
-  //   },
-  // ];
   return (
     <div className="blogPage-container">
       <div className="blogPage-heading">
